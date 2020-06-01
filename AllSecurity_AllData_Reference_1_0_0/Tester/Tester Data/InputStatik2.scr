@@ -1,0 +1,39 @@
+//Input Kelurahan / Desa
+//expect: 90 00
+90 30 000A 01 0A;
+
+//Input Kecamatan
+//expect: 90 00
+90 30 000B 01 0B;
+
+//Input Kota / Kabupaten
+//expect: 90 00
+90 30 000C 01 0C;
+
+//Input Propinsi
+//expect: 90 00
+90 30 000D 01 0D;
+
+//Input Kode pos
+//expect: 90 00
+80 30 000E 05 000E000E0E;
+
+//Input Diluar/Didalam wilayah kerja
+//expect: 90 00
+90 30 000F 01 01;
+
+//Input Tempat Lahir
+//expect: 90 00
+80 30 0010 04 00100010;
+
+//Input Tanggal Lahir
+//expect: 90 00
+80 30 0011 06 01 07 0B 01 01 09 07;
+
+//Input Telepon
+//expect: 90 00
+80 30 0012 04 00120012;
+
+//Input HP
+//expect: 90 00
+80 30 0013 04 00130013;

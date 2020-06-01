@@ -1,0 +1,49 @@
+     //DATA DIRI
+     /* 6: Hubungan Keluarga                                                */ MIN_VAL_DATA[6] = (short) 1;
+     /* 8: RT                                                               */ MIN_VAL_DATA[8] = (short) 1;
+     /* 9: RW                                                               */ MIN_VAL_DATA[9] = (short) 1;
+     /* 10: Kelurahan / Desa                                                */ MIN_VAL_DATA[10] = (short) 1;
+     /* 11: Kecamatan                                                       */ MIN_VAL_DATA[11] = (short) 1;
+     /* 12: Kota / Kabupaten                                                */ MIN_VAL_DATA[12] = (short) 1;
+     /* 13: Propinsi                                                        */ MIN_VAL_DATA[13] = (short) 1;
+     /* 15: Diluar/Didalam wilayah kerja                                    */ MIN_VAL_DATA[15] = (short) 1;
+     /* 21: Jenis Kelamin                                                   */ MIN_VAL_DATA[21] = (short) 1;
+     /* 22: Agama                                                           */ MIN_VAL_DATA[22] = (short) 1;
+     /* 23: Pendidikan                                                      */ MIN_VAL_DATA[23] = (short) 1;
+     /* 24: Pekerjaan                                                       */ MIN_VAL_DATA[24] = (short) 1;
+     /* 27: Status perkawinan                                               */ MIN_VAL_DATA[27] = (short) 1;
+     /* 28: Kewarganegaraan                                                 */ MIN_VAL_DATA[28] = (short) 1;
+     /* 30: Hubungan                                                        */ MIN_VAL_DATA[30] = (short) 1;
+     /* 32: Kelurahan / Desa                                                */ MIN_VAL_DATA[32] = (short) 1;
+     /* 33: Kecamatan                                                       */ MIN_VAL_DATA[33] = (short) 1;
+     /* 34: Kota / Kabupaten                                                */ MIN_VAL_DATA[34] = (short) 1;
+     /* 35: Propinsi                                                        */ MIN_VAL_DATA[35] = (short) 1;
+     /* 41: Kota / Kabupaten                                                */ MIN_VAL_DATA[41] = (short) 1;
+
+     //REK. STATIS
+     /* 1: Golongan darah                                                   */ MIN_VAL_STATIS[1] = (short) 1;
+
+     //REK. DINAMIS
+     /* 0: No Record (Index)                                                */ MIN_VAL_DINAMIK[0] = (short) 1;
+     /* 7: Tinggi                                                           */ MIN_VAL_DINAMIK[7] = (short) 30;
+     /* 8: Berat badan                                                      */ MIN_VAL_DINAMIK[8] = (short) 10;
+     /* 9: Systole                                                          */ MIN_VAL_DINAMIK[9] = (short) 40;
+     /* 10: Diastole                                                        */ MIN_VAL_DINAMIK[10] = (short) 40;
+     /* 11: Nadi                                                            */ MIN_VAL_DINAMIK[11] = (short) 10;
+     /* 12: Kesadaran                                                       */ MIN_VAL_DINAMIK[12] = (short) 1;
+     /* 13: Suhu                                                            */ MIN_VAL_DINAMIK[13] = (short) 1200;
+     /* 14: Respirasi                                                       */ MIN_VAL_DINAMIK[14] = (short) 1;
+     /* 16: Lab execute flag                                                */ MIN_VAL_DINAMIK[16] = (short) 1;
+     /* 22: Eksekusi resep flag                                             */ MIN_VAL_DINAMIK[22] = (short) 1;
+     /* 23: Repetisi resep                                                  */ MIN_VAL_DINAMIK[23] = (short) 1;
+     /* 24: Prognosa                                                        */ MIN_VAL_DINAMIK[24] = (short) 1;
+     /* 35: Kode Penyakit ICD 1 Status Diagnosa                             */ MIN_VAL_DINAMIK[35] = (short) 1;
+     /* 36: Kode Penyakit ICD 2 Status Diagnosa                             */ MIN_VAL_DINAMIK[36] = (short) 1;
+     /* 37: Kode Penyakit ICD 3 Status Diagnosa                             */ MIN_VAL_DINAMIK[37] = (short) 1;
+     /* 38: Kode Penyakit ICD 4 Status Diagnosa                             */ MIN_VAL_DINAMIK[38] = (short) 1;
+     /* 39: Kode Penyakit ICD 5 Status Diagnosa                             */ MIN_VAL_DINAMIK[39] = (short) 1;
+     /* 40: Kode Penyakit ICD 6 Status Diagnosa                             */ MIN_VAL_DINAMIK[40] = (short) 1;
+     /* 41: Kode Penyakit ICD 7 Status Diagnosa                             */ MIN_VAL_DINAMIK[41] = (short) 1;
+     /* 42: Kode Penyakit ICD 8 Status Diagnosa                             */ MIN_VAL_DINAMIK[42] = (short) 1;
+     /* 43: Kode Penyakit ICD 9 Status Diagnosa                             */ MIN_VAL_DINAMIK[43] = (short) 1;
+     /* 44: Kode Penyakit ICD 10 Status Diagnosa                            */ MIN_VAL_DINAMIK[44] = (short) 1;

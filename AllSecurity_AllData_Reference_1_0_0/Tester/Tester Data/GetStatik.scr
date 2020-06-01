@@ -1,0 +1,212 @@
+//Get No Smartcard
+//expect: 00000000 9000 
+80 50 0000;
+
+//Get Kategori Pasien/Jenis pembayaran/Asuansi
+//expect: 00010001 9000 
+80 50 0001;
+
+//Get Nomer Asuransi
+//expect: 00020002 9000 
+80 50 0002;
+
+//Get Tanggal Daftar
+//expect: 000300030003 9000 
+80 50 0003;
+
+//Get Nama Pasien
+//expect: 00040004 9000 
+80 50 0004;
+
+//Get Nama KK
+//expect: 10050005 10050005 10050005 10050005 9000 
+80 50 0005;
+
+//Get Hubungan Keluarga
+//expect: 00 06 9000
+90 50 0006;
+
+//Get Alamat
+//expect: 00070007 9000 
+80 50 0007;
+
+//Get RT
+//expect: 00 08 9000
+90 50 0008;
+
+//Get RW
+//expect: 00 09 9000
+90 50 0009;
+
+//Get Kelurahan / Desa
+//expect: 00 0A 9000
+90 50 000A;
+
+//Get Kecamatan
+//expect: 00 0B 9000
+90 50 000B;
+
+//Get Kota / Kabupaten
+//expect: 00 0C 9000
+90 50 000C;
+
+//Get Propinsi
+//expect: 00 0D 9000
+90 50 000D;
+
+//Get Kode pos
+//expect: 000E000E 0E 9000 
+80 50 000E;
+
+//Get Diluar/Didalam wilayah kerja
+//expect: 00 01 9000
+90 50 000F;
+
+//Get Tempat Lahir
+//expect: 00100010 9000 
+80 50 0010;
+
+//Get Tanggal Lahir
+//expect: 01 07 0B 01 01 09 9000 
+80 50 0011;
+
+//Get Telepon
+//expect: 00120012 9000 
+80 50 0012;
+
+//Get HP
+//expect: 00130013 9000 
+80 50 0013;
+
+//Get No. KTP (ID Number) - NIK
+//expect: 1014201430144014 1014201430144014 9000 
+80 50 0014;
+
+//Get Jenis Kelamin
+//expect: 00 01 9000
+90 50 0015;
+
+//Get Agama
+//expect: 00 06 9000
+90 50 0016;
+
+//Get Pendidikan
+//expect: 00 04 9000
+90 50 0017;
+
+//Get Pekerjaan
+//expect: 00 08 9000
+90 50 0018;
+
+//Get Kelas Perawatan
+//expect: 00190019 9000 
+80 50 0019;
+
+//Get Alamat e-mail
+//expect: 001A001A 9000 
+80 50 001A;
+
+//Get Status perkawinan
+//expect: 00 03 9000
+90 50 001B;
+
+//Get Kewarganegaraan
+//expect: 00 01 9000
+90 50 001C;
+
+//Get Nama Keluarga
+//expect: 001D001D 9000 
+80 50 001D;
+
+//Get Hubungan
+//expect: 00 01 9000
+90 50 001E;
+
+//Get Alamat
+//expect: 001F001F 9000 
+80 50 001F;
+
+//Get Kelurahan / Desa
+//expect: 00 07 9000
+90 50 0020;
+
+//Get Kecamatan
+//expect: 00 01 9000
+90 50 0021;
+
+//Get Kota / Kabupaten
+//expect: 00 02 9000
+90 50 0022;
+
+//Get Propinsi
+//expect: 00 03 9000
+90 50 0023;
+
+//Get Kode pos
+//expect: 0024002400 9000 
+80 50 0024;
+
+//Get Telepon
+//expect: 00250025 9000 
+80 50 0025;
+
+//Get HP
+//expect: 00260026 9000 
+80 50 0026;
+
+//Get Nama Kantor
+//expect: 00270027 9000 
+80 50 0027;
+
+//Get Alamat Kantor
+//expect: 00280028 9000 
+80 50 0028;
+
+//Get Kota / Kabupaten
+//expect: 00 09 9000
+90 50 0029;
+
+//Get Telepon
+//expect: 002A002A 9000 
+80 50 002A;
+
+//Get HP
+//expect: 002B002B 9000 
+80 50 002B;
+
+//Get Telepon
+//expect: 002A002A 9000 
+80 50 002A;
+
+//Get HP
+//expect: 002B002B 9000 
+80 50 002B;
+
+//Get Alergi
+//expect: 01000100 9000 
+80 50 0100;
+
+//Get Golongan darah
+//expect: 00 01 9000
+90 50 0101;
+
+//Get Riwayat Operasi
+//expect: 01020102 9000 
+80 50 0102;
+
+//Get Riwayat Rawat RS
+//expect: 01030103 9000 
+80 50 0103;
+
+//Get Riwayat penyakit Kronis (Jantung, Paru, Ginjal, dll.)
+//expect: 01040104 9000 
+80 50 0104;
+
+//Get Riwayat penyakit bawaan dan orang tua/keluarga/kerabat
+//expect: 01050105 9000 
+80 50 0105;
+
+//Get Faktor Resiko
+//expect: 01060106 9000 
+80 50 0106;
+

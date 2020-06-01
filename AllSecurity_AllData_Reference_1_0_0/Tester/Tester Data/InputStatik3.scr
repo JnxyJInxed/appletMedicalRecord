@@ -1,0 +1,39 @@
+//Input No. KTP (ID Number) - NIK
+//expect: 90 00
+80 30 0014 10 1014201430144014 1014201430144014;
+
+//Input Jenis Kelamin
+//expect: 90 00
+90 30 0015 01 01;
+
+//Input Agama
+//expect: 90 00
+90 30 0016 01 06;
+
+//Input Pendidikan
+//expect: 90 00
+90 30 0017 01 04;
+
+//Input Pekerjaan
+//expect: 90 00
+90 30 0018 01 08;
+
+//Input Kelas Perawatan
+//expect: 90 00
+80 30 0019 04 00190019;
+
+//Input Alamat e-mail
+//expect: 90 00
+80 30 001A 04 001A001A;
+
+//Input Status perkawinan
+//expect: 90 00
+90 30 001B 01 03;
+
+//Input Kewarganegaraan
+//expect: 90 00
+90 30 001C 01 01;
+
+//Input Nama Keluarga
+//expect: 90 00
+80 30 001D 04 001D001D;

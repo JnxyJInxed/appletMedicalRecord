@@ -1,0 +1,40 @@
+//Input Hubungan
+//expect: 90 00
+90 30 001E 01 01;
+
+//Input Alamat
+//expect: 90 00
+80 30 001F 04 001F001F;
+
+//Input Kelurahan / Desa
+//expect: 90 00
+90 30 0020 01 07;
+
+//Input Kecamatan
+//expect: 90 00
+90 30 0021 01 01;
+
+//Input Kota / Kabupaten
+//expect: 90 00
+90 30 0022 01 02;
+
+//Input Propinsi
+//expect: 90 00
+90 30 0023 01 03;
+
+//Input Kode pos
+//expect: 90 00
+80 30 0024 05 00 24 00 24 00;
+
+//Input Telepon
+//expect: 90 00
+80 30 0025 04 00250025;
+
+//Input HP
+//expect: 90 00
+80 30 0026 04 00260026;
+
+//Input Nama Kantor
+//expect: 90 00
+80 30 0027 04 00270027;
+
