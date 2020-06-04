@@ -1,0 +1,2020 @@
+//1
+//select
+00A40400 09 B70000006203012101;
+
+//2
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//3
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//4
+//Delete No Smartcard
+//expect: 90 00
+80 40 0000;
+
+
+//5
+//select
+00A40400 09 B70000006203012101;
+
+//6
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//7
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//8
+//Delete Kategori Pasien/Jenis pembayaran/Asuansi
+//expect: 90 00
+80 40 0001;
+
+
+//9
+//select
+00A40400 09 B70000006203012101;
+
+//10
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//11
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//12
+//Delete Nomer Asuransi
+//expect: 90 00
+80 40 0002;
+
+
+//13
+//select
+00A40400 09 B70000006203012101;
+
+//14
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//15
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//16
+//Delete Tanggal Daftar
+//expect: 90 00
+80 40 0003;
+
+
+//17
+//select
+00A40400 09 B70000006203012101;
+
+//18
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//19
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//20
+//Delete Nama Pasien
+//expect: 90 00
+80 40 0004;
+
+
+//21
+//select
+00A40400 09 B70000006203012101;
+
+//22
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//23
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//24
+//Delete Nama KK
+//expect: 90 00
+80 40 0005;
+
+
+//25
+//select
+00A40400 09 B70000006203012101;
+
+//26
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//27
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//28
+//Delete Hubungan Keluarga
+//expect: 90 00
+90 40 0006;
+
+
+//29
+//select
+00A40400 09 B70000006203012101;
+
+//30
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//31
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//32
+//Delete Alamat
+//expect: 90 00
+80 40 0007;
+
+
+//33
+//select
+00A40400 09 B70000006203012101;
+
+//34
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//35
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//36
+//Delete RT
+//expect: 90 00
+90 40 0008;
+
+
+//37
+//select
+00A40400 09 B70000006203012101;
+
+//38
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//39
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//40
+//Delete RW
+//expect: 90 00
+90 40 0009;
+
+
+//41
+//select
+00A40400 09 B70000006203012101;
+
+//42
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//43
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//44
+//Delete Kelurahan / Desa
+//expect: 90 00
+90 40 000A;
+
+
+//45
+//select
+00A40400 09 B70000006203012101;
+
+//46
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//47
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//48
+//Delete Kecamatan
+//expect: 90 00
+90 40 000B;
+
+
+//49
+//select
+00A40400 09 B70000006203012101;
+
+//50
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//51
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//52
+//Delete Kota / Kabupaten
+//expect: 90 00
+90 40 000C;
+
+
+//53
+//select
+00A40400 09 B70000006203012101;
+
+//54
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//55
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//56
+//Delete Propinsi
+//expect: 90 00
+90 40 000D;
+
+
+//57
+//select
+00A40400 09 B70000006203012101;
+
+//58
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//59
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//60
+//Delete Kode pos
+//expect: 90 00
+80 40 000E;
+
+
+//61
+//select
+00A40400 09 B70000006203012101;
+
+//62
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//63
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//64
+//Delete Diluar/Didalam wilayah kerja
+//expect: 90 00
+90 40 000F;
+
+
+//65
+//select
+00A40400 09 B70000006203012101;
+
+//66
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//67
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//68
+//Delete Tempat Lahir
+//expect: 90 00
+80 40 0010;
+
+
+//69
+//select
+00A40400 09 B70000006203012101;
+
+//70
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//71
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//72
+//Delete Tanggal Lahir
+//expect: 90 00
+80 40 0011;
+
+
+//73
+//select
+00A40400 09 B70000006203012101;
+
+//74
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//75
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//76
+//Delete Telepon
+//expect: 90 00
+80 40 0012;
+
+
+//77
+//select
+00A40400 09 B70000006203012101;
+
+//78
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//79
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//80
+//Delete HP
+//expect: 90 00
+80 40 0013;
+
+
+//81
+//select
+00A40400 09 B70000006203012101;
+
+//82
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//83
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//84
+//Delete No. KTP (ID Number) - NIK
+//expect: 90 00
+80 40 0014;
+
+
+//85
+//select
+00A40400 09 B70000006203012101;
+
+//86
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//87
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//88
+//Delete Jenis Kelamin
+//expect: 90 00
+90 40 0015;
+
+
+//89
+//select
+00A40400 09 B70000006203012101;
+
+//90
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//91
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//92
+//Delete Agama
+//expect: 90 00
+90 40 0016;
+
+
+//93
+//select
+00A40400 09 B70000006203012101;
+
+//94
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//95
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//96
+//Delete Pendidikan
+//expect: 90 00
+90 40 0017;
+
+
+//97
+//select
+00A40400 09 B70000006203012101;
+
+//98
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//99
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//100
+//Delete Pekerjaan
+//expect: 90 00
+90 40 0018;
+
+
+//101
+//select
+00A40400 09 B70000006203012101;
+
+//102
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//103
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//104
+//Delete Kelas Perawatan
+//expect: 90 00
+80 40 0019;
+
+
+//105
+//select
+00A40400 09 B70000006203012101;
+
+//106
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//107
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//108
+//Delete Alamat e-mail
+//expect: 90 00
+80 40 001A;
+
+
+//109
+//select
+00A40400 09 B70000006203012101;
+
+//110
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//111
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//112
+//Delete Status perkawinan
+//expect: 90 00
+90 40 001B;
+
+
+//113
+//select
+00A40400 09 B70000006203012101;
+
+//114
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//115
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//116
+//Delete Kewarganegaraan
+//expect: 90 00
+90 40 001C;
+
+
+//117
+//select
+00A40400 09 B70000006203012101;
+
+//118
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//119
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//120
+//Delete Nama Keluarga
+//expect: 90 00
+80 40 001D;
+
+
+//121
+//select
+00A40400 09 B70000006203012101;
+
+//122
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//123
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//124
+//Delete Hubungan
+//expect: 90 00
+90 40 001E;
+
+
+//125
+//select
+00A40400 09 B70000006203012101;
+
+//126
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//127
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//128
+//Delete Alamat
+//expect: 90 00
+80 40 001F;
+
+
+//129
+//select
+00A40400 09 B70000006203012101;
+
+//130
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//131
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//132
+//Delete Kelurahan / Desa
+//expect: 90 00
+90 40 0020;
+
+
+//133
+//select
+00A40400 09 B70000006203012101;
+
+//134
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//135
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//136
+//Delete Kecamatan
+//expect: 90 00
+90 40 0021;
+
+
+//137
+//select
+00A40400 09 B70000006203012101;
+
+//138
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//139
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//140
+//Delete Kota / Kabupaten
+//expect: 90 00
+90 40 0022;
+
+
+//141
+//select
+00A40400 09 B70000006203012101;
+
+//142
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//143
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//144
+//Delete Propinsi
+//expect: 90 00
+90 40 0023;
+
+
+//145
+//select
+00A40400 09 B70000006203012101;
+
+//146
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//147
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//148
+//Delete Kode pos
+//expect: 90 00
+80 40 0024;
+
+
+//149
+//select
+00A40400 09 B70000006203012101;
+
+//150
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//151
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//152
+//Delete Telepon
+//expect: 90 00
+80 40 0025;
+
+
+//153
+//select
+00A40400 09 B70000006203012101;
+
+//154
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//155
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//156
+//Delete HP
+//expect: 90 00
+80 40 0026;
+
+
+//157
+//select
+00A40400 09 B70000006203012101;
+
+//158
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//159
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//160
+//Delete Nama Kantor
+//expect: 90 00
+80 40 0027;
+
+
+//161
+//select
+00A40400 09 B70000006203012101;
+
+//162
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//163
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//164
+//Delete Alamat Kantor
+//expect: 90 00
+80 40 0028;
+
+
+//165
+//select
+00A40400 09 B70000006203012101;
+
+//166
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//167
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//168
+//Delete Kota / Kabupaten
+//expect: 90 00
+90 40 0029;
+
+
+//169
+//select
+00A40400 09 B70000006203012101;
+
+//170
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//171
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//172
+//Delete Telepon
+//expect: 90 00
+80 40 002A;
+
+
+//173
+//select
+00A40400 09 B70000006203012101;
+
+//174
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//175
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//176
+//Delete HP
+//expect: 90 00
+80 40 002B;
+
+
+//177
+//select
+00A40400 09 B70000006203012101;
+
+//178
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//179
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//180
+//Delete Telepon
+//expect: 90 00
+80 40 002A;
+
+
+//181
+//select
+00A40400 09 B70000006203012101;
+
+//182
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//183
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//184
+//Delete HP
+//expect: 90 00
+80 40 002B;
+
+
+//185
+//select
+00A40400 09 B70000006203012101;
+
+//186
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//187
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//188
+//Delete Alergi
+//expect: 90 00
+80 40 0100;
+
+
+//189
+//select
+00A40400 09 B70000006203012101;
+
+//190
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//191
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//192
+//Delete Golongan darah
+//expect: 90 00
+90 40 0101;
+
+
+//193
+//select
+00A40400 09 B70000006203012101;
+
+//194
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//195
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//196
+//Delete Riwayat Operasi
+//expect: 90 00
+80 40 0102;
+
+
+//197
+//select
+00A40400 09 B70000006203012101;
+
+//198
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//199
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//200
+//Delete Riwayat Rawat RS
+//expect: 90 00
+80 40 0103;
+
+
+//201
+//select
+00A40400 09 B70000006203012101;
+
+//202
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//203
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//204
+//Delete Riwayat penyakit Kronis (Jantung, Paru, Ginjal, dll.)
+//expect: 90 00
+80 40 0104;
+
+
+//205
+//select
+00A40400 09 B70000006203012101;
+
+//206
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//207
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//208
+//Delete Riwayat penyakit bawaan dan orang tua/keluarga/kerabat
+//expect: 90 00
+80 40 0105;
+
+
+//209
+//select
+00A40400 09 B70000006203012101;
+
+//210
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//211
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//212
+//Delete Faktor Resiko
+//expect: 90 00
+80 40 0106;
+
+
+//213
+//select
+00A40400 09 B70000006203012101;
+
+//214
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//215
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//216
+//Delete No Record (Index)
+//expect: 90 00
+90 40 0200;
+
+
+//217
+//select
+00A40400 09 B70000006203012101;
+
+//218
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//219
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//220
+//Delete Tanggal periksa
+//expect: 90 00
+80 40 0201;
+
+
+//221
+//select
+00A40400 09 B70000006203012101;
+
+//222
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//223
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//224
+//Delete Keluhan utama
+//expect: 90 00
+80 40 0202;
+
+
+//225
+//select
+00A40400 09 B70000006203012101;
+
+//226
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//227
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//228
+//Delete Anamnesa
+//expect: 90 00
+80 40 0203;
+
+
+//229
+//select
+00A40400 09 B70000006203012101;
+
+//230
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//231
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//232
+//Delete Riwayat Penyakit Dahulu
+//expect: 90 00
+80 40 0204;
+
+
+//233
+//select
+00A40400 09 B70000006203012101;
+
+//234
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//235
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//236
+//Delete Riwayat Penyakit pada keluarga/kerabat
+//expect: 90 00
+80 40 0205;
+
+
+//237
+//select
+00A40400 09 B70000006203012101;
+
+//238
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//239
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//240
+//Delete Pemeriksaan Fisik
+//expect: 90 00
+80 40 0206;
+
+
+//241
+//select
+00A40400 09 B70000006203012101;
+
+//242
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//243
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//244
+//Delete Tinggi
+//expect: 90 00
+80 40 0207;
+
+
+//245
+//select
+00A40400 09 B70000006203012101;
+
+//246
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//247
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//248
+//Delete Berat badan
+//expect: 90 00
+90 40 0208;
+
+
+//249
+//select
+00A40400 09 B70000006203012101;
+
+//250
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//251
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//252
+//Delete Systole
+//expect: 90 00
+90 40 0209;
+
+
+//253
+//select
+00A40400 09 B70000006203012101;
+
+//254
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//255
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//256
+//Delete Diastole
+//expect: 90 00
+90 40 020A;
+
+
+//257
+//select
+00A40400 09 B70000006203012101;
+
+//258
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//259
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//260
+//Delete Nadi
+//expect: 90 00
+90 40 020B;
+
+
+//261
+//select
+00A40400 09 B70000006203012101;
+
+//262
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//263
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//264
+//Delete Kesadaran
+//expect: 90 00
+90 40 020C;
+
+
+//265
+//select
+00A40400 09 B70000006203012101;
+
+//266
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//267
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//268
+//Delete Suhu
+//expect: 90 00
+90 40 020D;
+
+
+//269
+//select
+00A40400 09 B70000006203012101;
+
+//270
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//271
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//272
+//Delete Respirasi
+//expect: 90 00
+90 40 020E;
+
+
+//273
+//select
+00A40400 09 B70000006203012101;
+
+//274
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//275
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//276
+//Delete Lain-lain
+//expect: 90 00
+80 40 020F;
+
+
+//277
+//select
+00A40400 09 B70000006203012101;
+
+//278
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//279
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//280
+//Delete Lab execute flag
+//expect: 90 00
+90 40 0210;
+
+
+//281
+//select
+00A40400 09 B70000006203012101;
+
+//282
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//283
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//284
+//Delete Expertise Lab/Radio/etc
+//expect: 90 00
+80 40 0211;
+
+
+//285
+//select
+00A40400 09 B70000006203012101;
+
+//286
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//287
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//288
+//Delete Catatan Lab
+//expect: 90 00
+80 40 0212;
+
+
+//289
+//select
+00A40400 09 B70000006203012101;
+
+//290
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//291
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//292
+//Delete Terapi
+//expect: 90 00
+80 40 0213;
+
+
+//293
+//select
+00A40400 09 B70000006203012101;
+
+//294
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//295
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//296
+//Delete Resep
+//expect: 90 00
+80 40 0214;
+
+
+//297
+//select
+00A40400 09 B70000006203012101;
+
+//298
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//299
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//300
+//Delete Catatan resep
+//expect: 90 00
+80 40 0215;
+
+
+//301
+//select
+00A40400 09 B70000006203012101;
+
+//302
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//303
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//304
+//Delete Eksekusi resep flag
+//expect: 90 00
+90 40 0216;
+
+
+//305
+//select
+00A40400 09 B70000006203012101;
+
+//306
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//307
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//308
+//Delete Repetisi resep
+//expect: 90 00
+90 40 0217;
+
+
+//309
+//select
+00A40400 09 B70000006203012101;
+
+//310
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//311
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//312
+//Delete Prognosa
+//expect: 90 00
+90 40 0218;
+
+
+//313
+//select
+00A40400 09 B70000006203012101;
+
+//314
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//315
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//316
+//Delete Kode Penyakit ICD 1
+//expect: 90 00
+80 40 0219;
+
+
+//317
+//select
+00A40400 09 B70000006203012101;
+
+//318
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//319
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//320
+//Delete Kode Penyakit ICD 2
+//expect: 90 00
+80 40 021A;
+
+
+//321
+//select
+00A40400 09 B70000006203012101;
+
+//322
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//323
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//324
+//Delete Kode Penyakit ICD 3
+//expect: 90 00
+80 40 021B;
+
+
+//325
+//select
+00A40400 09 B70000006203012101;
+
+//326
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//327
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//328
+//Delete Kode Penyakit ICD 4
+//expect: 90 00
+80 40 021C;
+
+
+//329
+//select
+00A40400 09 B70000006203012101;
+
+//330
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//331
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//332
+//Delete Kode Penyakit ICD 5
+//expect: 90 00
+80 40 021D;
+
+
+//333
+//select
+00A40400 09 B70000006203012101;
+
+//334
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//335
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//336
+//Delete Kode Penyakit ICD 6
+//expect: 90 00
+80 40 021E;
+
+
+//337
+//select
+00A40400 09 B70000006203012101;
+
+//338
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//339
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//340
+//Delete Kode Penyakit ICD 7
+//expect: 90 00
+80 40 021F;
+
+
+//341
+//select
+00A40400 09 B70000006203012101;
+
+//342
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//343
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//344
+//Delete Kode Penyakit ICD 8
+//expect: 90 00
+80 40 0220;
+
+
+//345
+//select
+00A40400 09 B70000006203012101;
+
+//346
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//347
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//348
+//Delete Kode Penyakit ICD 9
+//expect: 90 00
+80 40 0221;
+
+
+//349
+//select
+00A40400 09 B70000006203012101;
+
+//350
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//351
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//352
+//Delete Kode Penyakit ICD 10
+//expect: 90 00
+80 40 0222;
+
+
+//353
+//select
+00A40400 09 B70000006203012101;
+
+//354
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//355
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//356
+//Delete Kode Penyakit ICD 1 Status Diagnosa
+//expect: 90 00
+90 40 0223;
+
+
+//357
+//select
+00A40400 09 B70000006203012101;
+
+//358
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//359
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//360
+//Delete Kode Penyakit ICD 2 Status Diagnosa
+//expect: 90 00
+90 40 0224;
+
+
+//361
+//select
+00A40400 09 B70000006203012101;
+
+//362
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//363
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//364
+//Delete Kode Penyakit ICD 3 Status Diagnosa
+//expect: 90 00
+90 40 0225;
+
+
+//365
+//select
+00A40400 09 B70000006203012101;
+
+//366
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//367
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//368
+//Delete Kode Penyakit ICD 4 Status Diagnosa
+//expect: 90 00
+90 40 0226;
+
+
+//369
+//select
+00A40400 09 B70000006203012101;
+
+//370
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//371
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//372
+//Delete Kode Penyakit ICD 5 Status Diagnosa
+//expect: 90 00
+90 40 0227;
+
+
+//373
+//select
+00A40400 09 B70000006203012101;
+
+//374
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//375
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//376
+//Delete Kode Penyakit ICD 6 Status Diagnosa
+//expect: 90 00
+90 40 0228;
+
+
+//377
+//select
+00A40400 09 B70000006203012101;
+
+//378
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//379
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//380
+//Delete Kode Penyakit ICD 7 Status Diagnosa
+//expect: 90 00
+90 40 0229;
+
+
+//381
+//select
+00A40400 09 B70000006203012101;
+
+//382
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//383
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//384
+//Delete Kode Penyakit ICD 8 Status Diagnosa
+//expect: 90 00
+90 40 022A;
+
+
+//385
+//select
+00A40400 09 B70000006203012101;
+
+//386
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//387
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//388
+//Delete Kode Penyakit ICD 9 Status Diagnosa
+//expect: 90 00
+90 40 022B;
+
+
+//389
+//select
+00A40400 09 B70000006203012101;
+
+//390
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//391
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//392
+//Delete Kode Penyakit ICD 10 Status Diagnosa
+//expect: 90 00
+90 40 022C;
+
+
+//393
+//select
+00A40400 09 B70000006203012101;
+
+//394
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//395
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//396
+//Delete Poli yang dituju
+//expect: 90 00
+80 40 022D;
+
+
+//397
+//select
+00A40400 09 B70000006203012101;
+
+//398
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//399
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//400
+//Delete Rujukan/Pengirim penderita
+//expect: 90 00
+80 40 022E;
+
+
+//401
+//select
+00A40400 09 B70000006203012101;
+
+//402
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//403
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//404
+//Delete ID Puskesmas
+//expect: 90 00
+80 40 022F;
+
+
