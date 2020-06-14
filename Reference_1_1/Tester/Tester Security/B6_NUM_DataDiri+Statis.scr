@@ -1,0 +1,23 @@
+//input data[0] pendidikan[23]
+//expect: 9000
+90 30 00 17 01 05;
+
+//input data[0] KWN[28]
+//expect: 9000
+90 30 00 1C 01 01;
+
+//input data[1] golongan darah[1]
+//expect: 9000
+90 30 01 01 01 08;
+
+//get data[0] pendidikan[19]
+//expect: 00 05 9000
+90 50 00 17;
+
+//get data[0] KWN[24]
+//expect:00 01 9000
+90 50 00 1C;
+
+//get data[1] golongan darah[1]
+//expect: 00 08 9000
+90 50 01 01;

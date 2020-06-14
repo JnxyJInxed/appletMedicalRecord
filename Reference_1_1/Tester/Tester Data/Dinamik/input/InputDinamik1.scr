@@ -1,0 +1,192 @@
+//Input No Record (Index)
+//expect: 9000
+90 30 0200 01 01;
+
+//Input Tanggal periksa
+//expect: 9000
+80 30 0201 06 02 02 0200002A;
+
+//Input Keluhan utama
+//expect: 9000
+80 30 0202 05 0202020201;
+
+//Input Anamnesa
+//expect: 9000
+80 30 0203 05 0203020301;
+
+//Input Riwayat Penyakit Dahulu
+//expect: 9000
+80 30 0204 05 0204020401;
+
+//Input Riwayat Penyakit pada keluarga/kerabat
+//expect: 9000
+80 30 0205 05 0205020501;
+
+//Input Pemeriksaan Fisik
+//expect: 9000
+80 30 0206 05 0206020601;
+
+//Input Tinggi
+//expect: 9000
+80 30 0207 01 9E;
+
+//Input Berat badan
+//expect: 9000
+90 30 0208 01 37;
+
+//Input Systole
+//expect: 9000
+90 30 0209 01 6E;
+
+//Input Diastole
+//expect: 9000
+90 30 020A 01 46;
+
+//Input Nadi
+//expect: 9000
+90 30 020B 01 3C;
+
+//Input Kesadaran
+//expect: 9000
+90 30 020C 01 06;
+
+//Input Suhu
+//expect: 9000
+90 30 020D 02 09C4;
+
+//Input Respirasi
+//expect: 9000
+90 30 020E 01 14;
+
+//Input Lain-lain
+//expect: 9000
+80 30 020F 05 020F020F01;
+
+//Input Lab execute flag
+//expect: 9000
+90 30 0210 01 02;
+
+//Input Expertise Lab/Radio/etc
+//expect: 9000
+80 30 0211 05 0211021101;
+
+//Input Catatan Lab
+//expect: 9000
+80 30 0212 05 0212021201;
+
+//Input Terapi
+//expect: 9000
+80 30 0213 05 0213021301;
+
+//Input Resep
+//expect: 9000
+80 30 0214 05 0214021401;
+
+//Input Catatan resep
+//expect: 9000
+80 30 0215 05 0215021501;
+
+//Input Eksekusi resep flag
+//expect: 9000
+90 30 0216 01 04;
+
+//Input Repetisi resep
+//expect: 9000
+90 30 0217 01 03;
+
+//Input Prognosa
+//expect: 9000
+90 30 0218 01 07;
+
+//Input Kode Penyakit ICD 1
+//expect: 9000
+80 30 0219 05 0219021901;
+
+//Input Kode Penyakit ICD 2
+//expect: 9000
+80 30 021A 05 021A021A01;
+
+//Input Kode Penyakit ICD 3
+//expect: 9000
+80 30 021B 05 021B021B01;
+
+//Input Kode Penyakit ICD 4
+//expect: 9000
+80 30 021C 05 021C021C01;
+
+//Input Kode Penyakit ICD 5
+//expect: 9000
+80 30 021D 05 021D021D01;
+
+//Input Kode Penyakit ICD 6
+//expect: 9000
+80 30 021E 05 021E021E01;
+
+//Input Kode Penyakit ICD 7
+//expect: 9000
+80 30 021F 05 021F021F01;
+
+//Input Kode Penyakit ICD 8
+//expect: 9000
+80 30 0220 05 0220022001;
+
+//Input Kode Penyakit ICD 9
+//expect: 9000
+80 30 0221 05 0221022101;
+
+//Input Kode Penyakit ICD 10
+//expect: 9000
+80 30 0222 05 0222022201;
+
+//Input Kode Penyakit ICD 1 Status Diagnosa
+//expect: 9000
+90 30 0223 01 01;
+
+//Input Kode Penyakit ICD 2 Status Diagnosa
+//expect: 9000
+90 30 0224 01 02;
+
+//Input Kode Penyakit ICD 3 Status Diagnosa
+//expect: 9000
+90 30 0225 01 03;
+
+//Input Kode Penyakit ICD 4 Status Diagnosa
+//expect: 9000
+90 30 0226 01 04;
+
+//Input Kode Penyakit ICD 5 Status Diagnosa
+//expect: 9000
+90 30 0227 01 01;
+
+//Input Kode Penyakit ICD 6 Status Diagnosa
+//expect: 9000
+90 30 0228 01 06;
+
+//Input Kode Penyakit ICD 7 Status Diagnosa
+//expect: 9000
+90 30 0229 01 07;
+
+//Input Kode Penyakit ICD 8 Status Diagnosa
+//expect: 9000
+90 30 022A 01 08;
+
+//Input Kode Penyakit ICD 9 Status Diagnosa
+//expect: 9000
+90 30 022B 01 09;
+
+//Input Kode Penyakit ICD 10 Status Diagnosa
+//expect: 9000
+90 30 022C 01 0A;
+
+//Input Poli yang dituju
+//expect: 9000
+80 30 022D 05 022D022D01;
+
+//Input Rujukan/Pengirim penderita
+//expect: 9000
+80 30 022E 05 022E022E01;
+
+//Input ID Puskesmas
+//expect: 9000
+80 30 022F 05 022F022F01;
+

@@ -1,0 +1,192 @@
+//Get No Record (Index)
+//expect: 01 9000
+90 50 0200 01 01;
+
+//Get Tanggal periksa
+//expect: 02 02 0200002A 9000
+80 50 0201 01 01;
+
+//Get Keluhan utama
+//expect: 0202020201 9000
+80 50 0202 01 01;
+
+//Get Anamnesa
+//expect: 0203020301 9000
+80 50 0203 01 01;
+
+//Get Riwayat Penyakit Dahulu
+//expect: 0204020401 9000
+80 50 0204 01 01;
+
+//Get Riwayat Penyakit pada keluarga/kerabat
+//expect: 0205020501 9000
+80 50 0205 01 01;
+
+//Get Pemeriksaan Fisik
+//expect: 0206020601 9000
+80 50 0206 01 01;
+
+//Get Tinggi
+//expect: 9E 9000
+80 50 0207 01 01;
+
+//Get Berat badan
+//expect: 37 9000
+90 50 0208 01 01;
+
+//Get Systole
+//expect: 6E 9000
+90 50 0209 01 01;
+
+//Get Diastole
+//expect: 46 9000
+90 50 020A 01 01;
+
+//Get Nadi
+//expect: 3C 9000
+90 50 020B 01 01;
+
+//Get Kesadaran
+//expect: 06 9000
+90 50 020C 01 01;
+
+//Get Suhu
+//expect: 09c4 9000
+90 50 020D 01 01;
+
+//Get Respirasi
+//expect: 14 9000
+90 50 020E 01 01;
+
+//Get Lain-lain
+//expect: 020F020F01 9000
+80 50 020F 01 01;
+
+//Get Lab execute flag
+//expect: 02 9000
+90 50 0210 01 01;
+
+//Get Expertise Lab/Radio/etc
+//expect: 0211021101 9000
+80 50 0211 01 01;
+
+//Get Catatan Lab
+//expect: 0212021201 9000
+80 50 0212 01 01;
+
+//Get Terapi
+//expect: 0213021301 9000
+80 50 0213 01 01;
+
+//Get Resep
+//expect: 0214021401 9000
+80 50 0214 01 01;
+
+//Get Catatan resep
+//expect: 0215021501 9000
+80 50 0215 01 01;
+
+//Get Eksekusi resep flag
+//expect: 04 9000
+90 50 0216 01 01;
+
+//Get Repetisi resep
+//expect: 03 9000
+90 50 0217 01 01;
+
+//Get Prognosa
+//expect: 07 9000
+90 50 0218 01 01;
+
+//Get Kode Penyakit ICD 1
+//expect: 0219021901 9000
+80 50 0219 01 01;
+
+//Get Kode Penyakit ICD 2
+//expect: 021A021A01 9000
+80 50 021A 01 01;
+
+//Get Kode Penyakit ICD 3
+//expect: 021B021B01 9000
+80 50 021B 01 01;
+
+//Get Kode Penyakit ICD 4
+//expect: 021C021C01 9000
+80 50 021C 01 01;
+
+//Get Kode Penyakit ICD 5
+//expect: 021D021D01 9000
+80 50 021D 01 01;
+
+//Get Kode Penyakit ICD 6
+//expect: 021E021E01 9000
+80 50 021E 01 01;
+
+//Get Kode Penyakit ICD 7
+//expect: 021F021F01 9000
+80 50 021F 01 01;
+
+//Get Kode Penyakit ICD 8
+//expect: 0220022001 9000
+80 50 0220 01 01;
+
+//Get Kode Penyakit ICD 9
+//expect: 0221022101 9000
+80 50 0221 01 01;
+
+//Get Kode Penyakit ICD 10
+//expect: 0222022201 9000
+80 50 0222 01 01;
+
+//Get Kode Penyakit ICD 1 Status Diagnosa
+//expect: 01 9000
+90 50 0223 01 01;
+
+//Get Kode Penyakit ICD 2 Status Diagnosa
+//expect: 02 9000
+90 50 0224 01 01;
+
+//Get Kode Penyakit ICD 3 Status Diagnosa
+//expect: 03 9000
+90 50 0225 01 01;
+
+//Get Kode Penyakit ICD 4 Status Diagnosa
+//expect: 04 9000
+90 50 0226 01 01;
+
+//Get Kode Penyakit ICD 5 Status Diagnosa
+//expect: 05 9000
+90 50 0227 01 01;
+
+//Get Kode Penyakit ICD 6 Status Diagnosa
+//expect: 06 9000
+90 50 0228 01 01;
+
+//Get Kode Penyakit ICD 7 Status Diagnosa
+//expect: 07 9000
+90 50 0229 01 01;
+
+//Get Kode Penyakit ICD 8 Status Diagnosa
+//expect: 08 9000
+90 50 022A 01 01;
+
+//Get Kode Penyakit ICD 9 Status Diagnosa
+//expect: 09 9000
+90 50 022B 01 01;
+
+//Get Kode Penyakit ICD 10 Status Diagnosa
+//expect: 0A 9000
+90 50 022C 01 01;
+
+//Get Poli yang dituju
+//expect: 022D022D01 9000
+80 50 022D 01 01;
+
+//Get Rujukan/Pengirim penderita
+//expect: 022E022E01 9000
+80 50 022E 01 01;
+
+//Get ID Puskesmas
+//expect: 022F022F01 9000
+80 50 022F 01 01;
+

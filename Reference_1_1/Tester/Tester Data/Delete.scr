@@ -1,0 +1,404 @@
+//Delete No Smartcard
+//expect: 90 00 
+80 40 0000;
+
+//Delete Kategori Pasien/Jenis pembayaran/Asuansi
+//expect: 90 00 
+80 40 0001;
+
+//Delete Nomer Asuransi
+//expect: 90 00 
+80 40 0002;
+
+//Delete Tanggal Daftar
+//expect: 90 00 
+80 40 0003;
+
+//Delete Nama Pasien
+//expect: 90 00 
+80 40 0004;
+
+//Delete Nama KK
+//expect: 90 00 
+80 40 0005;
+
+//Delete Hubungan Keluarga
+//expect: 90 00 
+90 40 0006;
+
+//Delete Alamat
+//expect: 90 00 
+80 40 0007;
+
+//Delete RT
+//expect: 90 00 
+90 40 0008;
+
+//Delete RW
+//expect: 90 00 
+90 40 0009;
+
+//Delete Kelurahan / Desa
+//expect: 90 00 
+90 40 000A;
+
+//Delete Kecamatan
+//expect: 90 00 
+90 40 000B;
+
+//Delete Kota / Kabupaten
+//expect: 90 00 
+90 40 000C;
+
+//Delete Propinsi
+//expect: 90 00 
+90 40 000D;
+
+//Delete Kode pos
+//expect: 90 00 
+80 40 000E;
+
+//Delete Diluar/Didalam wilayah kerja
+//expect: 90 00 
+90 40 000F;
+
+//Delete Tempat Lahir
+//expect: 90 00 
+80 40 0010;
+
+//Delete Tanggal Lahir
+//expect: 90 00 
+80 40 0011;
+
+//Delete Telepon
+//expect: 90 00 
+80 40 0012;
+
+//Delete HP
+//expect: 90 00 
+80 40 0013;
+
+//Delete No. KTP (ID Number) - NIK
+//expect: 90 00 
+80 40 0014;
+
+//Delete Jenis Kelamin
+//expect: 90 00 
+90 40 0015;
+
+//Delete Agama
+//expect: 90 00 
+90 40 0016;
+
+//Delete Pendidikan
+//expect: 90 00 
+90 40 0017;
+
+//Delete Pekerjaan
+//expect: 90 00 
+90 40 0018;
+
+//Delete Kelas Perawatan
+//expect: 90 00 
+80 40 0019;
+
+//Delete Alamat e-mail
+//expect: 90 00 
+80 40 001A;
+
+//Delete Status perkawinan
+//expect: 90 00 
+90 40 001B;
+
+//Delete Kewarganegaraan
+//expect: 90 00 
+90 40 001C;
+
+//Delete Nama Keluarga
+//expect: 90 00 
+80 40 001D;
+
+//Delete Hubungan
+//expect: 90 00 
+90 40 001E;
+
+//Delete Alamat
+//expect: 90 00 
+80 40 001F;
+
+//Delete Kelurahan / Desa
+//expect: 90 00 
+90 40 0020;
+
+//Delete Kecamatan
+//expect: 90 00 
+90 40 0021;
+
+//Delete Kota / Kabupaten
+//expect: 90 00 
+90 40 0022;
+
+//Delete Propinsi
+//expect: 90 00 
+90 40 0023;
+
+//Delete Kode pos
+//expect: 90 00 
+80 40 0024;
+
+//Delete Telepon
+//expect: 90 00 
+80 40 0025;
+
+//Delete HP
+//expect: 90 00 
+80 40 0026;
+
+//Delete Nama Kantor
+//expect: 90 00 
+80 40 0027;
+
+//Delete Alamat Kantor
+//expect: 90 00 
+80 40 0028;
+
+//Delete Kota / Kabupaten
+//expect: 90 00 
+90 40 0029;
+
+//Delete Telepon
+//expect: 90 00 
+80 40 002A;
+
+//Delete HP
+//expect: 90 00 
+80 40 002B;
+
+//Delete Telepon
+//expect: 90 00 
+80 40 002A;
+
+//Delete HP
+//expect: 90 00 
+80 40 002B;
+
+//Delete Alergi
+//expect: 90 00 
+80 40 0100;
+
+//Delete Golongan darah
+//expect: 90 00 
+90 40 0101;
+
+//Delete Riwayat Operasi
+//expect: 90 00 
+80 40 0102;
+
+//Delete Riwayat Rawat RS
+//expect: 90 00 
+80 40 0103;
+
+//Delete Riwayat penyakit Kronis (Jantung, Paru, Ginjal, dll.)
+//expect: 90 00 
+80 40 0104;
+
+//Delete Riwayat penyakit bawaan dan orang tua/keluarga/kerabat
+//expect: 90 00 
+80 40 0105;
+
+//Delete Faktor Resiko
+//expect: 90 00 
+80 40 0106;
+
+//Delete No Record (Index)
+//expect: 90 00 
+90 40 0200;
+
+//Delete Tanggal periksa
+//expect: 90 00 
+80 40 0201;
+
+//Delete Keluhan utama
+//expect: 90 00 
+80 40 0202;
+
+//Delete Anamnesa
+//expect: 90 00 
+80 40 0203;
+
+//Delete Riwayat Penyakit Dahulu
+//expect: 90 00 
+80 40 0204;
+
+//Delete Riwayat Penyakit pada keluarga/kerabat
+//expect: 90 00 
+80 40 0205;
+
+//Delete Pemeriksaan Fisik
+//expect: 90 00 
+80 40 0206;
+
+//Delete Tinggi
+//expect: 90 00 
+80 40 0207;
+
+//Delete Berat badan
+//expect: 90 00 
+90 40 0208;
+
+//Delete Systole
+//expect: 90 00 
+90 40 0209;
+
+//Delete Diastole
+//expect: 90 00 
+90 40 020A;
+
+//Delete Nadi
+//expect: 90 00 
+90 40 020B;
+
+//Delete Kesadaran
+//expect: 90 00 
+90 40 020C;
+
+//Delete Suhu
+//expect: 90 00 
+90 40 020D;
+
+//Delete Respirasi
+//expect: 90 00 
+90 40 020E;
+
+//Delete Lain-lain
+//expect: 90 00 
+80 40 020F;
+
+//Delete Lab execute flag
+//expect: 90 00 
+90 40 0210;
+
+//Delete Expertise Lab/Radio/etc
+//expect: 90 00 
+80 40 0211;
+
+//Delete Catatan Lab
+//expect: 90 00 
+80 40 0212;
+
+//Delete Terapi
+//expect: 90 00 
+80 40 0213;
+
+//Delete Resep
+//expect: 90 00 
+80 40 0214;
+
+//Delete Catatan resep
+//expect: 90 00 
+80 40 0215;
+
+//Delete Eksekusi resep flag
+//expect: 90 00 
+90 40 0216;
+
+//Delete Repetisi resep
+//expect: 90 00 
+90 40 0217;
+
+//Delete Prognosa
+//expect: 90 00 
+90 40 0218;
+
+//Delete Kode Penyakit ICD 1
+//expect: 90 00 
+80 40 0219;
+
+//Delete Kode Penyakit ICD 2
+//expect: 90 00 
+80 40 021A;
+
+//Delete Kode Penyakit ICD 3
+//expect: 90 00 
+80 40 021B;
+
+//Delete Kode Penyakit ICD 4
+//expect: 90 00 
+80 40 021C;
+
+//Delete Kode Penyakit ICD 5
+//expect: 90 00 
+80 40 021D;
+
+//Delete Kode Penyakit ICD 6
+//expect: 90 00 
+80 40 021E;
+
+//Delete Kode Penyakit ICD 7
+//expect: 90 00 
+80 40 021F;
+
+//Delete Kode Penyakit ICD 8
+//expect: 90 00 
+80 40 0220;
+
+//Delete Kode Penyakit ICD 9
+//expect: 90 00 
+80 40 0221;
+
+//Delete Kode Penyakit ICD 10
+//expect: 90 00 
+80 40 0222;
+
+//Delete Kode Penyakit ICD 1 Status Diagnosa
+//expect: 90 00 
+90 40 0223;
+
+//Delete Kode Penyakit ICD 2 Status Diagnosa
+//expect: 90 00 
+90 40 0224;
+
+//Delete Kode Penyakit ICD 3 Status Diagnosa
+//expect: 90 00 
+90 40 0225;
+
+//Delete Kode Penyakit ICD 4 Status Diagnosa
+//expect: 90 00 
+90 40 0226;
+
+//Delete Kode Penyakit ICD 5 Status Diagnosa
+//expect: 90 00 
+90 40 0227;
+
+//Delete Kode Penyakit ICD 6 Status Diagnosa
+//expect: 90 00 
+90 40 0228;
+
+//Delete Kode Penyakit ICD 7 Status Diagnosa
+//expect: 90 00 
+90 40 0229;
+
+//Delete Kode Penyakit ICD 8 Status Diagnosa
+//expect: 90 00 
+90 40 022A;
+
+//Delete Kode Penyakit ICD 9 Status Diagnosa
+//expect: 90 00 
+90 40 022B;
+
+//Delete Kode Penyakit ICD 10 Status Diagnosa
+//expect: 90 00 
+90 40 022C;
+
+//Delete Poli yang dituju
+//expect: 90 00 
+80 40 022D;
+
+//Delete Rujukan/Pengirim penderita
+//expect: 90 00 
+80 40 022E;
+
+//Delete ID Puskesmas
+//expect: 90 00 
+80 40 022F;
+

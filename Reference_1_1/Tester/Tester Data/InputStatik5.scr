@@ -1,0 +1,48 @@
+//Input Nama Kantor
+//expect: 90 00
+80 30 0027 04 00270027;
+
+//Input Alamat Kantor
+//expect: 90 00
+80 30 0028 04 00280028;
+
+//Input Kota / Kabupaten
+//expect: 90 00
+90 30 0029 01 09;
+
+//Input Telepon
+//expect: 90 00
+80 30 002A 04 002A002A;
+
+//Input HP
+//expect: 90 00
+80 30 002B 04 002B002B;
+
+//Input Alergi
+//expect: 90 00
+80 30 0100 04 01000100;
+
+//Input Golongan darah
+//expect: 90 00
+90 30 0101 01 01;
+
+//Input Riwayat Operasi
+//expect: 90 00
+80 30 0102 04 01020102;
+
+//Input Riwayat Rawat RS
+//expect: 90 00
+80 30 0103 04 01030103;
+
+//Input Riwayat penyakit Kronis (Jantung, Paru, Ginjal, dll.)
+//expect: 90 00
+80 30 0104 04 01040104;
+
+//Input Riwayat penyakit bawaan dan orang tua/keluarga/kerabat
+//expect: 90 00
+80 30 0105 04 01050105;
+
+//Input Faktor Resiko
+//expect: 90 00
+80 30 0106 04 01060106;
+

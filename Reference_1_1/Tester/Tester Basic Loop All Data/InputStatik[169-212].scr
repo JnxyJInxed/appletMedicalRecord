@@ -1,0 +1,220 @@
+//169
+//select
+00A40400 09 B70000006203012101;
+
+//170
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//171
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//172
+//Input Telepon
+//expect: 90 00
+80 30 002A 04 002A002A;
+
+
+//173
+//select
+00A40400 09 B70000006203012101;
+
+//174
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//175
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//176
+//Input HP
+//expect: 90 00
+80 30 002B 04 002B002B;
+
+
+//177
+//select
+00A40400 09 B70000006203012101;
+
+//178
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//179
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//180
+//Input Telepon
+//expect: 90 00
+80 30 002A 04 002A002A;
+
+
+//181
+//select
+00A40400 09 B70000006203012101;
+
+//182
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//183
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//184
+//Input HP
+//expect: 90 00
+80 30 00 2B 04 002B002B;
+
+
+//185
+//select
+00A40400 09 B70000006203012101;
+
+//186
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//187
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//188
+//Input Alergi
+//expect: 90 00
+80 30 01 00 04 01000100;
+
+
+//189
+//select
+00A40400 09 B70000006203012101;
+
+//190
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//191
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//192
+//Input Golongan darah
+//expect: 90 00
+90 30 0101 01 01;
+
+
+//193
+//select
+00A40400 09 B70000006203012101;
+
+//194
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//195
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//196
+//Input Riwayat Operasi
+//expect: 90 00
+80 30 0102 04 01020102;
+
+
+//197
+//select
+00A40400 09 B70000006203012101;
+
+//198
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//199
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//200
+//Input Riwayat Rawat RS
+//expect: 90 00
+80 30 0103 04 01030103;
+
+
+//201
+//select
+00A40400 09 B70000006203012101;
+
+//202
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//203
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//204
+//Input Riwayat penyakit Kronis (Jantung, Paru, Ginjal, dll.)
+//expect: 90 00
+80 30 01 04 04 01040104;
+
+
+//205
+//select
+00A40400 09 B70000006203012101;
+
+//206
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//207
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//208
+//Input Riwayat penyakit bawaan dan orang tua/keluarga/kerabat
+//expect: 90 00
+80 30 01 05 04 01050105;
+
+
+//209
+//select
+00A40400 09 B70000006203012101;
+
+//210
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//211
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//212
+//Input Faktor Resiko
+//expect: 90 00
+80 30 01 06 04 01060106;
+
+

@@ -1,0 +1,39 @@
+//Input No Smartcard
+//expect: 90 00
+80 30 0000 04 00000000;
+
+//Input Kategori Pasien/Jenis pembayaran/Asuansi
+//expect: 90 00
+80 30 0001 04 00010001;
+
+//Input Nomer Asuransi
+//expect: 90 00
+80 30 0002 04 00020002;
+
+//Input Tanggal Daftar
+//expect: 90 00
+80 30 0003 06 00 03 00 03 00 03;
+
+//Input Nama Pasien
+//expect: 90 00
+80 30 0004 04 00040004;
+
+//Input Nama KK
+//expect: 90 00
+80 30 0005 10 10050005 10050005 10050005 10050005;
+
+//Input Hubungan Keluarga
+//expect: 90 00
+90 30 0006 01 06;
+
+//Input Alamat
+//expect: 90 00
+80 30 0007 04 00070007;
+
+//Input RT
+//expect: 90 00
+90 30 0008 01 08;
+
+//Input RW
+//expect: 90 00
+90 30 0009 01 09;

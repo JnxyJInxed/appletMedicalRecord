@@ -1,0 +1,5472 @@
+// converted by version 1.3
+// on Mon Jun 15 00:05:38 ICT 2020
+
+.package FinalDev_1_1 {
+	.aid 0xB7:0x0:0x0:0x0:0x62:0x3:0x1:0x21;
+	.version 1.0;
+
+	.imports {
+		0xA0:0x0:0x0:0x0:0x62:0x0:0x1 1.0;		//java/lang
+		0xA0:0x0:0x0:0x0:0x62:0x1:0x1 1.3;		//javacard/framework
+		0xA0:0x0:0x0:0x0:0x62:0x2:0x1 1.3;		//javacardx/crypto
+		0xA0:0x0:0x0:0x0:0x62:0x1:0x2 1.3;		//javacard/security
+	}
+
+	.applet {
+		0xB7:0x0:0x0:0x0:0x62:0x3:0x1:0x21:0x1 MedRec_1_1;
+	}
+
+	.constantPool {
+		// 0
+		instanceFieldRef MedRec_1_1 MedRec_1_1$IsiDataTEXT/this$0;
+		// 1
+		instanceFieldRef byte MedRec_1_1$IsiDataTEXT/statField;
+		// 2
+		instanceFieldRef short MedRec_1_1$IsiDataTEXT/lenData;
+		// 3
+		instanceFieldRef byte[] MedRec_1_1$IsiDataTEXT/isiData;
+		// 4
+		instanceFieldRef MedRec_1_1 MedRec_1_1$ItemDinamisTEXT/this$0;
+		// 5
+		instanceFieldRef byte[] MedRec_1_1$ItemDinamisTEXT/maxFieldDinamis;
+		// 6
+		instanceFieldRef MedRec_1_1$IsiDataTEXT[] MedRec_1_1$ItemDinamisTEXT/itemDinamis;
+		// 7
+		instanceFieldRef byte[] MedRec_1_1/statField_DATA;
+		// 8
+		instanceFieldRef byte[] MedRec_1_1/statField_STATIS;
+		// 9
+		instanceFieldRef short[] MedRec_1_1/MAX_VAL_DATA;
+		// 10
+		instanceFieldRef short[] MedRec_1_1/MAX_VAL_STATIS;
+		// 11
+		instanceFieldRef short[] MedRec_1_1/MAX_VAL_DINAMIS;
+		// 12
+		instanceFieldRef short[] MedRec_1_1/MIN_VAL_DATA;
+		// 13
+		instanceFieldRef short[] MedRec_1_1/MIN_VAL_STATIS;
+		// 14
+		instanceFieldRef short[] MedRec_1_1/MIN_VAL_DINAMIS;
+		// 15
+		instanceFieldRef short[] MedRec_1_1/MAX_FIELD_DATA;
+		// 16
+		instanceFieldRef short[] MedRec_1_1/MAX_FIELD_STATIS;
+		// 17
+		instanceFieldRef short[] MedRec_1_1/MAX_FIELD_DINAMIS;
+		// 18
+		instanceFieldRef short[] MedRec_1_1/MIN_FIELD_DATA;
+		// 19
+		instanceFieldRef short[] MedRec_1_1/MIN_FIELD_STATIS;
+		// 20
+		instanceFieldRef short[] MedRec_1_1/MIN_FIELD_DINAMIS;
+		// 21
+		instanceFieldRef short MedRec_1_1/stack;
+		// 22
+		instanceFieldRef byte MedRec_1_1/keyLen;
+		// 23
+		instanceFieldRef byte MedRec_1_1/Enc;
+		// 24
+		instanceFieldRef byte MedRec_1_1/Dec;
+		// 25
+		instanceFieldRef 1.9 MedRec_1_1/pin;
+		// 26
+		instanceFieldRef 1.9 MedRec_1_1/pinAdmin;
+		// 27
+		instanceFieldRef 1.9 MedRec_1_1/pinDokter;
+		// 28
+		instanceFieldRef 1.9 MedRec_1_1/pinOperator;
+		// 29
+		instanceFieldRef byte[] MedRec_1_1/aesKey;
+		// 30
+		instanceFieldRef byte[] MedRec_1_1/aesICV;
+		// 31
+		instanceFieldRef byte MedRec_1_1/aesKeyLen;
+		// 32
+		instanceFieldRef 2.1 MedRec_1_1/aesEcbCipher;
+		// 33
+		instanceFieldRef 2.1 MedRec_1_1/aesCbcCipher;
+		// 34
+		instanceFieldRef 3.0 MedRec_1_1/tempAesKey1;
+		// 35
+		instanceFieldRef 3.0 MedRec_1_1/tempAesKey2;
+		// 36
+		instanceFieldRef 3.0 MedRec_1_1/tempAesKey3;
+		// 37
+		instanceFieldRef 3.14 MedRec_1_1/randomData;
+		// 38
+		instanceFieldRef byte[] MedRec_1_1/rnd_key;
+		// 39
+		instanceFieldRef byte[] MedRec_1_1/rnd_IV;
+		// 40
+		instanceFieldRef byte MedRec_1_1/type;
+		// 41
+		instanceFieldRef byte MedRec_1_1/item;
+		// 42
+		instanceFieldRef short MedRec_1_1/minField;
+		// 43
+		instanceFieldRef short MedRec_1_1/maxField;
+		// 44
+		instanceFieldRef MedRec_1_1$IsiDataTEXT[] MedRec_1_1/dataDiri;
+		// 45
+		instanceFieldRef byte MedRec_1_1/statField;
+		// 46
+		instanceFieldRef MedRec_1_1$IsiDataTEXT[] MedRec_1_1/dataStatis;
+		// 47
+		instanceFieldRef MedRec_1_1$ItemDinamisTEXT[] MedRec_1_1/dataDinamis;
+		// 48
+		instanceFieldRef short MedRec_1_1/maxVal;
+		// 49
+		instanceFieldRef short MedRec_1_1/minVal;
+		// 50
+		instanceFieldRef short MedRec_1_1/lenData;
+		// 51
+		instanceFieldRef byte[] MedRec_1_1/dataStored;
+		// 52
+		instanceFieldRef byte[] MedRec_1_1/bufferData;
+		// 53
+		instanceFieldRef short MedRec_1_1/dataNumProcess;
+		// 54
+		staticMethodRef 1.16.2([BS[BSS)S;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+		// 55
+		staticMethodRef 2.1.0(BZ)Ljavacardx/crypto/Cipher;;		// javacardx/crypto/Cipher.getInstance(BZ)Ljavacardx/crypto/Cipher;
+			.descriptor	Ljavacardx/crypto/Cipher;	2.1;
+
+		// 56
+		classRef MedRec_1_1$IsiDataTEXT;
+		// 57
+		staticMethodRef 0.0.0()V;		// java/lang/Object.<init>()V
+		// 58
+		staticMethodRef 3.13.0(BSZ)Ljavacard/security/Key;;		// javacard/security/KeyBuilder.buildKey(BSZ)Ljavacard/security/Key;
+			.descriptor	Ljavacard/security/Key;	3.0;
+
+		// 59
+		staticMethodRef MedRec_1_1$IsiDataTEXT/<init>(LFinalDev_1_1/MedRec_1_1;)V;
+		// 60
+		staticMethodRef MedRec_1_1/LenPadded(S)S;
+		// 61
+		virtualMethodRef MedRec_1_1$IsiDataTEXT/setData(S)V;
+		// 62
+		staticMethodRef 1.8.18()V;		// javacard/framework/JCSystem.requestObjectDeletion()V
+		// 63
+		staticMethodRef 3.14.0(B)Ljavacard/security/RandomData;;		// javacard/security/RandomData.getInstance(B)Ljavacard/security/RandomData;
+			.descriptor	Ljavacard/security/RandomData;	3.14;
+
+		// 64
+		virtualMethodRef MedRec_1_1/InisiasiStatField()V;
+		// 65
+		staticMethodRef 1.8.13(SB)[B;		// javacard/framework/JCSystem.makeTransientByteArray(SB)[B
+		// 66
+		virtualMethodRef MedRec_1_1/InisiasiMinVal()V;
+		// 67
+		virtualMethodRef 3.14.1([BSS)V;		// generateData([BSS)V
+		// 68
+		virtualMethodRef MedRec_1_1/InisiasiMaxVal()V;
+		// 69
+		staticMethodRef 1.16.1([BS[BSS)S;		// javacard/framework/Util.arrayCopy([BS[BSS)S
+		// 70
+		staticMethodRef 1.8.2()V;		// javacard/framework/JCSystem.commitTransaction()V
+		// 71
+		virtualMethodRef 1.3.1()V;		// register()V
+		// 72
+		classRef MedRec_1_1;
+		// 73
+		staticMethodRef MedRec_1_1/<init>([BSB)V;
+		// 74
+		virtualMethodRef 1.9.5()V;		// reset()V
+		// 75
+		virtualMethodRef 1.10.1()[B;		// getBuffer()[B
+		// 76
+		virtualMethodRef 1.10.14()Z;		// isISOInterindustryCLA()Z
+		// 77
+		virtualMethodRef 1.9.2()B;		// getTriesRemaining()B
+		// 78
+		staticMethodRef MedRec_1_1/verifyAdmin(Ljavacard/framework/APDU;)V;
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+		// 79
+		staticMethodRef MedRec_1_1/updatePin(Ljavacard/framework/APDU;)V;
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+		// 80
+		staticMethodRef MedRec_1_1/verifyUser(Ljavacard/framework/APDU;)V;
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+		// 81
+		virtualMethodRef 1.9.4()Z;		// isValidated()Z
+		// 82
+		staticMethodRef MedRec_1_1/verifyDokter(Ljavacard/framework/APDU;)V;
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+		// 83
+		staticMethodRef MedRec_1_1/verifyOperator(Ljavacard/framework/APDU;)V;
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+		// 84
+		staticMethodRef MedRec_1_1/updatePinAdmin(Ljavacard/framework/APDU;)V;
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+		// 85
+		staticMethodRef MedRec_1_1/updatePinDokter(Ljavacard/framework/APDU;)V;
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+		// 86
+		staticMethodRef MedRec_1_1/updatePinOperator(Ljavacard/framework/APDU;)V;
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+		// 87
+		staticMethodRef MedRec_1_1/processTEXT(Ljavacard/framework/APDU;[B)V;
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+		// 88
+		staticMethodRef MedRec_1_1/processNUM(Ljavacard/framework/APDU;[B)V;
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+		// 89
+		classRef 0.2;		// java/lang/Exception
+		// 90
+		staticMethodRef MedRec_1_1/registerDinamis(Ljavacard/framework/APDU;)V;
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+		// 91
+		staticMethodRef MedRec_1_1/getStack(Ljavacard/framework/APDU;)V;
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+		// 92
+		staticMethodRef MedRec_1_1/getDataPadded(Ljavacard/framework/APDU;)V;
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+		// 93
+		virtualMethodRef MedRec_1_1/InisiasiMinField()V;
+		// 94
+		virtualMethodRef MedRec_1_1/InisiasiMaxField()V;
+		// 95
+		virtualMethodRef MedRec_1_1/InisiasiDataTEXT()V;
+		// 96
+		classRef 1.9;		// javacard/framework/OwnerPIN
+		// 97
+		staticMethodRef 1.9.0(BB)V;		// javacard/framework/OwnerPIN.<init>(BB)V
+		// 98
+		virtualMethodRef MedRec_1_1$IsiDataTEXT/inputItem([B)B;
+		// 99
+		virtualMethodRef MedRec_1_1$IsiDataTEXT/getItem()[B;
+		// 100
+		virtualMethodRef MedRec_1_1$IsiDataTEXT/deleteItem()B;
+		// 101
+		virtualMethodRef MedRec_1_1$ItemDinamisTEXT/getStat(B)B;
+		// 102
+		staticMethodRef MedRec_1_1/getDataTEXT(Ljavacard/framework/APDU;)V;
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+		// 103
+		staticMethodRef MedRec_1_1/deleteDataTEXT(Ljavacard/framework/APDU;)V;
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+		// 104
+		staticMethodRef MedRec_1_1/inputTEXT(Ljavacard/framework/APDU;)V;
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+		// 105
+		staticMethodRef MedRec_1_1/getLenDataStored(Ljavacard/framework/APDU;)V;
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+		// 106
+		staticMethodRef MedRec_1_1/getMaxField(Ljavacard/framework/APDU;)V;
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+		// 107
+		staticMethodRef MedRec_1_1/getMinField(Ljavacard/framework/APDU;)V;
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+		// 108
+		staticMethodRef MedRec_1_1/getField(Ljavacard/framework/APDU;)V;
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+		// 109
+		virtualMethodRef MedRec_1_1$IsiDataTEXT/getLen()S;
+		// 110
+		staticMethodRef 1.8.1()V;		// javacard/framework/JCSystem.beginTransaction()V
+		// 111
+		staticMethodRef MedRec_1_1/inputDataNUM(Ljavacard/framework/APDU;)V;
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+		// 112
+		staticMethodRef MedRec_1_1/getDataNUM(Ljavacard/framework/APDU;)V;
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+		// 113
+		staticMethodRef MedRec_1_1/deleteDataNUM(Ljavacard/framework/APDU;)V;
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+		// 114
+		staticMethodRef MedRec_1_1/getType(Ljavacard/framework/APDU;)V;
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+		// 115
+		staticMethodRef MedRec_1_1/getItem(Ljavacard/framework/APDU;)V;
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+		// 116
+		staticMethodRef MedRec_1_1/getMaxVal(Ljavacard/framework/APDU;)V;
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+		// 117
+		staticMethodRef MedRec_1_1/getMinVal(Ljavacard/framework/APDU;)V;
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+		// 118
+		virtualMethodRef 1.10.6()S;		// setIncomingAndReceive()S
+		// 119
+		staticMethodRef MedRec_1_1/addPadtoData([B)[B;
+		// 120
+		staticMethodRef MedRec_1_1/doAesCipherFunction(BS[B)[B;
+		// 121
+		virtualMethodRef MedRec_1_1$ItemDinamisTEXT/inputItem(B[B)V;
+		// 122
+		virtualMethodRef 1.10.3(S)S;		// receiveBytes(S)S
+		// 123
+		virtualMethodRef MedRec_1_1$ItemDinamisTEXT/deleteItem(B)B;
+		// 124
+		virtualMethodRef 1.10.7()S;		// setOutgoing()S
+		// 125
+		virtualMethodRef 1.9.8([BSB)V;		// update([BSB)V
+		// 126
+		staticMethodRef 1.7.1(S)V;		// javacard/framework/ISOException.throwIt(S)V
+		// 127
+		virtualMethodRef MedRec_1_1$ItemDinamisTEXT/getLen(B)S;
+		// 128
+		virtualMethodRef MedRec_1_1$ItemDinamisTEXT/getItem(B)[B;
+		// 129
+		virtualMethodRef MedRec_1_1$IsiDataTEXT/getStat()B;
+		// 130
+		staticMethodRef MedRec_1_1/removePadfromData([B)[B;
+		// 131
+		virtualMethodRef 1.10.9(S)V;		// setOutgoingLength(S)V
+		// 132
+		virtualMethodRef 1.10.4(SS)V;		// sendBytes(SS)V
+		// 133
+		staticMethodRef 1.16.4([BS)S;		// javacard/framework/Util.getShort([BS)S
+		// 134
+		staticMethodRef 1.3.0()V;		// javacard/framework/Applet.<init>()V
+		// 135
+		staticMethodRef 1.16.6([BSS)S;		// javacard/framework/Util.setShort([BSS)S
+		// 136
+		virtualMethodRef MedRec_1_1$ItemDinamisTEXT/setStat(B)V;
+		// 137
+		virtualMethodRef 1.9.1([BSB)Z;		// check([BSB)Z
+		// 138
+		staticFieldRef short MedRec_1_1/SW_VERIFICATION_FAILED;
+		// 139
+		classRef 3.20;		// javacard/security/AESKey
+		// 140
+		staticMethodRef MedRec_1_1/getAesKey()Ljavacard/security/Key;;
+			.descriptor	Ljavacard/security/Key;	3.0;
+
+		// 141
+		virtualMethodRef 2.1.4(Ljavacard/security/Key;B[BSS)V;		// init(Ljavacard/security/Key;B[BSS)V
+			.descriptor	Ljavacard/security/Key;	3.0;
+
+		// 142
+		virtualMethodRef 2.1.1([BSS[BS)S;		// doFinal([BSS[BS)S
+		// 143
+		staticMethodRef 1.16.3([BSSB)S;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+		// 144
+		classRef MedRec_1_1$ItemDinamisTEXT;
+		// 145
+		staticMethodRef MedRec_1_1$ItemDinamisTEXT/<init>(LFinalDev_1_1/MedRec_1_1;)V;
+		// 146
+		virtualMethodRef MedRec_1_1$ItemDinamisTEXT/setData()V;
+	}
+
+	.class  MedRec_1_1$IsiDataTEXT extends 0.0 {		// extends java/lang/Object
+
+		.fields {
+			public byte statField 0;		// B
+			public short lenData 1;		// S
+			public byte[] isiData 2;		// [B
+			final MedRec_1_1 this$0 3;		// LFinalDev_1_1/MedRec_1_1;
+		}
+
+		.publicMethodTable 1 {
+			equals(Ljava/lang/Object;)Z;
+			setData(S)V;
+			inputItem([B)B;
+			getItem()[B;
+			deleteItem()B;
+			getLen()S;
+			getStat()B;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(LFinalDev_1_1/MedRec_1_1;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 0;		// reference FinalDev_1_1/MedRec_1_1$IsiDataTEXT.this$0
+					aload_0;
+					invokespecial 57;		// java/lang/Object.<init>()V
+					return;
+		}
+
+		.method public setData(S)V 1 {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					sconst_0;
+					putfield_b 1;		// byte FinalDev_1_1/MedRec_1_1$IsiDataTEXT.statField
+					return;
+		}
+
+		.method public inputItem([B)B 2 {
+			.stack 5;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					arraylength;
+					putfield_s 2;		// short FinalDev_1_1/MedRec_1_1$IsiDataTEXT.lenData
+					aload_0;
+					getfield_s_this 2;		// short FinalDev_1_1/MedRec_1_1$IsiDataTEXT.lenData
+					newarray 11;
+					putfield_a 3;		// reference FinalDev_1_1/MedRec_1_1$IsiDataTEXT.isiData
+					aload_1;
+					sconst_0;
+					getfield_a_this 3;		// reference FinalDev_1_1/MedRec_1_1$IsiDataTEXT.isiData
+					sconst_0;
+					getfield_s_this 2;		// short FinalDev_1_1/MedRec_1_1$IsiDataTEXT.lenData
+					invokestatic 54;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					aload_0;
+					sconst_1;
+					putfield_b 1;		// byte FinalDev_1_1/MedRec_1_1$IsiDataTEXT.statField
+					getfield_b_this 1;		// byte FinalDev_1_1/MedRec_1_1$IsiDataTEXT.statField
+					sreturn;
+		}
+
+		.method public getItem()[B 3 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 3;		// reference FinalDev_1_1/MedRec_1_1$IsiDataTEXT.isiData
+					areturn;
+		}
+
+		.method public deleteItem()B 4 {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					sconst_0;
+					newarray 11;
+					putfield_a 3;		// reference FinalDev_1_1/MedRec_1_1$IsiDataTEXT.isiData
+					aload_0;
+					sconst_0;
+					putfield_b 1;		// byte FinalDev_1_1/MedRec_1_1$IsiDataTEXT.statField
+					getfield_b_this 1;		// byte FinalDev_1_1/MedRec_1_1$IsiDataTEXT.statField
+					sreturn;
+		}
+
+		.method public getLen()S 5 {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					getfield_a_this 3;		// reference FinalDev_1_1/MedRec_1_1$IsiDataTEXT.isiData
+					arraylength;
+					putfield_s 2;		// short FinalDev_1_1/MedRec_1_1$IsiDataTEXT.lenData
+					getfield_s_this 2;		// short FinalDev_1_1/MedRec_1_1$IsiDataTEXT.lenData
+					sreturn;
+		}
+
+		.method public getStat()B 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_b_this 1;		// byte FinalDev_1_1/MedRec_1_1$IsiDataTEXT.statField
+					sreturn;
+		}
+
+	}
+
+	.class  MedRec_1_1$ItemDinamisTEXT extends 0.0 {		// extends java/lang/Object
+
+		.fields {
+			public MedRec_1_1$IsiDataTEXT[] itemDinamis 0;		// [LFinalDev_1_1/MedRec_1_1$IsiDataTEXT;
+			private byte[] maxFieldDinamis 1;		// [B
+			final MedRec_1_1 this$0 2;		// LFinalDev_1_1/MedRec_1_1;
+		}
+
+		.publicMethodTable 1 {
+			equals(Ljava/lang/Object;)Z;
+			setData()V;
+			inputItem(B[B)V;
+			getItem(B)[B;
+			deleteItem(B)B;
+			getLen(B)S;
+			getStat(B)B;
+			setStat(B)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method  <init>(LFinalDev_1_1/MedRec_1_1;)V {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					aload_1;
+					putfield_a 4;		// reference FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT.this$0
+					aload_0;
+					invokespecial 57;		// java/lang/Object.<init>()V
+					aload_0;
+					bspush 48;
+					newarray 11;
+					putfield_a 5;		// reference FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT.maxFieldDinamis
+					return;
+		}
+
+		.method public setData()V 1 {
+			.stack 5;
+			.locals 1;
+
+				L0:	aload_0;
+					bspush 48;
+					anewarray 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					putfield_a 6;		// reference FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT.itemDinamis
+					sconst_0;
+					sstore_1;
+					goto L2;
+				L1:	getfield_a_this 6;		// reference FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT.itemDinamis
+					sload_1;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					getfield_a_this 4;		// reference FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT.this$0
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 6;		// reference FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT.itemDinamis
+					sload_1;
+					aaload;
+					getfield_a_this 5;		// reference FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT.maxFieldDinamis
+					sload_1;
+					baload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					sinc 1 1;
+				L2:	sload_1;
+					bspush 48;
+					if_scmplt L1;
+				L3:	return;
+		}
+
+		.method public inputItem(B[B)V 2 {
+			.stack 2;
+			.locals 0;
+
+				L0:	getfield_a_this 6;		// reference FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT.itemDinamis
+					sload_1;
+					aaload;
+					aload_2;
+					invokevirtual 98;		// inputItem([B)B
+					pop;
+					return;
+		}
+
+		.method public getItem(B)[B 3 {
+			.stack 2;
+			.locals 0;
+
+				L0:	getfield_a_this 6;		// reference FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT.itemDinamis
+					sload_1;
+					aaload;
+					invokevirtual 99;		// getItem()[B
+					areturn;
+		}
+
+		.method public deleteItem(B)B 4 {
+			.stack 2;
+			.locals 0;
+
+				L0:	getfield_a_this 6;		// reference FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT.itemDinamis
+					sload_1;
+					aaload;
+					invokevirtual 100;		// deleteItem()B
+					sreturn;
+		}
+
+		.method public getLen(B)S 5 {
+			.stack 2;
+			.locals 0;
+
+				L0:	getfield_a_this 6;		// reference FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT.itemDinamis
+					sload_1;
+					aaload;
+					invokevirtual 109;		// getLen()S
+					sreturn;
+		}
+
+		.method public getStat(B)B 6 {
+			.stack 2;
+			.locals 0;
+
+				L0:	getfield_a_this 6;		// reference FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT.itemDinamis
+					sload_1;
+					aaload;
+					invokevirtual 129;		// getStat()B
+					sreturn;
+		}
+
+		.method public setStat(B)V 7 {
+			.stack 2;
+			.locals 0;
+
+				L0:	getfield_a_this 6;		// reference FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT.itemDinamis
+					sload_1;
+					aaload;
+					sconst_1;
+					putfield_b 1;		// byte FinalDev_1_1/MedRec_1_1$IsiDataTEXT.statField
+					return;
+		}
+
+	}
+
+	.class public MedRec_1_1 0 extends 1.3 {		// extends javacard/framework/Applet
+
+		.fields {
+			private byte[] statField_DATA 0;		// [B
+			private byte[] statField_STATIS 1;		// [B
+			private short[] MAX_VAL_DATA 2;		// [S
+			private short[] MAX_VAL_STATIS 3;		// [S
+			private short[] MAX_VAL_DINAMIS 4;		// [S
+			private short[] MIN_VAL_DATA 5;		// [S
+			private short[] MIN_VAL_STATIS 6;		// [S
+			private short[] MIN_VAL_DINAMIS 7;		// [S
+			private short[] MAX_FIELD_DATA 8;		// [S
+			private short[] MAX_FIELD_STATIS 9;		// [S
+			private short[] MAX_FIELD_DINAMIS 10;		// [S
+			private short[] MIN_FIELD_DATA 11;		// [S
+			private short[] MIN_FIELD_STATIS 12;		// [S
+			private short[] MIN_FIELD_DINAMIS 13;		// [S
+			private MedRec_1_1$IsiDataTEXT[] dataDiri 14;		// [LFinalDev_1_1/MedRec_1_1$IsiDataTEXT;
+			private MedRec_1_1$IsiDataTEXT[] dataStatis 15;		// [LFinalDev_1_1/MedRec_1_1$IsiDataTEXT;
+			private MedRec_1_1$ItemDinamisTEXT[] dataDinamis 16;		// [LFinalDev_1_1/MedRec_1_1$ItemDinamisTEXT;
+			 byte[] dataText 17;		// [B
+			 1.9 pin 18;		// Ljavacard/framework/OwnerPIN;
+			 1.9 pinAdmin 19;		// Ljavacard/framework/OwnerPIN;
+			 1.9 pinDokter 20;		// Ljavacard/framework/OwnerPIN;
+			 1.9 pinOperator 21;		// Ljavacard/framework/OwnerPIN;
+			 byte[] bufferData 22;		// [B
+			 byte[] dataStored 23;		// [B
+			 byte[] dataPadded 24;		// [B
+			private byte[] aesKey 25;		// [B
+			private byte[] aesICV 26;		// [B
+			private 2.1 aesEcbCipher 27;		// Ljavacardx/crypto/Cipher;
+			private 2.1 aesCbcCipher 28;		// Ljavacardx/crypto/Cipher;
+			private 3.0 tempAesKey1 29;		// Ljavacard/security/Key;
+			private 3.0 tempAesKey2 30;		// Ljavacard/security/Key;
+			private 3.0 tempAesKey3 31;		// Ljavacard/security/Key;
+			private 3.14 randomData 32;		// Ljavacard/security/RandomData;
+			private byte[] rnd_key 33;		// [B
+			private byte[] rnd_IV 34;		// [B
+			 short dataNumProcess 35;		// S
+			 byte type 36;		// B
+			 byte item 37;		// B
+			 short maxVal 38;		// S
+			 short minVal 39;		// S
+			 short minField 40;		// S
+			 short maxField 41;		// S
+			 short stack 42;		// S
+			 short lenData 43;		// S
+			 byte statField 44;		// B
+			 short len_dataPadded 45;		// S
+			private byte aesKeyLen 46;		// B
+			private byte keyLen 47;		// B
+			private byte Enc 48;		// B
+			private byte Dec 49;		// B
+			static final byte Keamanan_CLA = 112;		// B
+			static final byte Text_CLA = -128;		// B
+			static final byte Num_CLA = -112;		// B
+			static final byte INS_INPUT = 48;		// B
+			static final byte INS_DELETE = 64;		// B
+			static final byte INS_GET_DATA = 80;		// B
+			static final byte INS_GET_TYPE = 33;		// B
+			static final byte INS_GET_ITEM = 34;		// B
+			static final byte INS_GET_MAX_FIELD = 96;		// B
+			static final byte INS_GET_MAX_VAL = 97;		// B
+			static final byte INS_GET_MIN_FIELD = 112;		// B
+			static final byte INS_GET_MIN_VAL = 113;		// B
+			static final byte INS_GET_FIELD = -128;		// B
+			static final byte INS_GET_STACK = -112;		// B
+			static final byte INS_REGISTER_DINAMIS = 16;		// B
+			static final byte INS_GET_LEN = 32;		// B
+			static final byte INS_OBJECT_DELETION = -48;		// B
+			static final byte INS_VERIFY_USER = -96;		// B
+			static final byte INS_VERIFY_ADMIN = -95;		// B
+			static final byte INS_VERIFY_DOKTER = -94;		// B
+			static final byte INS_VERIFY_OPERATOR = -93;		// B
+			static final byte INS_UPDATE_USER_PIN = -80;		// B
+			static final byte INS_UPDATE_ADMIN_PIN = -79;		// B
+			static final byte INS_UPDATE_DOKTER_PIN = -78;		// B
+			static final byte INS_UPDATE_OPERATOR_PIN = -77;		// B
+			static final byte INS_GET_DATA_PADDED = -32;		// B
+			static final byte REMOVE_PAD = -31;		// B
+			static final short SW_INVALID_DATA_INPUT_FIELD = 27264;		// S
+			static final short SW_INVALID_DATA_INPUT_RANGE = 27271;		// S
+			static final short SW_FIELD_NOT_EMPTY = 27268;		// S
+			static final short SW_USER_PIN_VERIFICATION_REQUIRED = 25344;		// S
+			static final short SW_ADMIN_PIN_VERIFICATION_REQUIRED = 25345;		// S
+			static final short SW_DOKTER_PIN_VERIFICATION_REQUIRED = 25346;		// S
+			static final short SW_OPERATOR_PIN_VERIFICATION_REQUIRED = 25347;		// S
+			static final short SW_ROLE_PIN_VERIFICATION_REQUIRED = 25348;		// S
+			static short SW_VERIFICATION_FAILED = 25536;		// S
+			static final short SW_CARD_LOCKED = 26880;		// S
+			static final short MAX_ITEM_DATADIRI = 46;		// S
+			static final short MAX_ITEM_STATIS = 7;		// S
+			static final short MAX_ITEM_DINAMIS = 48;		// S
+			static final short MAX_STACK = 20;		// S
+			static final byte PIN_TRY_LIMIT_USER_USER = 5;		// B
+			static final byte PIN_TRY_LIMIT_USER_ROLE = 16;		// B
+			static final byte MAX_PIN_SIZE_USER = 8;		// B
+			static final byte MAX_PIN_SIZE_ROLE = 16;		// B
+			static final byte indeksDATA = 0;		// B
+			static final byte indeksSTATIS = 1;		// B
+			static final byte indeksDINAMIS = 2;		// B
+		}
+
+		.publicMethodTable 4 {
+			equals(Ljava/lang/Object;)Z;
+			register()V;
+			register([BSB)V;
+			selectingApplet()Z;
+			deselect()V;
+			getShareableInterfaceObject(Ljavacard/framework/AID;B)Ljavacard/framework/Shareable;;
+			select()Z;
+			process(Ljavacard/framework/APDU;)V;
+			InisiasiStatField()V;
+			InisiasiMaxVal()V;
+			InisiasiMinVal()V;
+			InisiasiMinField()V;
+			InisiasiMaxField()V;
+			InisiasiDataTEXT()V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method private <init>([BSB)V {
+			.stack 5;
+			.locals 9;
+
+				L0:	aload_0;
+					invokespecial 134;		// javacard/framework/Applet.<init>()V
+					aload_0;
+					bspush 46;
+					newarray 11;
+					putfield_a 7;		// reference FinalDev_1_1/MedRec_1_1.statField_DATA
+					aload_0;
+					bspush 7;
+					newarray 11;
+					putfield_a 8;		// reference FinalDev_1_1/MedRec_1_1.statField_STATIS
+					aload_0;
+					bspush 46;
+					newarray 12;
+					putfield_a 9;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DATA
+					aload_0;
+					bspush 7;
+					newarray 12;
+					putfield_a 10;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_STATIS
+					aload_0;
+					bspush 48;
+					newarray 12;
+					putfield_a 11;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DINAMIS
+					aload_0;
+					bspush 46;
+					newarray 12;
+					putfield_a 12;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DATA
+					aload_0;
+					bspush 7;
+					newarray 12;
+					putfield_a 13;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_STATIS
+					aload_0;
+					bspush 48;
+					newarray 12;
+					putfield_a 14;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DINAMIS
+					aload_0;
+					bspush 46;
+					newarray 12;
+					putfield_a 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					aload_0;
+					bspush 7;
+					newarray 12;
+					putfield_a 16;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_STATIS
+					aload_0;
+					bspush 48;
+					newarray 12;
+					putfield_a 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					aload_0;
+					bspush 46;
+					newarray 12;
+					putfield_a 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					aload_0;
+					bspush 7;
+					newarray 12;
+					putfield_a 19;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_STATIS
+					aload_0;
+					bspush 48;
+					newarray 12;
+					putfield_a 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					aload_0;
+					sconst_1;
+					putfield_s 21;		// short FinalDev_1_1/MedRec_1_1.stack
+					aload_0;
+					bspush 32;
+					putfield_b 22;		// byte FinalDev_1_1/MedRec_1_1.keyLen
+					aload_0;
+					sconst_0;
+					putfield_b 23;		// byte FinalDev_1_1/MedRec_1_1.Enc
+					aload_0;
+					sconst_1;
+					putfield_b 24;		// byte FinalDev_1_1/MedRec_1_1.Dec
+					aload_0;
+					invokevirtual 64;		// InisiasiStatField()V
+					aload_0;
+					invokevirtual 66;		// InisiasiMinVal()V
+					aload_0;
+					invokevirtual 68;		// InisiasiMaxVal()V
+					aload_0;
+					invokevirtual 93;		// InisiasiMinField()V
+					aload_0;
+					invokevirtual 94;		// InisiasiMaxField()V
+					aload_0;
+					invokevirtual 95;		// InisiasiDataTEXT()V
+					aload_0;
+					new 96;		// javacard/framework/OwnerPIN
+					dup;
+					sconst_5;
+					bspush 8;
+					invokespecial 97;		// javacard/framework/OwnerPIN.<init>(BB)V
+					putfield_a 25;		// reference FinalDev_1_1/MedRec_1_1.pin
+					aload_0;
+					new 96;		// javacard/framework/OwnerPIN
+					dup;
+					bspush 16;
+					bspush 16;
+					invokespecial 97;		// javacard/framework/OwnerPIN.<init>(BB)V
+					putfield_a 26;		// reference FinalDev_1_1/MedRec_1_1.pinAdmin
+					aload_0;
+					new 96;		// javacard/framework/OwnerPIN
+					dup;
+					bspush 16;
+					bspush 16;
+					invokespecial 97;		// javacard/framework/OwnerPIN.<init>(BB)V
+					putfield_a 27;		// reference FinalDev_1_1/MedRec_1_1.pinDokter
+					aload_0;
+					new 96;		// javacard/framework/OwnerPIN
+					dup;
+					bspush 16;
+					bspush 16;
+					invokespecial 97;		// javacard/framework/OwnerPIN.<init>(BB)V
+					putfield_a 28;		// reference FinalDev_1_1/MedRec_1_1.pinOperator
+					aload_1;
+					sload_2;
+					baload;
+					sstore 4;
+					sload_2;
+					sload 4;
+					sadd;
+					sconst_1;
+					sadd;
+					sstore_2;
+					aload_1;
+					sload_2;
+					baload;
+					sstore 5;
+					sload_2;
+					sload 5;
+					sadd;
+					sconst_1;
+					sadd;
+					sstore_2;
+					aload_1;
+					sload_2;
+					baload;
+					sstore 6;
+					sinc 2 1;
+					invokestatic 110;		// javacard/framework/JCSystem.beginTransaction()V
+					aload_1;
+					sload_2;
+					baload;
+					sstore 7;
+					getfield_a_this 25;		// reference FinalDev_1_1/MedRec_1_1.pin
+					aload_1;
+					sload_2;
+					sconst_1;
+					sadd;
+					sload 7;
+					invokevirtual 125;		// update([BSB)V
+					sload_2;
+					sload 7;
+					sadd;
+					sconst_1;
+					sadd;
+					sstore_2;
+					aload_1;
+					sload_2;
+					baload;
+					sstore 8;
+					sload 8;
+					bspush 16;
+					if_scmpeq L2;
+				L1:	sspush 27264;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L2:	getfield_a_this 26;		// reference FinalDev_1_1/MedRec_1_1.pinAdmin
+					aload_1;
+					sload_2;
+					sconst_1;
+					sadd;
+					sload 8;
+					invokevirtual 125;		// update([BSB)V
+					sload_2;
+					sload 8;
+					sadd;
+					sconst_1;
+					sadd;
+					sstore_2;
+					aload_1;
+					sload_2;
+					baload;
+					sstore 9;
+					sload 9;
+					bspush 16;
+					if_scmpeq L4;
+				L3:	sspush 27264;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L4:	getfield_a_this 27;		// reference FinalDev_1_1/MedRec_1_1.pinDokter
+					aload_1;
+					sload_2;
+					sconst_1;
+					sadd;
+					sload 9;
+					invokevirtual 125;		// update([BSB)V
+					sload_2;
+					sload 9;
+					sadd;
+					sconst_1;
+					sadd;
+					sstore_2;
+					aload_1;
+					sload_2;
+					baload;
+					sstore 10;
+					sload 10;
+					bspush 16;
+					if_scmpeq L6;
+				L5:	sspush 27264;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L6:	getfield_a_this 28;		// reference FinalDev_1_1/MedRec_1_1.pinOperator
+					aload_1;
+					sload_2;
+					sconst_1;
+					sadd;
+					sload 10;
+					invokevirtual 125;		// update([BSB)V
+					invokestatic 110;		// javacard/framework/JCSystem.beginTransaction()V
+					aload_0;
+					bspush 32;
+					newarray 11;
+					putfield_a 29;		// reference FinalDev_1_1/MedRec_1_1.aesKey
+					aload_0;
+					bspush 16;
+					newarray 11;
+					putfield_a 30;		// reference FinalDev_1_1/MedRec_1_1.aesICV
+					aload_0;
+					sconst_0;
+					putfield_b 31;		// byte FinalDev_1_1/MedRec_1_1.aesKeyLen
+					aload_0;
+					bspush 14;
+					sconst_0;
+					invokestatic 55;		// javacardx/crypto/Cipher.getInstance(BZ)Ljavacardx/crypto/Cipher;
+					putfield_a 32;		// reference FinalDev_1_1/MedRec_1_1.aesEcbCipher
+					aload_0;
+					bspush 13;
+					sconst_0;
+					invokestatic 55;		// javacardx/crypto/Cipher.getInstance(BZ)Ljavacardx/crypto/Cipher;
+					putfield_a 33;		// reference FinalDev_1_1/MedRec_1_1.aesCbcCipher
+					aload_0;
+					bspush 14;
+					sspush 128;
+					sconst_0;
+					invokestatic 58;		// javacard/security/KeyBuilder.buildKey(BSZ)Ljavacard/security/Key;
+					putfield_a 34;		// reference FinalDev_1_1/MedRec_1_1.tempAesKey1
+					aload_0;
+					bspush 14;
+					sspush 192;
+					sconst_0;
+					invokestatic 58;		// javacard/security/KeyBuilder.buildKey(BSZ)Ljavacard/security/Key;
+					putfield_a 35;		// reference FinalDev_1_1/MedRec_1_1.tempAesKey2
+					aload_0;
+					bspush 14;
+					sspush 256;
+					sconst_0;
+					invokestatic 58;		// javacard/security/KeyBuilder.buildKey(BSZ)Ljavacard/security/Key;
+					putfield_a 36;		// reference FinalDev_1_1/MedRec_1_1.tempAesKey3
+					invokestatic 62;		// javacard/framework/JCSystem.requestObjectDeletion()V
+					aload_0;
+					sconst_2;
+					invokestatic 63;		// javacard/security/RandomData.getInstance(B)Ljavacard/security/RandomData;
+					putfield_a 37;		// reference FinalDev_1_1/MedRec_1_1.randomData
+					bspush 32;
+					sload 7;
+					ssub;
+					sstore 11;
+					aload_0;
+					sload 11;
+					sconst_1;
+					invokestatic 65;		// javacard/framework/JCSystem.makeTransientByteArray(SB)[B
+					putfield_a 38;		// reference FinalDev_1_1/MedRec_1_1.rnd_key
+					getfield_a_this 37;		// reference FinalDev_1_1/MedRec_1_1.randomData
+					getfield_a_this 38;		// reference FinalDev_1_1/MedRec_1_1.rnd_key
+					sconst_0;
+					sload 11;
+					invokevirtual 67;		// generateData([BSS)V
+					bspush 16;
+					sstore 12;
+					aload_0;
+					sload 12;
+					sconst_1;
+					invokestatic 65;		// javacard/framework/JCSystem.makeTransientByteArray(SB)[B
+					putfield_a 39;		// reference FinalDev_1_1/MedRec_1_1.rnd_IV
+					getfield_a_this 37;		// reference FinalDev_1_1/MedRec_1_1.randomData
+					getfield_a_this 39;		// reference FinalDev_1_1/MedRec_1_1.rnd_IV
+					sconst_0;
+					sload 12;
+					invokevirtual 67;		// generateData([BSS)V
+					invokestatic 110;		// javacard/framework/JCSystem.beginTransaction()V
+					aload_1;
+					sload_2;
+					sconst_1;
+					sadd;
+					getfield_a_this 29;		// reference FinalDev_1_1/MedRec_1_1.aesKey
+					sconst_0;
+					sload 7;
+					invokestatic 69;		// javacard/framework/Util.arrayCopy([BS[BSS)S
+					pop;
+					getfield_a_this 38;		// reference FinalDev_1_1/MedRec_1_1.rnd_key
+					sconst_0;
+					getfield_a_this 29;		// reference FinalDev_1_1/MedRec_1_1.aesKey
+					sload 7;
+					sload 11;
+					invokestatic 69;		// javacard/framework/Util.arrayCopy([BS[BSS)S
+					pop;
+					getfield_a_this 39;		// reference FinalDev_1_1/MedRec_1_1.rnd_IV
+					sconst_0;
+					getfield_a_this 30;		// reference FinalDev_1_1/MedRec_1_1.aesICV
+					sconst_0;
+					bspush 16;
+					invokestatic 69;		// javacard/framework/Util.arrayCopy([BS[BSS)S
+					pop;
+					aload_0;
+					getfield_b_this 22;		// byte FinalDev_1_1/MedRec_1_1.keyLen
+					putfield_b 31;		// byte FinalDev_1_1/MedRec_1_1.aesKeyLen
+					invokestatic 70;		// javacard/framework/JCSystem.commitTransaction()V
+					aload_0;
+					invokevirtual 71;		// register()V
+					return;
+		}
+
+		.method public static install([BSB)V 0 {
+			.stack 4;
+			.locals 0;
+
+				L0:	new 72;		// FinalDev_1_1/MedRec_1_1
+					aload_0;
+					sload_1;
+					sload_2;
+					invokespecial 73;		// FinalDev_1_1/MedRec_1_1.<init>([BSB)V
+					return;
+		}
+
+		.method public select()Z 6 {
+			.stack 1;
+			.locals 0;
+
+				L0:	sconst_1;
+					sreturn;
+		}
+
+		.method public deselect()V 4 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_a_this 25;		// reference FinalDev_1_1/MedRec_1_1.pin
+					invokevirtual 74;		// reset()V
+					return;
+		}
+
+		.method public process(Ljavacard/framework/APDU;)V 7 {
+			.stack 3;
+			.locals 1;
+
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+				L0:	aload_1;
+					invokevirtual 75;		// getBuffer()[B
+					astore_2;
+					aload_1;
+					invokevirtual 76;		// isISOInterindustryCLA()Z
+					ifeq L4;
+				L1:	aload_2;
+					sconst_1;
+					baload;
+					bspush -92;
+					if_scmpne L3;
+				L2:	return;
+				L3:	sspush 28160;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L4:	aload_2;
+					sconst_1;
+					baload;
+					stableswitch L6 -48 -48 L5;
+				L5:	invokestatic 62;		// javacard/framework/JCSystem.requestObjectDeletion()V
+					return;
+				L6:	getfield_a_this 25;		// reference FinalDev_1_1/MedRec_1_1.pin
+					invokevirtual 77;		// getTriesRemaining()B
+					ifne L11;
+				L7:	aload_2;
+					sconst_1;
+					baload;
+					slookupswitch L10 2 -95 L8 -80 L9;
+				L8:	aload_0;
+					aload_1;
+					invokespecial 78;		// FinalDev_1_1/MedRec_1_1.verifyAdmin(Ljavacard/framework/APDU;)V
+					return;
+				L9:	aload_0;
+					aload_1;
+					invokespecial 79;		// FinalDev_1_1/MedRec_1_1.updatePin(Ljavacard/framework/APDU;)V
+					return;
+				L10:	sspush 26880;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L11:	aload_2;
+					sconst_1;
+					baload;
+					slookupswitch L15 3 -96 L12 -95 L13 -80 L14;
+				L12:	aload_0;
+					aload_1;
+					invokespecial 80;		// FinalDev_1_1/MedRec_1_1.verifyUser(Ljavacard/framework/APDU;)V
+					return;
+				L13:	aload_0;
+					aload_1;
+					invokespecial 78;		// FinalDev_1_1/MedRec_1_1.verifyAdmin(Ljavacard/framework/APDU;)V
+					return;
+				L14:	aload_0;
+					aload_1;
+					invokespecial 79;		// FinalDev_1_1/MedRec_1_1.updatePin(Ljavacard/framework/APDU;)V
+					return;
+				L15:	getfield_a_this 25;		// reference FinalDev_1_1/MedRec_1_1.pin
+					invokevirtual 81;		// isValidated()Z
+					ifne L17;
+				L16:	sspush 25344;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L17:	aload_2;
+					sconst_1;
+					baload;
+					slookupswitch L24 6 -95 L23 -94 L18 -93 L19 -79 L20 -78 L21 -77 L22;
+				L18:	aload_0;
+					aload_1;
+					invokespecial 82;		// FinalDev_1_1/MedRec_1_1.verifyDokter(Ljavacard/framework/APDU;)V
+					return;
+				L19:	aload_0;
+					aload_1;
+					invokespecial 83;		// FinalDev_1_1/MedRec_1_1.verifyOperator(Ljavacard/framework/APDU;)V
+					return;
+				L20:	aload_0;
+					aload_1;
+					invokespecial 84;		// FinalDev_1_1/MedRec_1_1.updatePinAdmin(Ljavacard/framework/APDU;)V
+					return;
+				L21:	aload_0;
+					aload_1;
+					invokespecial 85;		// FinalDev_1_1/MedRec_1_1.updatePinDokter(Ljavacard/framework/APDU;)V
+					return;
+				L22:	aload_0;
+					aload_1;
+					invokespecial 86;		// FinalDev_1_1/MedRec_1_1.updatePinOperator(Ljavacard/framework/APDU;)V
+					return;
+				L23:	aload_0;
+					aload_1;
+					invokespecial 78;		// FinalDev_1_1/MedRec_1_1.verifyAdmin(Ljavacard/framework/APDU;)V
+					return;
+				L24:	aload_2;
+					sconst_0;
+					baload;
+					slookupswitch L27 2 -128 L25 -112 L26;
+				L25:	aload_0;
+					aload_1;
+					aload_2;
+					invokespecial 87;		// FinalDev_1_1/MedRec_1_1.processTEXT(Ljavacard/framework/APDU;[B)V
+					return;
+				L26:	aload_0;
+					aload_1;
+					aload_2;
+					invokespecial 88;		// FinalDev_1_1/MedRec_1_1.processNUM(Ljavacard/framework/APDU;[B)V
+					return;
+				L27:	sspush 28160;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+					return;
+		}
+
+		.method private processTEXT(Ljavacard/framework/APDU;[B)V {
+			.stack 3;
+			.locals 1;
+
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+				L0:	aload_2;
+					sconst_1;
+					baload;
+					slookupswitch L7 3 -112 L5 -32 L6 16 L1;
+				L1:	getfield_a_this 26;		// reference FinalDev_1_1/MedRec_1_1.pinAdmin
+					invokevirtual 81;		// isValidated()Z
+					ifne L4;
+				L2:	getfield_a_this 27;		// reference FinalDev_1_1/MedRec_1_1.pinDokter
+					invokevirtual 81;		// isValidated()Z
+					ifne L4;
+				L3:	sspush 25346;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L4:	aload_0;
+					aload_1;
+					invokespecial 90;		// FinalDev_1_1/MedRec_1_1.registerDinamis(Ljavacard/framework/APDU;)V
+					return;
+				L5:	aload_0;
+					aload_1;
+					invokespecial 91;		// FinalDev_1_1/MedRec_1_1.getStack(Ljavacard/framework/APDU;)V
+					return;
+				L6:	aload_0;
+					aload_1;
+					invokespecial 92;		// FinalDev_1_1/MedRec_1_1.getDataPadded(Ljavacard/framework/APDU;)V
+					return;
+				L7:	aload_0;
+					aload_2;
+					sconst_2;
+					baload;
+					putfield_b 40;		// byte FinalDev_1_1/MedRec_1_1.type
+					aload_0;
+					aload_2;
+					sconst_3;
+					baload;
+					putfield_b 41;		// byte FinalDev_1_1/MedRec_1_1.item
+				L8:	getfield_b_this 40;		// byte FinalDev_1_1/MedRec_1_1.type
+					stableswitch L12 0 2 L9 L10 L11;
+				L9:	aload_0;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					saload;
+					putfield_s 42;		// short FinalDev_1_1/MedRec_1_1.minField
+					aload_0;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					saload;
+					putfield_s 43;		// short FinalDev_1_1/MedRec_1_1.maxField
+					aload_0;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					aaload;
+					invokevirtual 129;		// getStat()B
+					putfield_b 45;		// byte FinalDev_1_1/MedRec_1_1.statField
+					goto L15;
+				L10:	aload_0;
+					getfield_a_this 19;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_STATIS
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					saload;
+					putfield_s 42;		// short FinalDev_1_1/MedRec_1_1.minField
+					aload_0;
+					getfield_a_this 16;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_STATIS
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					saload;
+					putfield_s 43;		// short FinalDev_1_1/MedRec_1_1.maxField
+					aload_0;
+					getfield_a_this 46;		// reference FinalDev_1_1/MedRec_1_1.dataStatis
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					aaload;
+					invokevirtual 129;		// getStat()B
+					putfield_b 45;		// byte FinalDev_1_1/MedRec_1_1.statField
+					goto L15;
+				L11:	aload_0;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					saload;
+					putfield_s 42;		// short FinalDev_1_1/MedRec_1_1.minField
+					aload_0;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					saload;
+					putfield_s 43;		// short FinalDev_1_1/MedRec_1_1.maxField
+					aload_0;
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					getfield_s_this 21;		// short FinalDev_1_1/MedRec_1_1.stack
+					aaload;
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					invokevirtual 101;		// getStat(B)B
+					putfield_b 45;		// byte FinalDev_1_1/MedRec_1_1.statField
+					goto L15;
+				L12:	sspush 27266;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L13:	goto L15;
+				L14:	astore_3;
+					sspush 27266;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L15:	aload_2;
+					sconst_1;
+					baload;
+					slookupswitch L39 7 -128 L38 32 L35 48 L28 64 L21 80 L16 96 L36 112 L37;
+				L16:	getfield_a_this 26;		// reference FinalDev_1_1/MedRec_1_1.pinAdmin
+					invokevirtual 81;		// isValidated()Z
+					ifne L20;
+				L17:	getfield_a_this 27;		// reference FinalDev_1_1/MedRec_1_1.pinDokter
+					invokevirtual 81;		// isValidated()Z
+					ifne L20;
+				L18:	getfield_a_this 28;		// reference FinalDev_1_1/MedRec_1_1.pinOperator
+					invokevirtual 81;		// isValidated()Z
+					ifne L20;
+				L19:	sspush 25348;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L20:	aload_0;
+					aload_1;
+					invokespecial 102;		// FinalDev_1_1/MedRec_1_1.getDataTEXT(Ljavacard/framework/APDU;)V
+					return;
+				L21:	getfield_b_this 40;		// byte FinalDev_1_1/MedRec_1_1.type
+					ifne L24;
+				L22:	getfield_a_this 26;		// reference FinalDev_1_1/MedRec_1_1.pinAdmin
+					invokevirtual 81;		// isValidated()Z
+					ifne L27;
+				L23:	sspush 25345;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+					goto L27;
+				L24:	getfield_a_this 26;		// reference FinalDev_1_1/MedRec_1_1.pinAdmin
+					invokevirtual 81;		// isValidated()Z
+					ifne L27;
+				L25:	getfield_a_this 27;		// reference FinalDev_1_1/MedRec_1_1.pinDokter
+					invokevirtual 81;		// isValidated()Z
+					ifne L27;
+				L26:	sspush 25346;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L27:	aload_0;
+					aload_1;
+					invokespecial 103;		// FinalDev_1_1/MedRec_1_1.deleteDataTEXT(Ljavacard/framework/APDU;)V
+					return;
+				L28:	getfield_b_this 40;		// byte FinalDev_1_1/MedRec_1_1.type
+					ifne L31;
+				L29:	getfield_a_this 26;		// reference FinalDev_1_1/MedRec_1_1.pinAdmin
+					invokevirtual 81;		// isValidated()Z
+					ifne L34;
+				L30:	sspush 25345;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+					goto L34;
+				L31:	getfield_a_this 26;		// reference FinalDev_1_1/MedRec_1_1.pinAdmin
+					invokevirtual 81;		// isValidated()Z
+					ifne L34;
+				L32:	getfield_a_this 27;		// reference FinalDev_1_1/MedRec_1_1.pinDokter
+					invokevirtual 81;		// isValidated()Z
+					ifne L34;
+				L33:	sspush 25346;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L34:	aload_0;
+					aload_1;
+					invokespecial 104;		// FinalDev_1_1/MedRec_1_1.inputTEXT(Ljavacard/framework/APDU;)V
+					return;
+				L35:	aload_0;
+					aload_1;
+					invokespecial 105;		// FinalDev_1_1/MedRec_1_1.getLenDataStored(Ljavacard/framework/APDU;)V
+					return;
+				L36:	aload_0;
+					aload_1;
+					invokespecial 106;		// FinalDev_1_1/MedRec_1_1.getMaxField(Ljavacard/framework/APDU;)V
+					return;
+				L37:	aload_0;
+					aload_1;
+					invokespecial 107;		// FinalDev_1_1/MedRec_1_1.getMinField(Ljavacard/framework/APDU;)V
+					return;
+				L38:	aload_0;
+					aload_1;
+					invokespecial 108;		// FinalDev_1_1/MedRec_1_1.getField(Ljavacard/framework/APDU;)V
+					return;
+				L39:	sspush 27904;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+					return;
+			.exceptionTable {
+				// start_block end_block handler_block catch_type_index
+				L8 L13 L14 89;
+			}
+		}
+
+		.method private processNUM(Ljavacard/framework/APDU;[B)V {
+			.stack 3;
+			.locals 1;
+
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+				L0:	aload_2;
+					sconst_1;
+					baload;
+					slookupswitch L6 2 -112 L5 16 L1;
+				L1:	getfield_a_this 26;		// reference FinalDev_1_1/MedRec_1_1.pinAdmin
+					invokevirtual 81;		// isValidated()Z
+					ifne L4;
+				L2:	getfield_a_this 27;		// reference FinalDev_1_1/MedRec_1_1.pinDokter
+					invokevirtual 81;		// isValidated()Z
+					ifne L4;
+				L3:	sspush 25346;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L4:	aload_0;
+					aload_1;
+					invokespecial 90;		// FinalDev_1_1/MedRec_1_1.registerDinamis(Ljavacard/framework/APDU;)V
+					return;
+				L5:	aload_0;
+					aload_1;
+					invokespecial 91;		// FinalDev_1_1/MedRec_1_1.getStack(Ljavacard/framework/APDU;)V
+					return;
+				L6:	aload_0;
+					aload_2;
+					sconst_2;
+					baload;
+					putfield_b 40;		// byte FinalDev_1_1/MedRec_1_1.type
+					aload_0;
+					aload_2;
+					sconst_3;
+					baload;
+					putfield_b 41;		// byte FinalDev_1_1/MedRec_1_1.item
+				L7:	getfield_b_this 40;		// byte FinalDev_1_1/MedRec_1_1.type
+					stableswitch L11 0 2 L8 L9 L10;
+				L8:	aload_0;
+					getfield_a_this 9;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DATA
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					saload;
+					putfield_s 48;		// short FinalDev_1_1/MedRec_1_1.maxVal
+					aload_0;
+					getfield_a_this 12;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DATA
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					saload;
+					putfield_s 49;		// short FinalDev_1_1/MedRec_1_1.minVal
+					aload_0;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					saload;
+					putfield_s 43;		// short FinalDev_1_1/MedRec_1_1.maxField
+					aload_0;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					aaload;
+					invokevirtual 129;		// getStat()B
+					putfield_b 45;		// byte FinalDev_1_1/MedRec_1_1.statField
+					goto L14;
+				L9:	aload_0;
+					getfield_a_this 10;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_STATIS
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					saload;
+					putfield_s 48;		// short FinalDev_1_1/MedRec_1_1.maxVal
+					aload_0;
+					getfield_a_this 13;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_STATIS
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					saload;
+					putfield_s 49;		// short FinalDev_1_1/MedRec_1_1.minVal
+					aload_0;
+					getfield_a_this 16;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_STATIS
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					saload;
+					putfield_s 43;		// short FinalDev_1_1/MedRec_1_1.maxField
+					aload_0;
+					getfield_a_this 46;		// reference FinalDev_1_1/MedRec_1_1.dataStatis
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					aaload;
+					invokevirtual 129;		// getStat()B
+					putfield_b 45;		// byte FinalDev_1_1/MedRec_1_1.statField
+					goto L14;
+				L10:	aload_0;
+					getfield_a_this 11;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DINAMIS
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					saload;
+					putfield_s 48;		// short FinalDev_1_1/MedRec_1_1.maxVal
+					aload_0;
+					getfield_a_this 14;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DINAMIS
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					saload;
+					putfield_s 49;		// short FinalDev_1_1/MedRec_1_1.minVal
+					aload_0;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					saload;
+					putfield_s 43;		// short FinalDev_1_1/MedRec_1_1.maxField
+					aload_0;
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					getfield_s_this 21;		// short FinalDev_1_1/MedRec_1_1.stack
+					aaload;
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					invokevirtual 101;		// getStat(B)B
+					putfield_b 45;		// byte FinalDev_1_1/MedRec_1_1.statField
+					goto L14;
+				L11:	sspush 27266;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L12:	goto L14;
+				L13:	astore_3;
+					sspush 27266;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L14:	aload_2;
+					sconst_1;
+					baload;
+					slookupswitch L40 9 -112 L39 33 L34 34 L35 48 L15 64 L27 80 L22 96 L38 97 L36 113 L37;
+				L15:	getfield_b_this 40;		// byte FinalDev_1_1/MedRec_1_1.type
+					ifne L18;
+				L16:	getfield_a_this 26;		// reference FinalDev_1_1/MedRec_1_1.pinAdmin
+					invokevirtual 81;		// isValidated()Z
+					ifne L21;
+				L17:	sspush 25345;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+					goto L21;
+				L18:	getfield_a_this 26;		// reference FinalDev_1_1/MedRec_1_1.pinAdmin
+					invokevirtual 81;		// isValidated()Z
+					ifne L21;
+				L19:	getfield_a_this 27;		// reference FinalDev_1_1/MedRec_1_1.pinDokter
+					invokevirtual 81;		// isValidated()Z
+					ifne L21;
+				L20:	sspush 25346;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L21:	aload_0;
+					aload_1;
+					invokespecial 111;		// FinalDev_1_1/MedRec_1_1.inputDataNUM(Ljavacard/framework/APDU;)V
+					return;
+				L22:	getfield_a_this 26;		// reference FinalDev_1_1/MedRec_1_1.pinAdmin
+					invokevirtual 81;		// isValidated()Z
+					ifne L26;
+				L23:	getfield_a_this 27;		// reference FinalDev_1_1/MedRec_1_1.pinDokter
+					invokevirtual 81;		// isValidated()Z
+					ifne L26;
+				L24:	getfield_a_this 28;		// reference FinalDev_1_1/MedRec_1_1.pinOperator
+					invokevirtual 81;		// isValidated()Z
+					ifne L26;
+				L25:	sspush 25348;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L26:	aload_0;
+					aload_1;
+					invokespecial 112;		// FinalDev_1_1/MedRec_1_1.getDataNUM(Ljavacard/framework/APDU;)V
+					return;
+				L27:	getfield_b_this 40;		// byte FinalDev_1_1/MedRec_1_1.type
+					ifne L30;
+				L28:	getfield_a_this 26;		// reference FinalDev_1_1/MedRec_1_1.pinAdmin
+					invokevirtual 81;		// isValidated()Z
+					ifne L33;
+				L29:	sspush 25345;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+					goto L33;
+				L30:	getfield_a_this 26;		// reference FinalDev_1_1/MedRec_1_1.pinAdmin
+					invokevirtual 81;		// isValidated()Z
+					ifne L33;
+				L31:	getfield_a_this 27;		// reference FinalDev_1_1/MedRec_1_1.pinDokter
+					invokevirtual 81;		// isValidated()Z
+					ifne L33;
+				L32:	sspush 25346;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L33:	aload_0;
+					aload_1;
+					invokespecial 113;		// FinalDev_1_1/MedRec_1_1.deleteDataNUM(Ljavacard/framework/APDU;)V
+					return;
+				L34:	aload_0;
+					aload_1;
+					invokespecial 114;		// FinalDev_1_1/MedRec_1_1.getType(Ljavacard/framework/APDU;)V
+					return;
+				L35:	aload_0;
+					aload_1;
+					invokespecial 115;		// FinalDev_1_1/MedRec_1_1.getItem(Ljavacard/framework/APDU;)V
+					return;
+				L36:	aload_0;
+					aload_1;
+					invokespecial 116;		// FinalDev_1_1/MedRec_1_1.getMaxVal(Ljavacard/framework/APDU;)V
+					return;
+				L37:	aload_0;
+					aload_1;
+					invokespecial 117;		// FinalDev_1_1/MedRec_1_1.getMinVal(Ljavacard/framework/APDU;)V
+					return;
+				L38:	aload_0;
+					aload_1;
+					invokespecial 108;		// FinalDev_1_1/MedRec_1_1.getField(Ljavacard/framework/APDU;)V
+					return;
+				L39:	aload_0;
+					aload_1;
+					invokespecial 91;		// FinalDev_1_1/MedRec_1_1.getStack(Ljavacard/framework/APDU;)V
+					return;
+				L40:	sspush 27904;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+					return;
+			.exceptionTable {
+				// start_block end_block handler_block catch_type_index
+				L7 L12 L13 89;
+			}
+		}
+
+		.method private inputTEXT(Ljavacard/framework/APDU;)V {
+			.stack 5;
+			.locals 10;
+
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+				L0:	aload_1;
+					invokevirtual 75;		// getBuffer()[B
+					astore_2;
+					aload_2;
+					sconst_4;
+					baload;
+					sstore_3;
+					aload_1;
+					invokevirtual 118;		// setIncomingAndReceive()S
+					sstore 4;
+					sload 4;
+					getfield_s_this 43;		// short FinalDev_1_1/MedRec_1_1.maxField
+					if_scmpgt L2;
+				L1:	sload 4;
+					getfield_s_this 42;		// short FinalDev_1_1/MedRec_1_1.minField
+					if_scmpge L3;
+				L2:	sspush 27264;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L3:	getfield_b_this 45;		// byte FinalDev_1_1/MedRec_1_1.statField
+					ifeq L5;
+				L4:	sspush 27268;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L5:	sload_3;
+					sconst_1;
+					invokestatic 65;		// javacard/framework/JCSystem.makeTransientByteArray(SB)[B
+					astore 5;
+					sconst_0;
+					sstore 6;
+					goto L7;
+				L6:	aload_2;
+					sconst_5;
+					aload 5;
+					sload 6;
+					sload 4;
+					invokestatic 54;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					sload 6;
+					sload 4;
+					sadd;
+					sstore 6;
+					aload_1;
+					sconst_5;
+					invokevirtual 122;		// receiveBytes(S)S
+					sstore 4;
+				L7:	sload 4;
+					ifgt L6;
+				L8:	aload 5;
+					arraylength;
+					sstore 7;
+					aload_0;
+					aload 5;
+					invokespecial 119;		// FinalDev_1_1/MedRec_1_1.addPadtoData([B)[B
+					astore 8;
+					aload 8;
+					arraylength;
+					sstore 9;
+					sload 9;
+					sconst_1;
+					invokestatic 65;		// javacard/framework/JCSystem.makeTransientByteArray(SB)[B
+					astore 10;
+					aload_0;
+					getfield_b_this 23;		// byte FinalDev_1_1/MedRec_1_1.Enc
+					sload 9;
+					aload 8;
+					invokespecial 120;		// FinalDev_1_1/MedRec_1_1.doAesCipherFunction(BS[B)[B
+					astore 10;
+					aload 10;
+					arraylength;
+					sstore 11;
+					getfield_b_this 40;		// byte FinalDev_1_1/MedRec_1_1.type
+					stableswitch L12 0 2 L9 L10 L11;
+				L9:	aload_0;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					aaload;
+					aload 10;
+					invokevirtual 98;		// inputItem([B)B
+					putfield_b 45;		// byte FinalDev_1_1/MedRec_1_1.statField
+					goto L13;
+				L10:	aload_0;
+					getfield_a_this 46;		// reference FinalDev_1_1/MedRec_1_1.dataStatis
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					aaload;
+					aload 10;
+					invokevirtual 98;		// inputItem([B)B
+					putfield_b 45;		// byte FinalDev_1_1/MedRec_1_1.statField
+					goto L13;
+				L11:	getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					getfield_s_this 21;		// short FinalDev_1_1/MedRec_1_1.stack
+					aaload;
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					aload 10;
+					invokevirtual 121;		// inputItem(B[B)V
+					goto L13;
+				L12:	sspush 27266;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L13:	return;
+		}
+
+		.method private deleteDataTEXT(Ljavacard/framework/APDU;)V {
+			.stack 3;
+			.locals 3;
+
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+				L0:	aload_1;
+					invokevirtual 75;		// getBuffer()[B
+					astore_2;
+					aload_2;
+					sconst_4;
+					baload;
+					sstore_3;
+					aload_1;
+					invokevirtual 118;		// setIncomingAndReceive()S
+					s2b;
+					sstore 4;
+					sload_3;
+					ifne L2;
+				L1:	sload 4;
+					ifeq L3;
+				L2:	sspush 26368;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L3:	getfield_b_this 45;		// byte FinalDev_1_1/MedRec_1_1.statField
+					sconst_1;
+					if_scmpeq L5;
+				L4:	sspush 27267;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L5:	getfield_b_this 40;		// byte FinalDev_1_1/MedRec_1_1.type
+					stableswitch L9 0 2 L6 L7 L8;
+				L6:	aload_0;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					aaload;
+					invokevirtual 100;		// deleteItem()B
+					putfield_b 45;		// byte FinalDev_1_1/MedRec_1_1.statField
+					goto L10;
+				L7:	aload_0;
+					getfield_a_this 46;		// reference FinalDev_1_1/MedRec_1_1.dataStatis
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					aaload;
+					invokevirtual 100;		// deleteItem()B
+					putfield_b 45;		// byte FinalDev_1_1/MedRec_1_1.statField
+					goto L10;
+				L8:	aload_0;
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					getfield_s_this 21;		// short FinalDev_1_1/MedRec_1_1.stack
+					aaload;
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					invokevirtual 123;		// deleteItem(B)B
+					putfield_b 45;		// byte FinalDev_1_1/MedRec_1_1.statField
+					goto L10;
+				L9:	sspush 27266;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L10:	return;
+		}
+
+		.method private getDataTEXT(Ljavacard/framework/APDU;)V {
+			.stack 5;
+			.locals 3;
+
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+				L0:	aload_1;
+					invokevirtual 75;		// getBuffer()[B
+					astore_2;
+					aload_1;
+					invokevirtual 124;		// setOutgoing()S
+					pop;
+					getfield_b_this 40;		// byte FinalDev_1_1/MedRec_1_1.type
+					sconst_2;
+					if_scmpeq L3;
+				L1:	getfield_b_this 45;		// byte FinalDev_1_1/MedRec_1_1.statField
+					sconst_1;
+					if_scmpeq L3;
+				L2:	sspush 27267;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L3:	getfield_b_this 40;		// byte FinalDev_1_1/MedRec_1_1.type
+					stableswitch L11 0 2 L4 L5 L6;
+				L4:	aload_0;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					aaload;
+					invokevirtual 109;		// getLen()S
+					putfield_s 50;		// short FinalDev_1_1/MedRec_1_1.lenData
+					aload_0;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					aaload;
+					invokevirtual 99;		// getItem()[B
+					putfield_a 51;		// reference FinalDev_1_1/MedRec_1_1.dataStored
+					goto L14;
+				L5:	aload_0;
+					getfield_a_this 46;		// reference FinalDev_1_1/MedRec_1_1.dataStatis
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					aaload;
+					invokevirtual 109;		// getLen()S
+					putfield_s 50;		// short FinalDev_1_1/MedRec_1_1.lenData
+					aload_0;
+					getfield_a_this 46;		// reference FinalDev_1_1/MedRec_1_1.dataStatis
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					aaload;
+					invokevirtual 99;		// getItem()[B
+					putfield_a 51;		// reference FinalDev_1_1/MedRec_1_1.dataStored
+					goto L14;
+				L6:	aload_2;
+					sconst_4;
+					baload;
+					sstore_3;
+					sload_3;
+					sconst_1;
+					if_scmpeq L8;
+				L7:	sspush 26368;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L8:	aload_2;
+					sconst_5;
+					baload;
+					sstore 4;
+					aload_0;
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					sload 4;
+					aaload;
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					invokevirtual 101;		// getStat(B)B
+					putfield_b 45;		// byte FinalDev_1_1/MedRec_1_1.statField
+					getfield_b_this 45;		// byte FinalDev_1_1/MedRec_1_1.statField
+					sconst_1;
+					if_scmpeq L10;
+				L9:	sspush 27267;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L10:	aload_0;
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					sload 4;
+					aaload;
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					invokevirtual 127;		// getLen(B)S
+					putfield_s 50;		// short FinalDev_1_1/MedRec_1_1.lenData
+					aload_0;
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					sload 4;
+					aaload;
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					invokevirtual 128;		// getItem(B)[B
+					putfield_a 51;		// reference FinalDev_1_1/MedRec_1_1.dataStored
+					goto L14;
+				L11:	sspush 27266;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L12:	goto L14;
+				L13:	astore_3;
+					sspush 27267;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L14:	aload_0;
+					aload_0;
+					getfield_b_this 24;		// byte FinalDev_1_1/MedRec_1_1.Dec
+					getfield_s_this 50;		// short FinalDev_1_1/MedRec_1_1.lenData
+					getfield_a_this 51;		// reference FinalDev_1_1/MedRec_1_1.dataStored
+					invokespecial 120;		// FinalDev_1_1/MedRec_1_1.doAesCipherFunction(BS[B)[B
+					putfield_a 52;		// reference FinalDev_1_1/MedRec_1_1.bufferData
+					aload_0;
+					getfield_a_this 52;		// reference FinalDev_1_1/MedRec_1_1.bufferData
+					invokespecial 130;		// FinalDev_1_1/MedRec_1_1.removePadfromData([B)[B
+					astore_3;
+					aload_3;
+					arraylength;
+					sstore 4;
+					aload_1;
+					sload 4;
+					invokevirtual 131;		// setOutgoingLength(S)V
+					aload_3;
+					sconst_0;
+					aload_2;
+					sconst_0;
+					sload 4;
+					invokestatic 54;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					aload_1;
+					sconst_0;
+					sload 4;
+					invokevirtual 132;		// sendBytes(SS)V
+					return;
+			.exceptionTable {
+				// start_block end_block handler_block catch_type_index
+				L3 L12 L13 89;
+			}
+		}
+
+		.method private inputDataNUM(Ljavacard/framework/APDU;)V {
+			.stack 5;
+			.locals 9;
+
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+				L0:	aload_1;
+					invokevirtual 75;		// getBuffer()[B
+					astore_2;
+					aload_2;
+					sconst_4;
+					baload;
+					sstore_3;
+					aload_1;
+					invokevirtual 118;		// setIncomingAndReceive()S
+					sstore 4;
+					sload_3;
+					getfield_s_this 43;		// short FinalDev_1_1/MedRec_1_1.maxField
+					s2b;
+					if_scmpne L2;
+				L1:	sload 4;
+					getfield_s_this 43;		// short FinalDev_1_1/MedRec_1_1.maxField
+					if_scmpeq L3;
+				L2:	sspush 27264;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L3:	getfield_b_this 45;		// byte FinalDev_1_1/MedRec_1_1.statField
+					ifeq L5;
+				L4:	sspush 27268;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L5:	aload_0;
+					sconst_2;
+					sconst_1;
+					invokestatic 65;		// javacard/framework/JCSystem.makeTransientByteArray(SB)[B
+					putfield_a 52;		// reference FinalDev_1_1/MedRec_1_1.bufferData
+					sload_3;
+					sconst_1;
+					if_scmpne L7;
+				L6:	sconst_1;
+					sstore 5;
+					goto L9;
+				L7:	sconst_0;
+					sstore 5;
+					goto L9;
+				L8:	aload_2;
+					sconst_5;
+					getfield_a_this 52;		// reference FinalDev_1_1/MedRec_1_1.bufferData
+					sload 5;
+					sload 4;
+					invokestatic 54;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					sload 5;
+					sload 4;
+					sadd;
+					sstore 5;
+					aload_1;
+					sconst_5;
+					invokevirtual 122;		// receiveBytes(S)S
+					sstore 4;
+				L9:	sload 4;
+					ifgt L8;
+				L10:	getfield_a_this 52;		// reference FinalDev_1_1/MedRec_1_1.bufferData
+					sconst_0;
+					invokestatic 133;		// javacard/framework/Util.getShort([BS)S
+					sstore 6;
+					aload_0;
+					sconst_0;
+					sload 6;
+					sadd;
+					putfield_s 53;		// short FinalDev_1_1/MedRec_1_1.dataNumProcess
+					sload 6;
+					getfield_s_this 48;		// short FinalDev_1_1/MedRec_1_1.maxVal
+					if_scmpgt L12;
+				L11:	sload 6;
+					getfield_s_this 49;		// short FinalDev_1_1/MedRec_1_1.minVal
+					if_scmpge L13;
+				L12:	sspush 27271;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L13:	getfield_b_this 45;		// byte FinalDev_1_1/MedRec_1_1.statField
+					ifeq L15;
+				L14:	sspush 27268;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L15:	getfield_a_this 52;		// reference FinalDev_1_1/MedRec_1_1.bufferData
+					arraylength;
+					sstore 7;
+					aload_0;
+					getfield_a_this 52;		// reference FinalDev_1_1/MedRec_1_1.bufferData
+					invokespecial 119;		// FinalDev_1_1/MedRec_1_1.addPadtoData([B)[B
+					astore 8;
+					aload 8;
+					arraylength;
+					sstore 9;
+					aload_0;
+					aload_0;
+					getfield_b_this 23;		// byte FinalDev_1_1/MedRec_1_1.Enc
+					sload 9;
+					aload 8;
+					invokespecial 120;		// FinalDev_1_1/MedRec_1_1.doAesCipherFunction(BS[B)[B
+					putfield_a 51;		// reference FinalDev_1_1/MedRec_1_1.dataStored
+					getfield_a_this 51;		// reference FinalDev_1_1/MedRec_1_1.dataStored
+					arraylength;
+					sstore 10;
+					getfield_b_this 40;		// byte FinalDev_1_1/MedRec_1_1.type
+					stableswitch L19 0 2 L16 L17 L18;
+				L16:	aload_0;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					aaload;
+					getfield_a_this 51;		// reference FinalDev_1_1/MedRec_1_1.dataStored
+					invokevirtual 98;		// inputItem([B)B
+					putfield_b 45;		// byte FinalDev_1_1/MedRec_1_1.statField
+					goto L20;
+				L17:	aload_0;
+					getfield_a_this 46;		// reference FinalDev_1_1/MedRec_1_1.dataStatis
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					aaload;
+					getfield_a_this 51;		// reference FinalDev_1_1/MedRec_1_1.dataStored
+					invokevirtual 98;		// inputItem([B)B
+					putfield_b 45;		// byte FinalDev_1_1/MedRec_1_1.statField
+					goto L20;
+				L18:	getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					getfield_s_this 21;		// short FinalDev_1_1/MedRec_1_1.stack
+					aaload;
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					getfield_a_this 51;		// reference FinalDev_1_1/MedRec_1_1.dataStored
+					invokevirtual 121;		// inputItem(B[B)V
+					goto L20;
+				L19:	sspush 27266;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L20:	return;
+		}
+
+		.method private deleteDataNUM(Ljavacard/framework/APDU;)V {
+			.stack 3;
+			.locals 3;
+
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+				L0:	aload_1;
+					invokevirtual 75;		// getBuffer()[B
+					astore_2;
+					aload_2;
+					sconst_4;
+					baload;
+					sstore_3;
+					aload_1;
+					invokevirtual 118;		// setIncomingAndReceive()S
+					s2b;
+					sstore 4;
+					sload_3;
+					ifne L2;
+				L1:	sload 4;
+					ifeq L3;
+				L2:	sspush 26368;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L3:	getfield_b_this 45;		// byte FinalDev_1_1/MedRec_1_1.statField
+					sconst_1;
+					if_scmpeq L5;
+				L4:	sspush 27267;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L5:	getfield_b_this 40;		// byte FinalDev_1_1/MedRec_1_1.type
+					stableswitch L9 0 2 L6 L7 L8;
+				L6:	aload_0;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					aaload;
+					invokevirtual 100;		// deleteItem()B
+					putfield_b 45;		// byte FinalDev_1_1/MedRec_1_1.statField
+					goto L10;
+				L7:	aload_0;
+					getfield_a_this 46;		// reference FinalDev_1_1/MedRec_1_1.dataStatis
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					aaload;
+					invokevirtual 100;		// deleteItem()B
+					putfield_b 45;		// byte FinalDev_1_1/MedRec_1_1.statField
+					goto L10;
+				L8:	aload_0;
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					getfield_s_this 21;		// short FinalDev_1_1/MedRec_1_1.stack
+					aaload;
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					invokevirtual 123;		// deleteItem(B)B
+					putfield_b 45;		// byte FinalDev_1_1/MedRec_1_1.statField
+					goto L10;
+				L9:	sspush 27266;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L10:	return;
+		}
+
+		.method private getDataNUM(Ljavacard/framework/APDU;)V {
+			.stack 5;
+			.locals 4;
+
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+				L0:	aload_1;
+					invokevirtual 75;		// getBuffer()[B
+					astore_2;
+					aload_1;
+					invokevirtual 124;		// setOutgoing()S
+					pop;
+					getfield_b_this 40;		// byte FinalDev_1_1/MedRec_1_1.type
+					sconst_2;
+					if_scmpeq L3;
+				L1:	getfield_b_this 45;		// byte FinalDev_1_1/MedRec_1_1.statField
+					sconst_1;
+					if_scmpeq L3;
+				L2:	sspush 27267;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L3:	getfield_b_this 40;		// byte FinalDev_1_1/MedRec_1_1.type
+					stableswitch L11 0 2 L4 L5 L6;
+				L4:	aload_0;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					aaload;
+					invokevirtual 109;		// getLen()S
+					putfield_s 50;		// short FinalDev_1_1/MedRec_1_1.lenData
+					aload_0;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					aaload;
+					invokevirtual 99;		// getItem()[B
+					putfield_a 51;		// reference FinalDev_1_1/MedRec_1_1.dataStored
+					goto L14;
+				L5:	aload_0;
+					getfield_a_this 46;		// reference FinalDev_1_1/MedRec_1_1.dataStatis
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					aaload;
+					invokevirtual 109;		// getLen()S
+					putfield_s 50;		// short FinalDev_1_1/MedRec_1_1.lenData
+					aload_0;
+					getfield_a_this 46;		// reference FinalDev_1_1/MedRec_1_1.dataStatis
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					aaload;
+					invokevirtual 99;		// getItem()[B
+					putfield_a 51;		// reference FinalDev_1_1/MedRec_1_1.dataStored
+					goto L14;
+				L6:	aload_2;
+					sconst_4;
+					baload;
+					sstore_3;
+					sload_3;
+					sconst_1;
+					if_scmpeq L8;
+				L7:	sspush 26368;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L8:	aload_2;
+					sconst_5;
+					baload;
+					sstore 4;
+					aload_0;
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					sload 4;
+					aaload;
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					invokevirtual 101;		// getStat(B)B
+					putfield_b 45;		// byte FinalDev_1_1/MedRec_1_1.statField
+					getfield_b_this 45;		// byte FinalDev_1_1/MedRec_1_1.statField
+					sconst_1;
+					if_scmpeq L10;
+				L9:	sspush 27267;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L10:	aload_0;
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					sload 4;
+					aaload;
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					invokevirtual 127;		// getLen(B)S
+					putfield_s 50;		// short FinalDev_1_1/MedRec_1_1.lenData
+					aload_0;
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					sload 4;
+					aaload;
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					invokevirtual 128;		// getItem(B)[B
+					putfield_a 51;		// reference FinalDev_1_1/MedRec_1_1.dataStored
+					goto L14;
+				L11:	sspush 27266;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L12:	goto L14;
+				L13:	astore_3;
+					sspush 27267;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L14:	getfield_a_this 51;		// reference FinalDev_1_1/MedRec_1_1.dataStored
+					arraylength;
+					sstore_3;
+					aload_0;
+					aload_0;
+					getfield_b_this 24;		// byte FinalDev_1_1/MedRec_1_1.Dec
+					sload_3;
+					getfield_a_this 51;		// reference FinalDev_1_1/MedRec_1_1.dataStored
+					invokespecial 120;		// FinalDev_1_1/MedRec_1_1.doAesCipherFunction(BS[B)[B
+					putfield_a 52;		// reference FinalDev_1_1/MedRec_1_1.bufferData
+					aload_0;
+					getfield_a_this 52;		// reference FinalDev_1_1/MedRec_1_1.bufferData
+					invokespecial 130;		// FinalDev_1_1/MedRec_1_1.removePadfromData([B)[B
+					astore 4;
+					aload 4;
+					arraylength;
+					sstore 5;
+					aload_1;
+					sconst_2;
+					invokevirtual 131;		// setOutgoingLength(S)V
+					aload_0;
+					aload 4;
+					sconst_0;
+					invokestatic 133;		// javacard/framework/Util.getShort([BS)S
+					putfield_s 53;		// short FinalDev_1_1/MedRec_1_1.dataNumProcess
+					aload_2;
+					sconst_0;
+					getfield_s_this 53;		// short FinalDev_1_1/MedRec_1_1.dataNumProcess
+					invokestatic 135;		// javacard/framework/Util.setShort([BSS)S
+					pop;
+					aload_1;
+					sconst_0;
+					sconst_2;
+					invokevirtual 132;		// sendBytes(SS)V
+					return;
+			.exceptionTable {
+				// start_block end_block handler_block catch_type_index
+				L3 L12 L13 89;
+			}
+		}
+
+		.method private registerDinamis(Ljavacard/framework/APDU;)V {
+			.stack 3;
+			.locals 4;
+
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+				L0:	aload_1;
+					invokevirtual 75;		// getBuffer()[B
+					astore_2;
+					aload_2;
+					sconst_4;
+					baload;
+					sstore_3;
+					aload_1;
+					invokevirtual 118;		// setIncomingAndReceive()S
+					s2b;
+					sstore 4;
+					sload_3;
+					ifne L2;
+				L1:	sload 4;
+					ifeq L3;
+				L2:	sspush 26368;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L3:	getfield_b_this 40;		// byte FinalDev_1_1/MedRec_1_1.type
+					stableswitch L8 2 2 L4;
+				L4:	sconst_0;
+					sstore 5;
+					goto L6;
+				L5:	getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					getfield_s_this 21;		// short FinalDev_1_1/MedRec_1_1.stack
+					aaload;
+					sload 5;
+					s2b;
+					invokevirtual 136;		// setStat(B)V
+					sinc 5 1;
+				L6:	sload 5;
+					bspush 48;
+					if_scmplt L5;
+				L7:	aload_0;
+					dup;
+					getfield_s 21;		// short FinalDev_1_1/MedRec_1_1.stack
+					sconst_1;
+					sadd;
+					putfield_s 21;		// short FinalDev_1_1/MedRec_1_1.stack
+					goto L9;
+				L8:	sspush 27266;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L9:	return;
+		}
+
+		.method private getStack(Ljavacard/framework/APDU;)V {
+			.stack 3;
+			.locals 2;
+
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+				L0:	aload_1;
+					invokevirtual 75;		// getBuffer()[B
+					astore_2;
+					aload_1;
+					invokevirtual 124;		// setOutgoing()S
+					sstore_3;
+					aload_1;
+					sconst_2;
+					invokevirtual 131;		// setOutgoingLength(S)V
+					aload_2;
+					sconst_0;
+					getfield_s_this 21;		// short FinalDev_1_1/MedRec_1_1.stack
+					invokestatic 135;		// javacard/framework/Util.setShort([BSS)S
+					pop;
+					aload_1;
+					sconst_0;
+					sconst_2;
+					invokevirtual 132;		// sendBytes(SS)V
+					return;
+		}
+
+		.method private getType(Ljavacard/framework/APDU;)V {
+			.stack 3;
+			.locals 2;
+
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+				L0:	aload_1;
+					invokevirtual 75;		// getBuffer()[B
+					astore_2;
+					aload_1;
+					invokevirtual 124;		// setOutgoing()S
+					sstore_3;
+					aload_1;
+					sconst_2;
+					invokevirtual 131;		// setOutgoingLength(S)V
+					aload_2;
+					sconst_0;
+					getfield_b_this 40;		// byte FinalDev_1_1/MedRec_1_1.type
+					invokestatic 135;		// javacard/framework/Util.setShort([BSS)S
+					pop;
+					aload_1;
+					sconst_0;
+					sconst_2;
+					invokevirtual 132;		// sendBytes(SS)V
+					return;
+		}
+
+		.method private getItem(Ljavacard/framework/APDU;)V {
+			.stack 3;
+			.locals 2;
+
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+				L0:	aload_1;
+					invokevirtual 75;		// getBuffer()[B
+					astore_2;
+					aload_1;
+					invokevirtual 124;		// setOutgoing()S
+					sstore_3;
+					aload_1;
+					sconst_2;
+					invokevirtual 131;		// setOutgoingLength(S)V
+					aload_2;
+					sconst_0;
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					invokestatic 135;		// javacard/framework/Util.setShort([BSS)S
+					pop;
+					aload_1;
+					sconst_0;
+					sconst_2;
+					invokevirtual 132;		// sendBytes(SS)V
+					return;
+		}
+
+		.method private getLenDataStored(Ljavacard/framework/APDU;)V {
+			.stack 3;
+			.locals 3;
+
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+				L0:	aload_1;
+					invokevirtual 75;		// getBuffer()[B
+					astore_2;
+					getfield_b_this 40;		// byte FinalDev_1_1/MedRec_1_1.type
+					stableswitch L6 0 2 L1 L2 L3;
+				L1:	aload_0;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					aaload;
+					invokevirtual 109;		// getLen()S
+					putfield_s 50;		// short FinalDev_1_1/MedRec_1_1.lenData
+					goto L7;
+				L2:	aload_0;
+					getfield_a_this 46;		// reference FinalDev_1_1/MedRec_1_1.dataStatis
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					aaload;
+					invokevirtual 109;		// getLen()S
+					putfield_s 50;		// short FinalDev_1_1/MedRec_1_1.lenData
+					goto L7;
+				L3:	aload_2;
+					sconst_4;
+					baload;
+					sstore_3;
+					sload_3;
+					sconst_1;
+					if_scmpeq L5;
+				L4:	sspush 26368;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L5:	aload_2;
+					sconst_5;
+					baload;
+					sstore 4;
+					aload_0;
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					sload 4;
+					aaload;
+					getfield_b_this 41;		// byte FinalDev_1_1/MedRec_1_1.item
+					invokevirtual 127;		// getLen(B)S
+					putfield_s 50;		// short FinalDev_1_1/MedRec_1_1.lenData
+					goto L7;
+				L6:	sspush 27266;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L7:	aload_1;
+					invokevirtual 124;		// setOutgoing()S
+					pop;
+					aload_1;
+					sconst_2;
+					invokevirtual 131;		// setOutgoingLength(S)V
+					aload_2;
+					sconst_0;
+					getfield_s_this 50;		// short FinalDev_1_1/MedRec_1_1.lenData
+					invokestatic 135;		// javacard/framework/Util.setShort([BSS)S
+					pop;
+					aload_1;
+					sconst_0;
+					sconst_2;
+					invokevirtual 132;		// sendBytes(SS)V
+					return;
+		}
+
+		.method private getField(Ljavacard/framework/APDU;)V {
+			.stack 4;
+			.locals 2;
+
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+				L0:	aload_1;
+					invokevirtual 75;		// getBuffer()[B
+					astore_2;
+					aload_1;
+					invokevirtual 124;		// setOutgoing()S
+					sstore_3;
+					aload_1;
+					sconst_2;
+					invokevirtual 131;		// setOutgoingLength(S)V
+					aload_2;
+					sconst_0;
+					aload_2;
+					sconst_4;
+					baload;
+					invokestatic 135;		// javacard/framework/Util.setShort([BSS)S
+					pop;
+					aload_1;
+					sconst_0;
+					sconst_2;
+					invokevirtual 132;		// sendBytes(SS)V
+					return;
+		}
+
+		.method private getMaxVal(Ljavacard/framework/APDU;)V {
+			.stack 3;
+			.locals 2;
+
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+				L0:	aload_1;
+					invokevirtual 75;		// getBuffer()[B
+					astore_2;
+					aload_1;
+					invokevirtual 124;		// setOutgoing()S
+					sstore_3;
+					aload_1;
+					sconst_2;
+					invokevirtual 131;		// setOutgoingLength(S)V
+					aload_2;
+					sconst_0;
+					getfield_s_this 48;		// short FinalDev_1_1/MedRec_1_1.maxVal
+					invokestatic 135;		// javacard/framework/Util.setShort([BSS)S
+					pop;
+					aload_1;
+					sconst_0;
+					sconst_2;
+					invokevirtual 132;		// sendBytes(SS)V
+					return;
+		}
+
+		.method private getMinVal(Ljavacard/framework/APDU;)V {
+			.stack 3;
+			.locals 2;
+
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+				L0:	aload_1;
+					invokevirtual 75;		// getBuffer()[B
+					astore_2;
+					aload_1;
+					invokevirtual 124;		// setOutgoing()S
+					sstore_3;
+					aload_1;
+					sconst_2;
+					invokevirtual 131;		// setOutgoingLength(S)V
+					aload_2;
+					sconst_0;
+					getfield_s_this 49;		// short FinalDev_1_1/MedRec_1_1.minVal
+					invokestatic 135;		// javacard/framework/Util.setShort([BSS)S
+					pop;
+					aload_1;
+					sconst_0;
+					sconst_2;
+					invokevirtual 132;		// sendBytes(SS)V
+					return;
+		}
+
+		.method private getMaxField(Ljavacard/framework/APDU;)V {
+			.stack 3;
+			.locals 2;
+
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+				L0:	aload_1;
+					invokevirtual 75;		// getBuffer()[B
+					astore_2;
+					aload_1;
+					invokevirtual 124;		// setOutgoing()S
+					sstore_3;
+					aload_1;
+					sconst_2;
+					invokevirtual 131;		// setOutgoingLength(S)V
+					aload_2;
+					sconst_0;
+					getfield_s_this 43;		// short FinalDev_1_1/MedRec_1_1.maxField
+					invokestatic 135;		// javacard/framework/Util.setShort([BSS)S
+					pop;
+					aload_1;
+					sconst_0;
+					sconst_2;
+					invokevirtual 132;		// sendBytes(SS)V
+					return;
+		}
+
+		.method private getMinField(Ljavacard/framework/APDU;)V {
+			.stack 3;
+			.locals 2;
+
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+				L0:	aload_1;
+					invokevirtual 75;		// getBuffer()[B
+					astore_2;
+					aload_1;
+					invokevirtual 124;		// setOutgoing()S
+					sstore_3;
+					aload_1;
+					sconst_2;
+					invokevirtual 131;		// setOutgoingLength(S)V
+					aload_2;
+					sconst_0;
+					getfield_s_this 42;		// short FinalDev_1_1/MedRec_1_1.minField
+					invokestatic 135;		// javacard/framework/Util.setShort([BSS)S
+					pop;
+					aload_1;
+					sconst_0;
+					sconst_2;
+					invokevirtual 132;		// sendBytes(SS)V
+					return;
+		}
+
+		.method private verifyUser(Ljavacard/framework/APDU;)V {
+			.stack 4;
+			.locals 3;
+
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+				L0:	aload_1;
+					invokevirtual 75;		// getBuffer()[B
+					astore_2;
+					aload_1;
+					invokevirtual 118;		// setIncomingAndReceive()S
+					s2b;
+					sstore_3;
+					aload_2;
+					sconst_4;
+					baload;
+					sstore 4;
+					sload_3;
+					sload 4;
+					if_scmpeq L2;
+				L1:	sspush 26368;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L2:	getfield_a_this 25;		// reference FinalDev_1_1/MedRec_1_1.pin
+					aload_2;
+					sconst_5;
+					sload_3;
+					invokevirtual 137;		// check([BSB)Z
+					ifne L4;
+				L3:	getstatic_s 138;		// short FinalDev_1_1/MedRec_1_1.SW_VERIFICATION_FAILED
+					getfield_a_this 25;		// reference FinalDev_1_1/MedRec_1_1.pin
+					invokevirtual 77;		// getTriesRemaining()B
+					sadd;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L4:	return;
+		}
+
+		.method private verifyAdmin(Ljavacard/framework/APDU;)V {
+			.stack 4;
+			.locals 3;
+
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+				L0:	aload_1;
+					invokevirtual 75;		// getBuffer()[B
+					astore_2;
+					aload_1;
+					invokevirtual 118;		// setIncomingAndReceive()S
+					s2b;
+					sstore_3;
+					aload_2;
+					sconst_4;
+					baload;
+					sstore 4;
+					sload_3;
+					sload 4;
+					if_scmpeq L2;
+				L1:	sspush 26368;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L2:	getfield_a_this 26;		// reference FinalDev_1_1/MedRec_1_1.pinAdmin
+					aload_2;
+					sconst_5;
+					sload_3;
+					invokevirtual 137;		// check([BSB)Z
+					ifne L4;
+				L3:	getstatic_s 138;		// short FinalDev_1_1/MedRec_1_1.SW_VERIFICATION_FAILED
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L4:	return;
+		}
+
+		.method private verifyDokter(Ljavacard/framework/APDU;)V {
+			.stack 4;
+			.locals 3;
+
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+				L0:	aload_1;
+					invokevirtual 75;		// getBuffer()[B
+					astore_2;
+					aload_1;
+					invokevirtual 118;		// setIncomingAndReceive()S
+					s2b;
+					sstore_3;
+					aload_2;
+					sconst_4;
+					baload;
+					sstore 4;
+					sload_3;
+					sload 4;
+					if_scmpeq L2;
+				L1:	sspush 26368;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L2:	getfield_a_this 27;		// reference FinalDev_1_1/MedRec_1_1.pinDokter
+					aload_2;
+					sconst_5;
+					sload_3;
+					invokevirtual 137;		// check([BSB)Z
+					ifne L4;
+				L3:	getstatic_s 138;		// short FinalDev_1_1/MedRec_1_1.SW_VERIFICATION_FAILED
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L4:	return;
+		}
+
+		.method private verifyOperator(Ljavacard/framework/APDU;)V {
+			.stack 4;
+			.locals 3;
+
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+				L0:	aload_1;
+					invokevirtual 75;		// getBuffer()[B
+					astore_2;
+					aload_1;
+					invokevirtual 118;		// setIncomingAndReceive()S
+					s2b;
+					sstore_3;
+					aload_2;
+					sconst_4;
+					baload;
+					sstore 4;
+					sload_3;
+					sload 4;
+					if_scmpeq L2;
+				L1:	sspush 26368;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L2:	getfield_a_this 28;		// reference FinalDev_1_1/MedRec_1_1.pinOperator
+					aload_2;
+					sconst_5;
+					sload_3;
+					invokevirtual 137;		// check([BSB)Z
+					ifne L4;
+				L3:	getstatic_s 138;		// short FinalDev_1_1/MedRec_1_1.SW_VERIFICATION_FAILED
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L4:	return;
+		}
+
+		.method private updatePin(Ljavacard/framework/APDU;)V {
+			.stack 5;
+			.locals 5;
+
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+				L0:	getfield_a_this 26;		// reference FinalDev_1_1/MedRec_1_1.pinAdmin
+					invokevirtual 81;		// isValidated()Z
+					ifne L2;
+				L1:	sspush 25345;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L2:	aload_1;
+					invokevirtual 75;		// getBuffer()[B
+					astore_2;
+					aload_2;
+					sconst_4;
+					baload;
+					sstore_3;
+					aload_1;
+					invokevirtual 118;		// setIncomingAndReceive()S
+					sstore 4;
+					sload_3;
+					sload 4;
+					if_scmpeq L4;
+				L3:	sspush 26368;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L4:	aload_2;
+					sconst_5;
+					baload;
+					sconst_2;
+					if_scmpge L6;
+				L5:	sspush 27012;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L6:	aload_0;
+					sload 4;
+					sconst_1;
+					invokestatic 65;		// javacard/framework/JCSystem.makeTransientByteArray(SB)[B
+					putfield_a 52;		// reference FinalDev_1_1/MedRec_1_1.bufferData
+					sconst_0;
+					sstore 5;
+					goto L8;
+				L7:	aload_2;
+					sconst_5;
+					getfield_a_this 52;		// reference FinalDev_1_1/MedRec_1_1.bufferData
+					sload 5;
+					sload 4;
+					invokestatic 54;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					sload 5;
+					sload 4;
+					sadd;
+					sstore 5;
+					aload_1;
+					sconst_5;
+					invokevirtual 122;		// receiveBytes(S)S
+					sstore 4;
+				L8:	sload 4;
+					ifgt L7;
+				L9:	getfield_a_this 52;		// reference FinalDev_1_1/MedRec_1_1.bufferData
+					arraylength;
+					s2b;
+					sstore 6;
+					invokestatic 110;		// javacard/framework/JCSystem.beginTransaction()V
+					aload_0;
+					new 96;		// javacard/framework/OwnerPIN
+					dup;
+					sconst_5;
+					bspush 8;
+					invokespecial 97;		// javacard/framework/OwnerPIN.<init>(BB)V
+					putfield_a 25;		// reference FinalDev_1_1/MedRec_1_1.pin
+					getfield_a_this 25;		// reference FinalDev_1_1/MedRec_1_1.pin
+					getfield_a_this 52;		// reference FinalDev_1_1/MedRec_1_1.bufferData
+					sconst_0;
+					sload 6;
+					invokevirtual 125;		// update([BSB)V
+					invokestatic 70;		// javacard/framework/JCSystem.commitTransaction()V
+					return;
+		}
+
+		.method private updatePinAdmin(Ljavacard/framework/APDU;)V {
+			.stack 5;
+			.locals 5;
+
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+				L0:	getfield_a_this 26;		// reference FinalDev_1_1/MedRec_1_1.pinAdmin
+					invokevirtual 81;		// isValidated()Z
+					ifne L2;
+				L1:	sspush 25345;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L2:	aload_1;
+					invokevirtual 75;		// getBuffer()[B
+					astore_2;
+					aload_2;
+					sconst_4;
+					baload;
+					sstore_3;
+					aload_1;
+					invokevirtual 118;		// setIncomingAndReceive()S
+					sstore 4;
+					sload_3;
+					sload 4;
+					if_scmpeq L4;
+				L3:	sspush 26368;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L4:	aload_2;
+					sconst_5;
+					baload;
+					sconst_2;
+					if_scmpge L6;
+				L5:	sspush 27012;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L6:	aload_0;
+					sload 4;
+					sconst_1;
+					invokestatic 65;		// javacard/framework/JCSystem.makeTransientByteArray(SB)[B
+					putfield_a 52;		// reference FinalDev_1_1/MedRec_1_1.bufferData
+					sconst_0;
+					sstore 5;
+					goto L8;
+				L7:	aload_2;
+					sconst_5;
+					getfield_a_this 52;		// reference FinalDev_1_1/MedRec_1_1.bufferData
+					sload 5;
+					sload 4;
+					invokestatic 54;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					sload 5;
+					sload 4;
+					sadd;
+					sstore 5;
+					aload_1;
+					sconst_5;
+					invokevirtual 122;		// receiveBytes(S)S
+					sstore 4;
+				L8:	sload 4;
+					ifgt L7;
+				L9:	getfield_a_this 52;		// reference FinalDev_1_1/MedRec_1_1.bufferData
+					arraylength;
+					s2b;
+					sstore 6;
+					sload 6;
+					bspush 16;
+					if_scmpeq L11;
+				L10:	sspush 27264;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L11:	invokestatic 110;		// javacard/framework/JCSystem.beginTransaction()V
+					aload_0;
+					new 96;		// javacard/framework/OwnerPIN
+					dup;
+					bspush 16;
+					bspush 16;
+					invokespecial 97;		// javacard/framework/OwnerPIN.<init>(BB)V
+					putfield_a 26;		// reference FinalDev_1_1/MedRec_1_1.pinAdmin
+					getfield_a_this 26;		// reference FinalDev_1_1/MedRec_1_1.pinAdmin
+					getfield_a_this 52;		// reference FinalDev_1_1/MedRec_1_1.bufferData
+					sconst_0;
+					sload 6;
+					invokevirtual 125;		// update([BSB)V
+					invokestatic 70;		// javacard/framework/JCSystem.commitTransaction()V
+					return;
+		}
+
+		.method private updatePinDokter(Ljavacard/framework/APDU;)V {
+			.stack 5;
+			.locals 5;
+
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+				L0:	getfield_a_this 26;		// reference FinalDev_1_1/MedRec_1_1.pinAdmin
+					invokevirtual 81;		// isValidated()Z
+					ifne L2;
+				L1:	sspush 25345;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L2:	aload_1;
+					invokevirtual 75;		// getBuffer()[B
+					astore_2;
+					aload_2;
+					sconst_4;
+					baload;
+					sstore_3;
+					aload_1;
+					invokevirtual 118;		// setIncomingAndReceive()S
+					sstore 4;
+					sload_3;
+					sload 4;
+					if_scmpeq L4;
+				L3:	sspush 26368;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L4:	aload_2;
+					sconst_5;
+					baload;
+					sconst_2;
+					if_scmpge L6;
+				L5:	sspush 27012;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L6:	aload_0;
+					sload 4;
+					sconst_1;
+					invokestatic 65;		// javacard/framework/JCSystem.makeTransientByteArray(SB)[B
+					putfield_a 52;		// reference FinalDev_1_1/MedRec_1_1.bufferData
+					sconst_0;
+					sstore 5;
+					goto L8;
+				L7:	aload_2;
+					sconst_5;
+					getfield_a_this 52;		// reference FinalDev_1_1/MedRec_1_1.bufferData
+					sload 5;
+					sload 4;
+					invokestatic 54;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					sload 5;
+					sload 4;
+					sadd;
+					sstore 5;
+					aload_1;
+					sconst_5;
+					invokevirtual 122;		// receiveBytes(S)S
+					sstore 4;
+				L8:	sload 4;
+					ifgt L7;
+				L9:	getfield_a_this 52;		// reference FinalDev_1_1/MedRec_1_1.bufferData
+					arraylength;
+					s2b;
+					sstore 6;
+					sload 6;
+					bspush 16;
+					if_scmpeq L11;
+				L10:	sspush 27264;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L11:	invokestatic 110;		// javacard/framework/JCSystem.beginTransaction()V
+					aload_0;
+					new 96;		// javacard/framework/OwnerPIN
+					dup;
+					bspush 16;
+					bspush 16;
+					invokespecial 97;		// javacard/framework/OwnerPIN.<init>(BB)V
+					putfield_a 27;		// reference FinalDev_1_1/MedRec_1_1.pinDokter
+					getfield_a_this 27;		// reference FinalDev_1_1/MedRec_1_1.pinDokter
+					getfield_a_this 52;		// reference FinalDev_1_1/MedRec_1_1.bufferData
+					sconst_0;
+					sload 6;
+					invokevirtual 125;		// update([BSB)V
+					invokestatic 70;		// javacard/framework/JCSystem.commitTransaction()V
+					return;
+		}
+
+		.method private updatePinOperator(Ljavacard/framework/APDU;)V {
+			.stack 5;
+			.locals 5;
+
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+				L0:	getfield_a_this 26;		// reference FinalDev_1_1/MedRec_1_1.pinAdmin
+					invokevirtual 81;		// isValidated()Z
+					ifne L2;
+				L1:	sspush 25345;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L2:	aload_1;
+					invokevirtual 75;		// getBuffer()[B
+					astore_2;
+					aload_2;
+					sconst_4;
+					baload;
+					sstore_3;
+					aload_1;
+					invokevirtual 118;		// setIncomingAndReceive()S
+					sstore 4;
+					sload_3;
+					sload 4;
+					if_scmpeq L4;
+				L3:	sspush 26368;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L4:	aload_2;
+					sconst_5;
+					baload;
+					sconst_2;
+					if_scmpge L6;
+				L5:	sspush 27012;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L6:	aload_0;
+					sload 4;
+					sconst_1;
+					invokestatic 65;		// javacard/framework/JCSystem.makeTransientByteArray(SB)[B
+					putfield_a 52;		// reference FinalDev_1_1/MedRec_1_1.bufferData
+					sconst_0;
+					sstore 5;
+					goto L8;
+				L7:	aload_2;
+					sconst_5;
+					getfield_a_this 52;		// reference FinalDev_1_1/MedRec_1_1.bufferData
+					sload 5;
+					sload 4;
+					invokestatic 54;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					sload 5;
+					sload 4;
+					sadd;
+					sstore 5;
+					aload_1;
+					sconst_5;
+					invokevirtual 122;		// receiveBytes(S)S
+					sstore 4;
+				L8:	sload 4;
+					ifgt L7;
+				L9:	getfield_a_this 52;		// reference FinalDev_1_1/MedRec_1_1.bufferData
+					arraylength;
+					s2b;
+					sstore 6;
+					sload 6;
+					bspush 16;
+					if_scmpeq L11;
+				L10:	sspush 27264;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L11:	invokestatic 110;		// javacard/framework/JCSystem.beginTransaction()V
+					aload_0;
+					new 96;		// javacard/framework/OwnerPIN
+					dup;
+					bspush 16;
+					bspush 16;
+					invokespecial 97;		// javacard/framework/OwnerPIN.<init>(BB)V
+					putfield_a 28;		// reference FinalDev_1_1/MedRec_1_1.pinOperator
+					getfield_a_this 28;		// reference FinalDev_1_1/MedRec_1_1.pinOperator
+					getfield_a_this 52;		// reference FinalDev_1_1/MedRec_1_1.bufferData
+					sconst_0;
+					sload 6;
+					invokevirtual 125;		// update([BSB)V
+					invokestatic 70;		// javacard/framework/JCSystem.commitTransaction()V
+					return;
+		}
+
+		.method private getAesKey()Ljavacard/security/Key; {
+			.stack 3;
+			.locals 1;
+
+			.descriptor	Ljavacard/security/Key;	3.0;
+
+				L0:	getfield_a_this 25;		// reference FinalDev_1_1/MedRec_1_1.pin
+					invokevirtual 81;		// isValidated()Z
+					ifne L2;
+				L1:	sspush 25344;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L2:	aconst_null;
+					astore_1;
+					getfield_b_this 31;		// byte FinalDev_1_1/MedRec_1_1.aesKeyLen
+					stableswitch L4 32 32 L3;
+				L3:	getfield_a_this 36;		// reference FinalDev_1_1/MedRec_1_1.tempAesKey3
+					astore_1;
+					goto L5;
+				L4:	sspush 27013;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L5:	aload_1;
+					checkcast 0 139;		// T_CLASSORINTERFACE javacard/security/AESKey
+					getfield_a_this 29;		// reference FinalDev_1_1/MedRec_1_1.aesKey
+					sconst_0;
+					invokeinterface 3 139 4;		// javacard/security/AESKey
+					aload_1;
+					areturn;
+		}
+
+		.method private doAesCipherFunction(BS[B)[B {
+			.stack 6;
+			.locals 4;
+
+				L0:	getfield_a_this 25;		// reference FinalDev_1_1/MedRec_1_1.pin
+					invokevirtual 81;		// isValidated()Z
+					ifne L2;
+				L1:	sspush 25344;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L2:	sload_2;
+					newarray 11;
+					astore 4;
+					sload_2;
+					ifle L4;
+				L3:	sload_2;
+					bspush 16;
+					srem;
+					ifeq L5;
+				L4:	sspush 26368;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+				L5:	aload_0;
+					invokespecial 140;		// FinalDev_1_1/MedRec_1_1.getAesKey()Ljavacard/security/Key;
+					astore 5;
+					sload_1;
+					ifne L7;
+				L6:	sconst_2;
+					goto L8;
+				L7:	sconst_1;
+				L8:	sstore 6;
+					getfield_a_this 33;		// reference FinalDev_1_1/MedRec_1_1.aesCbcCipher
+					astore 7;
+					aload 7;
+					aload 5;
+					sload 6;
+					getfield_a_this 30;		// reference FinalDev_1_1/MedRec_1_1.aesICV
+					sconst_0;
+					bspush 16;
+					invokevirtual 141;		// init(Ljavacard/security/Key;B[BSS)V
+					aload 7;
+					aload_3;
+					sconst_0;
+					sload_2;
+					aload 4;
+					sconst_0;
+					invokevirtual 142;		// doFinal([BSS[BS)S
+					pop;
+					aload 4;
+					areturn;
+		}
+
+		.method private addPadtoData([B)[B {
+			.stack 5;
+			.locals 4;
+
+				L0:	aload_1;
+					arraylength;
+					sstore_2;
+					sload_2;
+					bspush 16;
+					if_scmpge L2;
+				L1:	bspush 16;
+					sload_2;
+					ssub;
+					sstore_3;
+				L2:	sload_2;
+					bspush 16;
+					if_scmpne L4;
+				L3:	aload_1;
+					areturn;
+				L4:	bspush 16;
+					sload_2;
+					bspush 16;
+					srem;
+					ssub;
+					sstore_3;
+					sload_3;
+					sload_2;
+					sadd;
+					sstore 4;
+					sload 4;
+					newarray 11;
+					astore 5;
+					aload 5;
+					sconst_0;
+					sload 4;
+					sconst_0;
+					invokestatic 143;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					aload_1;
+					sconst_0;
+					aload 5;
+					sconst_0;
+					sload_2;
+					invokestatic 54;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					aload 5;
+					sload_2;
+					sconst_1;
+					bspush -128;
+					invokestatic 143;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					aload 5;
+					areturn;
+		}
+
+		.method private removePadfromData([B)[B {
+			.stack 5;
+			.locals 3;
+
+				L0:	aload_1;
+					arraylength;
+					sstore_2;
+					sload_2;
+					sstore_3;
+					sload_2;
+					ifne L3;
+				L1:	sspush 27267;
+					invokestatic 126;		// javacard/framework/ISOException.throwIt(S)V
+					goto L3;
+				L2:	sinc 2 -1;
+				L3:	sload_2;
+					ifeq L5;
+				L4:	aload_1;
+					sload_2;
+					sconst_1;
+					ssub;
+					baload;
+					ifeq L2;
+				L5:	aload_1;
+					sload_2;
+					sconst_1;
+					ssub;
+					baload;
+					bspush -128;
+					if_scmpeq L7;
+				L6:	aload_1;
+					areturn;
+				L7:	sload_2;
+					sconst_1;
+					ssub;
+					sstore_3;
+					sload_3;
+					newarray 11;
+					astore 4;
+					aload_1;
+					sconst_0;
+					aload 4;
+					sconst_0;
+					sload_3;
+					invokestatic 54;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					aload 4;
+					areturn;
+		}
+
+		.method private getDataPadded(Ljavacard/framework/APDU;)V {
+			.stack 5;
+			.locals 9;
+
+			.descriptor	Ljavacard/framework/APDU;	1.10;
+
+				L0:	aload_1;
+					invokevirtual 75;		// getBuffer()[B
+					astore_2;
+					aload_1;
+					invokevirtual 118;		// setIncomingAndReceive()S
+					sstore_3;
+					aload_2;
+					sconst_4;
+					baload;
+					sstore 4;
+					sconst_0;
+					sstore 5;
+					sload_3;
+					newarray 11;
+					astore 6;
+					goto L2;
+				L1:	aload_2;
+					sconst_5;
+					aload 6;
+					sload 5;
+					sload_3;
+					invokestatic 54;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					sload 5;
+					sload_3;
+					sadd;
+					sstore 5;
+					aload_1;
+					sconst_5;
+					invokevirtual 122;		// receiveBytes(S)S
+					sstore_3;
+				L2:	sload_3;
+					ifgt L1;
+				L3:	aload 6;
+					arraylength;
+					sstore 7;
+					sload 7;
+					bspush 16;
+					if_scmpge L5;
+				L4:	bspush 16;
+					sload 7;
+					ssub;
+					sstore 8;
+				L5:	sload 7;
+					bspush 16;
+					if_scmpne L7;
+				L6:	sconst_0;
+					sstore 8;
+					goto L8;
+				L7:	bspush 16;
+					sload 7;
+					bspush 16;
+					srem;
+					ssub;
+					sstore 8;
+				L8:	sload 8;
+					sload 7;
+					sadd;
+					sstore 9;
+					sload 9;
+					newarray 11;
+					astore 10;
+					aload_1;
+					invokevirtual 124;		// setOutgoing()S
+					pop;
+					aload_1;
+					sload 9;
+					invokevirtual 131;		// setOutgoingLength(S)V
+					aload 10;
+					sconst_0;
+					sload 9;
+					sconst_0;
+					invokestatic 143;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					aload 6;
+					sconst_0;
+					aload 10;
+					sconst_0;
+					sload 7;
+					invokestatic 54;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					aload 10;
+					sload 7;
+					sconst_1;
+					bspush -128;
+					invokestatic 143;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					aload 10;
+					sconst_0;
+					aload_2;
+					sconst_0;
+					sload 9;
+					invokestatic 54;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					aload_1;
+					sconst_0;
+					sload 9;
+					invokevirtual 132;		// sendBytes(SS)V
+					return;
+		}
+
+		.method public InisiasiStatField()V 8 {
+			.stack 4;
+			.locals 0;
+
+				L0:	getfield_a_this 7;		// reference FinalDev_1_1/MedRec_1_1.statField_DATA
+					sconst_0;
+					bspush 46;
+					sconst_0;
+					invokestatic 143;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					getfield_a_this 8;		// reference FinalDev_1_1/MedRec_1_1.statField_STATIS
+					sconst_0;
+					bspush 7;
+					sconst_0;
+					invokestatic 143;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					return;
+		}
+
+		.method public InisiasiMaxVal()V 9 {
+			.stack 3;
+			.locals 0;
+
+				L0:	getfield_a_this 9;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DATA
+					bspush 6;
+					bspush 7;
+					sastore;
+					getfield_a_this 9;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DATA
+					bspush 8;
+					bspush 30;
+					sastore;
+					getfield_a_this 9;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DATA
+					bspush 9;
+					bspush 30;
+					sastore;
+					getfield_a_this 9;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DATA
+					bspush 10;
+					bspush 30;
+					sastore;
+					getfield_a_this 9;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DATA
+					bspush 11;
+					bspush 30;
+					sastore;
+					getfield_a_this 9;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DATA
+					bspush 12;
+					bspush 30;
+					sastore;
+					getfield_a_this 9;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DATA
+					bspush 13;
+					bspush 34;
+					sastore;
+					getfield_a_this 9;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DATA
+					bspush 15;
+					sconst_2;
+					sastore;
+					getfield_a_this 9;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DATA
+					bspush 21;
+					sconst_2;
+					sastore;
+					getfield_a_this 9;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DATA
+					bspush 22;
+					bspush 6;
+					sastore;
+					getfield_a_this 9;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DATA
+					bspush 23;
+					bspush 7;
+					sastore;
+					getfield_a_this 9;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DATA
+					bspush 24;
+					bspush 13;
+					sastore;
+					getfield_a_this 9;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DATA
+					bspush 27;
+					sconst_3;
+					sastore;
+					getfield_a_this 9;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DATA
+					bspush 28;
+					sconst_2;
+					sastore;
+					getfield_a_this 9;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DATA
+					bspush 30;
+					bspush 7;
+					sastore;
+					getfield_a_this 9;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DATA
+					bspush 32;
+					bspush 30;
+					sastore;
+					getfield_a_this 9;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DATA
+					bspush 33;
+					bspush 30;
+					sastore;
+					getfield_a_this 9;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DATA
+					bspush 34;
+					bspush 30;
+					sastore;
+					getfield_a_this 9;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DATA
+					bspush 35;
+					bspush 34;
+					sastore;
+					getfield_a_this 9;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DATA
+					bspush 41;
+					bspush 30;
+					sastore;
+					getfield_a_this 10;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_STATIS
+					sconst_1;
+					bspush 8;
+					sastore;
+					getfield_a_this 11;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DINAMIS
+					sconst_0;
+					bspush 20;
+					sastore;
+					getfield_a_this 11;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DINAMIS
+					bspush 7;
+					sspush 250;
+					sastore;
+					getfield_a_this 11;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DINAMIS
+					bspush 8;
+					sspush 300;
+					sastore;
+					getfield_a_this 11;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DINAMIS
+					bspush 9;
+					sspush 250;
+					sastore;
+					getfield_a_this 11;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DINAMIS
+					bspush 10;
+					sspush 250;
+					sastore;
+					getfield_a_this 11;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DINAMIS
+					bspush 11;
+					sspush 220;
+					sastore;
+					getfield_a_this 11;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DINAMIS
+					bspush 12;
+					bspush 6;
+					sastore;
+					getfield_a_this 11;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DINAMIS
+					bspush 13;
+					sspush 5000;
+					sastore;
+					getfield_a_this 11;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DINAMIS
+					bspush 14;
+					bspush 60;
+					sastore;
+					getfield_a_this 11;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DINAMIS
+					bspush 16;
+					sconst_3;
+					sastore;
+					getfield_a_this 11;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DINAMIS
+					bspush 22;
+					sconst_5;
+					sastore;
+					getfield_a_this 11;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DINAMIS
+					bspush 23;
+					sconst_5;
+					sastore;
+					getfield_a_this 11;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DINAMIS
+					bspush 24;
+					bspush 8;
+					sastore;
+					getfield_a_this 11;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DINAMIS
+					bspush 35;
+					bspush 100;
+					sastore;
+					getfield_a_this 11;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DINAMIS
+					bspush 36;
+					bspush 100;
+					sastore;
+					getfield_a_this 11;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DINAMIS
+					bspush 37;
+					bspush 100;
+					sastore;
+					getfield_a_this 11;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DINAMIS
+					bspush 38;
+					bspush 100;
+					sastore;
+					getfield_a_this 11;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DINAMIS
+					bspush 39;
+					bspush 100;
+					sastore;
+					getfield_a_this 11;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DINAMIS
+					bspush 40;
+					bspush 100;
+					sastore;
+					getfield_a_this 11;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DINAMIS
+					bspush 41;
+					bspush 100;
+					sastore;
+					getfield_a_this 11;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DINAMIS
+					bspush 42;
+					bspush 100;
+					sastore;
+					getfield_a_this 11;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DINAMIS
+					bspush 43;
+					bspush 100;
+					sastore;
+					getfield_a_this 11;		// reference FinalDev_1_1/MedRec_1_1.MAX_VAL_DINAMIS
+					bspush 44;
+					bspush 100;
+					sastore;
+					return;
+		}
+
+		.method public InisiasiMinVal()V 10 {
+			.stack 3;
+			.locals 0;
+
+				L0:	getfield_a_this 12;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DATA
+					bspush 6;
+					sconst_1;
+					sastore;
+					getfield_a_this 12;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DATA
+					bspush 8;
+					sconst_1;
+					sastore;
+					getfield_a_this 12;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DATA
+					bspush 9;
+					sconst_1;
+					sastore;
+					getfield_a_this 12;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DATA
+					bspush 10;
+					sconst_1;
+					sastore;
+					getfield_a_this 12;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DATA
+					bspush 11;
+					sconst_1;
+					sastore;
+					getfield_a_this 12;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DATA
+					bspush 12;
+					sconst_1;
+					sastore;
+					getfield_a_this 12;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DATA
+					bspush 13;
+					sconst_1;
+					sastore;
+					getfield_a_this 12;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DATA
+					bspush 15;
+					sconst_1;
+					sastore;
+					getfield_a_this 12;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DATA
+					bspush 21;
+					sconst_1;
+					sastore;
+					getfield_a_this 12;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DATA
+					bspush 22;
+					sconst_1;
+					sastore;
+					getfield_a_this 12;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DATA
+					bspush 23;
+					sconst_1;
+					sastore;
+					getfield_a_this 12;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DATA
+					bspush 24;
+					sconst_1;
+					sastore;
+					getfield_a_this 12;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DATA
+					bspush 27;
+					sconst_1;
+					sastore;
+					getfield_a_this 12;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DATA
+					bspush 28;
+					sconst_1;
+					sastore;
+					getfield_a_this 12;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DATA
+					bspush 30;
+					sconst_1;
+					sastore;
+					getfield_a_this 12;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DATA
+					bspush 32;
+					sconst_1;
+					sastore;
+					getfield_a_this 12;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DATA
+					bspush 33;
+					sconst_1;
+					sastore;
+					getfield_a_this 12;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DATA
+					bspush 34;
+					sconst_1;
+					sastore;
+					getfield_a_this 12;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DATA
+					bspush 35;
+					sconst_1;
+					sastore;
+					getfield_a_this 12;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DATA
+					bspush 41;
+					sconst_1;
+					sastore;
+					getfield_a_this 13;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_STATIS
+					sconst_1;
+					sconst_1;
+					sastore;
+					getfield_a_this 14;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DINAMIS
+					sconst_0;
+					sconst_1;
+					sastore;
+					getfield_a_this 14;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DINAMIS
+					bspush 7;
+					bspush 30;
+					sastore;
+					getfield_a_this 14;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DINAMIS
+					bspush 8;
+					bspush 10;
+					sastore;
+					getfield_a_this 14;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DINAMIS
+					bspush 9;
+					bspush 40;
+					sastore;
+					getfield_a_this 14;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DINAMIS
+					bspush 10;
+					bspush 40;
+					sastore;
+					getfield_a_this 14;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DINAMIS
+					bspush 11;
+					bspush 10;
+					sastore;
+					getfield_a_this 14;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DINAMIS
+					bspush 12;
+					sconst_1;
+					sastore;
+					getfield_a_this 14;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DINAMIS
+					bspush 13;
+					sspush 1200;
+					sastore;
+					getfield_a_this 14;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DINAMIS
+					bspush 14;
+					sconst_1;
+					sastore;
+					getfield_a_this 14;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DINAMIS
+					bspush 16;
+					sconst_1;
+					sastore;
+					getfield_a_this 14;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DINAMIS
+					bspush 22;
+					sconst_1;
+					sastore;
+					getfield_a_this 14;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DINAMIS
+					bspush 23;
+					sconst_1;
+					sastore;
+					getfield_a_this 14;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DINAMIS
+					bspush 24;
+					sconst_1;
+					sastore;
+					getfield_a_this 14;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DINAMIS
+					bspush 35;
+					sconst_1;
+					sastore;
+					getfield_a_this 14;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DINAMIS
+					bspush 36;
+					sconst_1;
+					sastore;
+					getfield_a_this 14;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DINAMIS
+					bspush 37;
+					sconst_1;
+					sastore;
+					getfield_a_this 14;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DINAMIS
+					bspush 38;
+					sconst_1;
+					sastore;
+					getfield_a_this 14;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DINAMIS
+					bspush 39;
+					sconst_1;
+					sastore;
+					getfield_a_this 14;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DINAMIS
+					bspush 40;
+					sconst_1;
+					sastore;
+					getfield_a_this 14;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DINAMIS
+					bspush 41;
+					sconst_1;
+					sastore;
+					getfield_a_this 14;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DINAMIS
+					bspush 42;
+					sconst_1;
+					sastore;
+					getfield_a_this 14;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DINAMIS
+					bspush 43;
+					sconst_1;
+					sastore;
+					getfield_a_this 14;		// reference FinalDev_1_1/MedRec_1_1.MIN_VAL_DINAMIS
+					bspush 44;
+					sconst_1;
+					sastore;
+					return;
+		}
+
+		.method public InisiasiMinField()V 11 {
+			.stack 3;
+			.locals 0;
+
+				L0:	getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					sconst_0;
+					sconst_3;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					sconst_1;
+					sconst_3;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					sconst_2;
+					sconst_3;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					sconst_3;
+					bspush 6;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					sconst_4;
+					sconst_3;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					sconst_5;
+					bspush 14;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					bspush 6;
+					sconst_1;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					bspush 7;
+					sconst_3;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					bspush 8;
+					sconst_1;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					bspush 9;
+					sconst_1;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					bspush 10;
+					sconst_1;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					bspush 11;
+					sconst_1;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					bspush 12;
+					sconst_1;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					bspush 13;
+					sconst_1;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					bspush 14;
+					sconst_5;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					bspush 15;
+					sconst_1;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					bspush 16;
+					sconst_3;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					bspush 17;
+					bspush 6;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					bspush 18;
+					sconst_3;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					bspush 19;
+					sconst_3;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					bspush 20;
+					bspush 14;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					bspush 21;
+					sconst_1;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					bspush 22;
+					sconst_1;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					bspush 23;
+					sconst_1;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					bspush 24;
+					sconst_1;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					bspush 25;
+					sconst_3;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					bspush 26;
+					sconst_3;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					bspush 27;
+					sconst_1;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					bspush 28;
+					sconst_1;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					bspush 29;
+					sconst_3;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					bspush 30;
+					sconst_1;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					bspush 31;
+					sconst_3;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					bspush 32;
+					sconst_1;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					bspush 33;
+					sconst_1;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					bspush 34;
+					sconst_1;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					bspush 35;
+					sconst_1;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					bspush 36;
+					sconst_5;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					bspush 37;
+					sconst_3;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					bspush 38;
+					sconst_3;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					bspush 39;
+					sconst_3;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					bspush 40;
+					sconst_3;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					bspush 41;
+					sconst_1;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					bspush 42;
+					sconst_3;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					bspush 43;
+					sconst_3;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					bspush 44;
+					sconst_3;
+					sastore;
+					getfield_a_this 18;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DATA
+					bspush 45;
+					sconst_3;
+					sastore;
+					getfield_a_this 19;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_STATIS
+					sconst_0;
+					sconst_3;
+					sastore;
+					getfield_a_this 19;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_STATIS
+					sconst_1;
+					sconst_1;
+					sastore;
+					getfield_a_this 19;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_STATIS
+					sconst_2;
+					sconst_3;
+					sastore;
+					getfield_a_this 19;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_STATIS
+					sconst_3;
+					sconst_3;
+					sastore;
+					getfield_a_this 19;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_STATIS
+					sconst_4;
+					sconst_3;
+					sastore;
+					getfield_a_this 19;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_STATIS
+					sconst_5;
+					sconst_3;
+					sastore;
+					getfield_a_this 19;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_STATIS
+					bspush 6;
+					sconst_3;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					sconst_0;
+					sconst_1;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					sconst_1;
+					bspush 6;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					sconst_2;
+					sconst_3;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					sconst_3;
+					sconst_3;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					sconst_4;
+					sconst_3;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					sconst_5;
+					sconst_3;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					bspush 6;
+					sconst_3;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					bspush 7;
+					sconst_1;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					bspush 8;
+					sconst_1;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					bspush 9;
+					sconst_1;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					bspush 10;
+					sconst_1;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					bspush 11;
+					sconst_1;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					bspush 12;
+					sconst_1;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					bspush 13;
+					sconst_2;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					bspush 14;
+					sconst_1;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					bspush 15;
+					sconst_3;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					bspush 16;
+					sconst_1;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					bspush 17;
+					sconst_3;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					bspush 18;
+					sconst_3;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					bspush 19;
+					sconst_3;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					bspush 20;
+					sconst_3;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					bspush 21;
+					sconst_3;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					bspush 22;
+					sconst_1;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					bspush 23;
+					sconst_1;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					bspush 24;
+					sconst_1;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					bspush 25;
+					sconst_3;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					bspush 26;
+					sconst_3;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					bspush 27;
+					sconst_3;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					bspush 28;
+					sconst_3;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					bspush 29;
+					sconst_3;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					bspush 30;
+					sconst_3;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					bspush 31;
+					sconst_3;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					bspush 32;
+					sconst_3;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					bspush 33;
+					sconst_3;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					bspush 34;
+					sconst_3;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					bspush 35;
+					sconst_1;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					bspush 36;
+					sconst_1;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					bspush 37;
+					sconst_1;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					bspush 38;
+					sconst_1;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					bspush 39;
+					sconst_1;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					bspush 40;
+					sconst_1;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					bspush 41;
+					sconst_1;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					bspush 42;
+					sconst_1;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					bspush 43;
+					sconst_1;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					bspush 44;
+					sconst_1;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					bspush 45;
+					sconst_3;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					bspush 46;
+					sconst_3;
+					sastore;
+					getfield_a_this 20;		// reference FinalDev_1_1/MedRec_1_1.MIN_FIELD_DINAMIS
+					bspush 47;
+					sconst_3;
+					sastore;
+					return;
+		}
+
+		.method public InisiasiMaxField()V 12 {
+			.stack 3;
+			.locals 0;
+
+				L0:	getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					sconst_0;
+					bspush 20;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					sconst_1;
+					bspush 12;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					sconst_2;
+					bspush 20;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					sconst_3;
+					bspush 6;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					sconst_4;
+					bspush 50;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					sconst_5;
+					bspush 32;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 6;
+					sconst_1;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 7;
+					bspush 50;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 8;
+					sconst_1;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 9;
+					sconst_1;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 10;
+					sconst_1;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 11;
+					sconst_1;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 12;
+					sconst_1;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 13;
+					sconst_1;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 14;
+					sconst_5;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 15;
+					sconst_1;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 16;
+					bspush 10;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 17;
+					bspush 6;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 18;
+					bspush 12;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 19;
+					bspush 12;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 20;
+					bspush 32;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 21;
+					sconst_1;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 22;
+					sconst_1;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 23;
+					sconst_1;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 24;
+					sconst_1;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 25;
+					bspush 12;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 26;
+					bspush 30;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 27;
+					sconst_1;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 28;
+					sconst_1;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 29;
+					bspush 50;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 30;
+					sconst_1;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 31;
+					bspush 50;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 32;
+					sconst_1;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 33;
+					sconst_1;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 34;
+					sconst_1;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 35;
+					sconst_1;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 36;
+					sconst_5;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 37;
+					bspush 12;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 38;
+					bspush 12;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 39;
+					bspush 20;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 40;
+					bspush 30;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 41;
+					sconst_1;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 42;
+					bspush 12;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 43;
+					bspush 12;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 44;
+					bspush 12;
+					sastore;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 45;
+					bspush 12;
+					sastore;
+					getfield_a_this 16;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_STATIS
+					sconst_0;
+					bspush 100;
+					sastore;
+					getfield_a_this 16;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_STATIS
+					sconst_1;
+					sconst_1;
+					sastore;
+					getfield_a_this 16;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_STATIS
+					sconst_2;
+					sspush 255;
+					sastore;
+					getfield_a_this 16;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_STATIS
+					sconst_3;
+					sspush 255;
+					sastore;
+					getfield_a_this 16;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_STATIS
+					sconst_4;
+					sspush 255;
+					sastore;
+					getfield_a_this 16;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_STATIS
+					sconst_5;
+					sspush 255;
+					sastore;
+					getfield_a_this 16;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_STATIS
+					bspush 6;
+					sspush 255;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					sconst_0;
+					sconst_1;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					sconst_1;
+					bspush 6;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					sconst_2;
+					bspush 50;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					sconst_3;
+					sspush 200;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					sconst_4;
+					bspush 100;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					sconst_5;
+					bspush 100;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					bspush 6;
+					bspush 100;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					bspush 7;
+					sconst_1;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					bspush 8;
+					sconst_1;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					bspush 9;
+					sconst_1;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					bspush 10;
+					sconst_1;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					bspush 11;
+					sconst_1;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					bspush 12;
+					sconst_1;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					bspush 13;
+					sconst_2;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					bspush 14;
+					sconst_1;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					bspush 15;
+					sspush 250;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					bspush 16;
+					sconst_1;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					bspush 17;
+					sspush 512;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					bspush 18;
+					bspush 50;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					bspush 19;
+					sspush 512;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					bspush 20;
+					sspush 200;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					bspush 21;
+					bspush 50;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					bspush 22;
+					sconst_1;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					bspush 23;
+					sconst_1;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					bspush 24;
+					sconst_1;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					bspush 25;
+					bspush 20;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					bspush 26;
+					bspush 20;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					bspush 27;
+					bspush 20;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					bspush 28;
+					bspush 20;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					bspush 29;
+					bspush 20;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					bspush 30;
+					bspush 20;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					bspush 31;
+					bspush 20;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					bspush 32;
+					bspush 20;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					bspush 33;
+					bspush 20;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					bspush 34;
+					bspush 20;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					bspush 35;
+					sconst_1;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					bspush 36;
+					sconst_1;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					bspush 37;
+					sconst_1;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					bspush 38;
+					sconst_1;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					bspush 39;
+					sconst_1;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					bspush 40;
+					sconst_1;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					bspush 41;
+					sconst_1;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					bspush 42;
+					sconst_1;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					bspush 43;
+					sconst_1;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					bspush 44;
+					sconst_1;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					bspush 45;
+					bspush 50;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					bspush 46;
+					bspush 30;
+					sastore;
+					getfield_a_this 17;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DINAMIS
+					bspush 47;
+					bspush 12;
+					sastore;
+					return;
+		}
+
+		.method public static LenPadded(S)S 1 {
+			.stack 3;
+			.locals 3;
+
+				L0:	sload_0;
+					bspush 16;
+					sdiv;
+					sstore_2;
+					sload_0;
+					bspush 16;
+					srem;
+					sstore_3;
+					sload_3;
+					ifeq L2;
+				L1:	bspush 16;
+					sload_2;
+					sconst_1;
+					sadd;
+					smul;
+					sstore_1;
+					goto L3;
+				L2:	bspush 16;
+					sload_2;
+					smul;
+					sstore_1;
+				L3:	sload_1;
+					sreturn;
+		}
+
+		.method public InisiasiDataTEXT()V 13 {
+			.stack 5;
+			.locals 1;
+
+				L0:	aload_0;
+					bspush 46;
+					anewarray 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					putfield_a 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					sconst_0;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					sconst_0;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					sconst_0;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					sconst_1;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					sconst_1;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					sconst_1;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					sconst_2;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					sconst_2;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					sconst_2;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					sconst_3;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					sconst_3;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					sconst_3;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					sconst_4;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					sconst_4;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					sconst_4;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					sconst_5;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					sconst_5;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					sconst_5;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 6;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 6;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 6;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 7;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 7;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 7;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 8;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 8;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 8;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 9;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 9;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 9;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 10;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 10;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 10;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 11;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 11;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 11;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 12;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 12;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 12;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 13;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 13;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 13;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 14;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 14;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 14;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 15;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 15;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 15;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 16;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 16;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 16;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 17;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 17;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 17;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 18;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 18;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 18;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 19;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 19;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 19;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 20;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 20;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 20;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 21;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 21;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 21;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 22;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 22;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 22;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 23;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 23;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 23;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 24;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 24;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 24;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 25;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 25;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 25;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 26;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 26;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 26;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 27;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 27;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 27;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 28;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 28;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 28;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 29;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 29;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 29;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 30;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 30;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 30;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 31;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 31;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 31;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 32;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 32;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 32;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 33;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 33;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 33;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 34;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 34;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 34;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 35;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 35;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 35;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 36;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 36;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 36;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 37;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 37;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 37;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 38;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 38;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 38;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 39;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 39;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 39;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 40;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 40;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 40;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 41;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 41;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 41;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 42;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 42;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 42;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 43;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 44;		// reference FinalDev_1_1/MedRec_1_1.dataDiri
+					bspush 43;
+					aaload;
+					getfield_a_this 15;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_DATA
+					bspush 43;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					aload_0;
+					bspush 7;
+					anewarray 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					putfield_a 46;		// reference FinalDev_1_1/MedRec_1_1.dataStatis
+					sconst_0;
+					sstore_1;
+					goto L2;
+				L1:	getfield_a_this 46;		// reference FinalDev_1_1/MedRec_1_1.dataStatis
+					sload_1;
+					new 56;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT
+					dup;
+					aload_0;
+					invokespecial 59;		// FinalDev_1_1/MedRec_1_1$IsiDataTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 46;		// reference FinalDev_1_1/MedRec_1_1.dataStatis
+					sload_1;
+					aaload;
+					getfield_a_this 16;		// reference FinalDev_1_1/MedRec_1_1.MAX_FIELD_STATIS
+					sload_1;
+					saload;
+					invokestatic 60;		// FinalDev_1_1/MedRec_1_1.LenPadded(S)S
+					invokevirtual 61;		// setData(S)V
+					sinc 1 1;
+				L2:	sload_1;
+					bspush 7;
+					if_scmplt L1;
+				L3:	aload_0;
+					bspush 20;
+					anewarray 144;		// FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT
+					putfield_a 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					sconst_0;
+					new 144;		// FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT
+					dup;
+					aload_0;
+					invokespecial 145;		// FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					sconst_1;
+					new 144;		// FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT
+					dup;
+					aload_0;
+					invokespecial 145;		// FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					sconst_2;
+					new 144;		// FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT
+					dup;
+					aload_0;
+					invokespecial 145;		// FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					sconst_3;
+					new 144;		// FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT
+					dup;
+					aload_0;
+					invokespecial 145;		// FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					sconst_4;
+					new 144;		// FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT
+					dup;
+					aload_0;
+					invokespecial 145;		// FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					sconst_5;
+					new 144;		// FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT
+					dup;
+					aload_0;
+					invokespecial 145;		// FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					bspush 6;
+					new 144;		// FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT
+					dup;
+					aload_0;
+					invokespecial 145;		// FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					bspush 7;
+					new 144;		// FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT
+					dup;
+					aload_0;
+					invokespecial 145;		// FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					bspush 8;
+					new 144;		// FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT
+					dup;
+					aload_0;
+					invokespecial 145;		// FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					bspush 9;
+					new 144;		// FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT
+					dup;
+					aload_0;
+					invokespecial 145;		// FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					bspush 10;
+					new 144;		// FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT
+					dup;
+					aload_0;
+					invokespecial 145;		// FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					bspush 11;
+					new 144;		// FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT
+					dup;
+					aload_0;
+					invokespecial 145;		// FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					bspush 12;
+					new 144;		// FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT
+					dup;
+					aload_0;
+					invokespecial 145;		// FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					bspush 13;
+					new 144;		// FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT
+					dup;
+					aload_0;
+					invokespecial 145;		// FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					bspush 14;
+					new 144;		// FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT
+					dup;
+					aload_0;
+					invokespecial 145;		// FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					bspush 15;
+					new 144;		// FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT
+					dup;
+					aload_0;
+					invokespecial 145;		// FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					bspush 16;
+					new 144;		// FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT
+					dup;
+					aload_0;
+					invokespecial 145;		// FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					bspush 17;
+					new 144;		// FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT
+					dup;
+					aload_0;
+					invokespecial 145;		// FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					bspush 18;
+					new 144;		// FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT
+					dup;
+					aload_0;
+					invokespecial 145;		// FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					bspush 19;
+					new 144;		// FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT
+					dup;
+					aload_0;
+					invokespecial 145;		// FinalDev_1_1/MedRec_1_1$ItemDinamisTEXT.<init>(LFinalDev_1_1/MedRec_1_1;)V
+					aastore;
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					sconst_0;
+					aaload;
+					invokevirtual 146;		// setData()V
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					sconst_1;
+					aaload;
+					invokevirtual 146;		// setData()V
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					sconst_2;
+					aaload;
+					invokevirtual 146;		// setData()V
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					sconst_3;
+					aaload;
+					invokevirtual 146;		// setData()V
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					sconst_4;
+					aaload;
+					invokevirtual 146;		// setData()V
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					sconst_5;
+					aaload;
+					invokevirtual 146;		// setData()V
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					bspush 6;
+					aaload;
+					invokevirtual 146;		// setData()V
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					bspush 7;
+					aaload;
+					invokevirtual 146;		// setData()V
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					bspush 8;
+					aaload;
+					invokevirtual 146;		// setData()V
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					bspush 9;
+					aaload;
+					invokevirtual 146;		// setData()V
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					bspush 10;
+					aaload;
+					invokevirtual 146;		// setData()V
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					bspush 11;
+					aaload;
+					invokevirtual 146;		// setData()V
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					bspush 12;
+					aaload;
+					invokevirtual 146;		// setData()V
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					bspush 13;
+					aaload;
+					invokevirtual 146;		// setData()V
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					bspush 14;
+					aaload;
+					invokevirtual 146;		// setData()V
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					bspush 15;
+					aaload;
+					invokevirtual 146;		// setData()V
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					bspush 16;
+					aaload;
+					invokevirtual 146;		// setData()V
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					bspush 17;
+					aaload;
+					invokevirtual 146;		// setData()V
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					bspush 18;
+					aaload;
+					invokevirtual 146;		// setData()V
+					getfield_a_this 47;		// reference FinalDev_1_1/MedRec_1_1.dataDinamis
+					bspush 19;
+					aaload;
+					invokevirtual 146;		// setData()V
+					return;
+		}
+
+	}
+
+}

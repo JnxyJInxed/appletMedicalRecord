@@ -1,0 +1,960 @@
+//1
+//select
+00A40400 09 B70000006203012101;
+
+//2
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//3
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//4
+//Get No Record (Index)
+//expect: 0200020006 9000
+90 50 0200 01 06;
+
+
+//5
+//select
+00A40400 09 B70000006203012101;
+
+//6
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//7
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//8
+//Get Tanggal periksa
+//expect: 0201020106 9000
+80 50 0201 01 06;
+
+
+//9
+//select
+00A40400 09 B70000006203012101;
+
+//10
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//11
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//12
+//Get Keluhan utama
+//expect: 0202020206 9000
+80 50 0202 01 06;
+
+
+//13
+//select
+00A40400 09 B70000006203012101;
+
+//14
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//15
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//16
+//Get Anamnesa
+//expect: 0203020306 9000
+80 50 0203 01 06;
+
+
+//17
+//select
+00A40400 09 B70000006203012101;
+
+//18
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//19
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//20
+//Get Riwayat Penyakit Dahulu
+//expect: 0204020406 9000
+80 50 0204 01 06;
+
+
+//21
+//select
+00A40400 09 B70000006203012101;
+
+//22
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//23
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//24
+//Get Riwayat Penyakit pada keluarga/kerabat
+//expect: 0205020506 9000
+80 50 0205 01 06;
+
+
+//25
+//select
+00A40400 09 B70000006203012101;
+
+//26
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//27
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//28
+//Get Pemeriksaan Fisik
+//expect: 0206020606 9000
+80 50 0206 01 06;
+
+
+//29
+//select
+00A40400 09 B70000006203012101;
+
+//30
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//31
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//32
+//Get Tinggi
+//expect: 0207020706 9000
+80 50 0207 01 06;
+
+
+//33
+//select
+00A40400 09 B70000006203012101;
+
+//34
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//35
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//36
+//Get Berat badan
+//expect: 0208020806 9000
+90 50 0208 01 06;
+
+
+//37
+//select
+00A40400 09 B70000006203012101;
+
+//38
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//39
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//40
+//Get Systole
+//expect: 0209020906 9000
+90 50 0209 01 06;
+
+
+//41
+//select
+00A40400 09 B70000006203012101;
+
+//42
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//43
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//44
+//Get Diastole
+//expect: 020A020A06 9000
+90 50 020A 01 06;
+
+
+//45
+//select
+00A40400 09 B70000006203012101;
+
+//46
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//47
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//48
+//Get Nadi
+//expect: 020B020B06 9000
+90 50 020B 01 06;
+
+
+//49
+//select
+00A40400 09 B70000006203012101;
+
+//50
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//51
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//52
+//Get Kesadaran
+//expect: 020C020C06 9000
+90 50 020C 01 06;
+
+
+//53
+//select
+00A40400 09 B70000006203012101;
+
+//54
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//55
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//56
+//Get Suhu
+//expect: 020D020D06 9000
+90 50 020D 01 06;
+
+
+//57
+//select
+00A40400 09 B70000006203012101;
+
+//58
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//59
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//60
+//Get Respirasi
+//expect: 020E020E06 9000
+90 50 020E 01 06;
+
+
+//61
+//select
+00A40400 09 B70000006203012101;
+
+//62
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//63
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//64
+//Get Lain-lain
+//expect: 020F020F06 9000
+80 50 020F 01 06;
+
+
+//65
+//select
+00A40400 09 B70000006203012101;
+
+//66
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//67
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//68
+//Get Lab execute flag
+//expect: 0210021006 9000
+90 50 0210 01 06;
+
+
+//69
+//select
+00A40400 09 B70000006203012101;
+
+//70
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//71
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//72
+//Get Expertise Lab/Radio/etc
+//expect: 0211021106 9000
+80 50 0211 01 06;
+
+
+//73
+//select
+00A40400 09 B70000006203012101;
+
+//74
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//75
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//76
+//Get Catatan Lab
+//expect: 0212021206 9000
+80 50 0212 01 06;
+
+
+//77
+//select
+00A40400 09 B70000006203012101;
+
+//78
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//79
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//80
+//Get Terapi
+//expect: 0213021306 9000
+80 50 0213 01 06;
+
+
+//81
+//select
+00A40400 09 B70000006203012101;
+
+//82
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//83
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//84
+//Get Resep
+//expect: 0214021406 9000
+80 50 0214 01 06;
+
+
+//85
+//select
+00A40400 09 B70000006203012101;
+
+//86
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//87
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//88
+//Get Catatan resep
+//expect: 0215021506 9000
+80 50 0215 01 06;
+
+
+//89
+//select
+00A40400 09 B70000006203012101;
+
+//90
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//91
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//92
+//Get Eksekusi resep flag
+//expect: 0216021606 9000
+90 50 0216 01 06;
+
+
+//93
+//select
+00A40400 09 B70000006203012101;
+
+//94
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//95
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//96
+//Get Repetisi resep
+//expect: 0217021706 9000
+90 50 0217 01 06;
+
+
+//97
+//select
+00A40400 09 B70000006203012101;
+
+//98
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//99
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//100
+//Get Prognosa
+//expect: 0218021806 9000
+90 50 0218 01 06;
+
+
+//101
+//select
+00A40400 09 B70000006203012101;
+
+//102
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//103
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//104
+//Get Kode Penyakit ICD 1
+//expect: 0219021906 9000
+80 50 0219 01 06;
+
+
+//105
+//select
+00A40400 09 B70000006203012101;
+
+//106
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//107
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//108
+//Get Kode Penyakit ICD 2
+//expect: 021A021A06 9000
+80 50 021A 01 06;
+
+
+//109
+//select
+00A40400 09 B70000006203012101;
+
+//110
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//111
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//112
+//Get Kode Penyakit ICD 3
+//expect: 021B021B06 9000
+80 50 021B 01 06;
+
+
+//113
+//select
+00A40400 09 B70000006203012101;
+
+//114
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//115
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//116
+//Get Kode Penyakit ICD 4
+//expect: 021C021C06 9000
+80 50 021C 01 06;
+
+
+//117
+//select
+00A40400 09 B70000006203012101;
+
+//118
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//119
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//120
+//Get Kode Penyakit ICD 5
+//expect: 021D021D06 9000
+80 50 021D 01 06;
+
+
+//121
+//select
+00A40400 09 B70000006203012101;
+
+//122
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//123
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//124
+//Get Kode Penyakit ICD 6
+//expect: 021E021E06 9000
+80 50 021E 01 06;
+
+
+//125
+//select
+00A40400 09 B70000006203012101;
+
+//126
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//127
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//128
+//Get Kode Penyakit ICD 7
+//expect: 021F021F06 9000
+80 50 021F 01 06;
+
+
+//129
+//select
+00A40400 09 B70000006203012101;
+
+//130
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//131
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//132
+//Get Kode Penyakit ICD 8
+//expect: 0220022006 9000
+80 50 0220 01 06;
+
+
+//133
+//select
+00A40400 09 B70000006203012101;
+
+//134
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//135
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//136
+//Get Kode Penyakit ICD 9
+//expect: 0221022106 9000
+80 50 0221 01 06;
+
+
+//137
+//select
+00A40400 09 B70000006203012101;
+
+//138
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//139
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//140
+//Get Kode Penyakit ICD 10
+//expect: 0222022206 9000
+80 50 0222 01 06;
+
+
+//141
+//select
+00A40400 09 B70000006203012101;
+
+//142
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//143
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//144
+//Get Kode Penyakit ICD 1 Status Diagnosa
+//expect: 0223022306 9000
+90 50 0223 01 06;
+
+
+//145
+//select
+00A40400 09 B70000006203012101;
+
+//146
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//147
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//148
+//Get Kode Penyakit ICD 2 Status Diagnosa
+//expect: 0224022406 9000
+90 50 0224 01 06;
+
+
+//149
+//select
+00A40400 09 B70000006203012101;
+
+//150
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//151
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//152
+//Get Kode Penyakit ICD 3 Status Diagnosa
+//expect: 0225022506 9000
+90 50 0225 01 06;
+
+
+//153
+//select
+00A40400 09 B70000006203012101;
+
+//154
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//155
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//156
+//Get Kode Penyakit ICD 4 Status Diagnosa
+//expect: 0226022606 9000
+90 50 0226 01 06;
+
+
+//157
+//select
+00A40400 09 B70000006203012101;
+
+//158
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//159
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//160
+//Get Kode Penyakit ICD 5 Status Diagnosa
+//expect: 0227022706 9000
+90 50 0227 01 06;
+
+
+//161
+//select
+00A40400 09 B70000006203012101;
+
+//162
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//163
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//164
+//Get Kode Penyakit ICD 6 Status Diagnosa
+//expect: 0228022806 9000
+90 50 0228 01 06;
+
+
+//165
+//select
+00A40400 09 B70000006203012101;
+
+//166
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//167
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//168
+//Get Kode Penyakit ICD 7 Status Diagnosa
+//expect: 0229022906 9000
+90 50 0229 01 06;
+
+
+//169
+//select
+00A40400 09 B70000006203012101;
+
+//170
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//171
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//172
+//Get Kode Penyakit ICD 8 Status Diagnosa
+//expect: 022A022A06 9000
+90 50 022A 01 06;
+
+
+//173
+//select
+00A40400 09 B70000006203012101;
+
+//174
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//175
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//176
+//Get Kode Penyakit ICD 9 Status Diagnosa
+//expect: 022B022B06 9000
+90 50 022B 01 06;
+
+
+//177
+//select
+00A40400 09 B70000006203012101;
+
+//178
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//179
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//180
+//Get Kode Penyakit ICD 10 Status Diagnosa
+//expect: 022C022C06 9000
+90 50 022C 01 06;
+
+
+//181
+//select
+00A40400 09 B70000006203012101;
+
+//182
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//183
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//184
+//Get Poli yang dituju
+//expect: 022D022D06 9000
+80 50 022D 01 06;
+
+
+//185
+//select
+00A40400 09 B70000006203012101;
+
+//186
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//187
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//188
+//Get Rujukan/Pengirim penderita
+//expect: 022E022E06 9000
+80 50 022E 01 06;
+
+
+//189
+//select
+00A40400 09 B70000006203012101;
+
+//190
+//Verify user pin
+80 A0 00 00 03 112233;
+//expect: 90 00
+
+//191
+//Verify ADMIN pin
+80 A1 00 00 10 10 20 30 40 50 60 70 80 90 00 10 20 30 40 50 60;
+//expect: 90 00
+
+//192
+//Get ID Puskesmas
+//expect: 022F022F06 9000
+80 50 022F 01 06;
+
+

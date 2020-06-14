@@ -1,0 +1,204 @@
+//Input No Smartcard
+//expect: 90 00
+80 30 0000 04 00000000;
+
+//Input Kategori Pasien/Jenis pembayaran/Asuansi
+//expect: 90 00
+80 30 0001 04 00010001;
+
+//Input Nomer Asuransi
+//expect: 90 00
+80 30 0002 04 00020002;
+
+//Input Tanggal Daftar
+//expect: 90 00
+80 30 0003 06 00 03 00 03 00 03;
+
+//Input Nama Pasien
+//expect: 90 00
+80 30 0004 04 00040004;
+
+//Input Nama KK
+//expect: 90 00
+80 30 0005 10 10050005 10050005 10050005 10050005;
+
+//Input Hubungan Keluarga
+//expect: 90 00
+90 30 0006 01 06;
+
+//Input Alamat
+//expect: 90 00
+80 30 0007 04 00070007;
+
+//Input RT
+//expect: 90 00
+90 30 0008 01 08;
+
+//Input RW
+//expect: 90 00
+90 30 0009 01 09;
+
+//Input Kelurahan / Desa
+//expect: 90 00
+90 30 000A 01 0A;
+
+//Input Kecamatan
+//expect: 90 00
+90 30 000B 01 0B;
+
+//Input Kota / Kabupaten
+//expect: 90 00
+90 30 000C 01 0C;
+
+//Input Propinsi
+//expect: 90 00
+90 30 000D 01 0D;
+
+//Input Kode pos
+//expect: 90 00
+80 30 000E 05 000E000E0E;
+
+//Input Diluar/Didalam wilayah kerja
+//expect: 90 00
+90 30 000F 01 01;
+
+//Input Tempat Lahir
+//expect: 90 00
+80 30 0010 04 00100010;
+
+//Input Tanggal Lahir
+//expect: 90 00
+80 30 0011 06 01 07 0B 01 01 09 07;
+
+//Input Telepon
+//expect: 90 00
+80 30 0012 04 00120012;
+
+//Input HP
+//expect: 90 00
+80 30 0013 04 00130013;
+
+//Input No. KTP (ID Number) - NIK
+//expect: 90 00
+80 30 0014 10 1014201430144014 1014201430144014;
+
+//Input Jenis Kelamin
+//expect: 90 00
+90 30 0015 01 01;
+
+//Input Agama
+//expect: 90 00
+90 30 0016 01 06;
+
+//Input Pendidikan
+//expect: 90 00
+90 30 0017 01 04;
+
+//Input Pekerjaan
+//expect: 90 00
+90 30 0018 01 08;
+
+//Input Kelas Perawatan
+//expect: 90 00
+80 30 0019 04 00190019;
+
+//Input Alamat e-mail
+//expect: 90 00
+80 30 001A 04 001A001A;
+
+//Input Status perkawinan
+//expect: 90 00
+90 30 001B 01 03;
+
+//Input Kewarganegaraan
+//expect: 90 00
+90 30 001C 01 01;
+
+//Input Nama Keluarga
+//expect: 90 00
+80 30 001D 04 001D001D;
+
+//Input Hubungan
+//expect: 90 00
+90 30 001E 01 01;
+
+//Input Alamat
+//expect: 90 00
+80 30 001F 04 001F001F;
+
+//Input Kelurahan / Desa
+//expect: 90 00
+90 30 0020 01 07;
+
+//Input Kecamatan
+//expect: 90 00
+90 30 0021 01 01;
+
+//Input Kota / Kabupaten
+//expect: 90 00
+90 30 0022 01 02;
+
+//Input Propinsi
+//expect: 90 00
+90 30 0023 01 03;
+
+//Input Kode pos
+//expect: 90 00
+80 30 0024 05 00 24 00 24 00;
+
+//Input Telepon
+//expect: 90 00
+80 30 0025 04 00250025;
+
+//Input HP
+//expect: 90 00
+80 30 0026 04 00260026;
+
+//Input Nama Kantor
+//expect: 90 00
+80 30 0027 04 00270027;
+
+//Input Alamat Kantor
+//expect: 90 00
+80 30 0028 04 00280028;
+
+//Input Kota / Kabupaten
+//expect: 90 00
+90 30 0029 01 09;
+
+//Input Telepon
+//expect: 90 00
+80 30 002A 04 002A002A;
+
+//Input HP
+//expect: 90 00
+80 30 002B 04 002B002B;
+
+//Input Alergi
+//expect: 90 00
+80 30 0100 04 01000100;
+
+//Input Golongan darah
+//expect: 90 00
+90 30 0101 01 01;
+
+//Input Riwayat Operasi
+//expect: 90 00
+80 30 0102 04 01020102;
+
+//Input Riwayat Rawat RS
+//expect: 90 00
+80 30 0103 04 01030103;
+
+//Input Riwayat penyakit Kronis (Jantung, Paru, Ginjal, dll.)
+//expect: 90 00
+80 30 0104 04 01040104;
+
+//Input Riwayat penyakit bawaan dan orang tua/keluarga/kerabat
+//expect: 90 00
+80 30 0105 04 01050105;
+
+//Input Faktor Resiko
+//expect: 90 00
+80 30 0106 04 01060106;
+
